@@ -115,6 +115,7 @@ class Net:
             raise
 
     def _get(self, url):
+        url = urllib.parse.quote(url, safe=":/?&=%#+;,@!$*()~'[]")  # 한글이 섞인 주소 대응 (이미 인코딩된 % 는 유지)
         if not self.allowed(url):
             raise PermissionError("robots.txt 에서 수집을 허용하지 않는 페이지")
         wait = self.delay - (time.time() - self._last)
@@ -193,6 +194,11 @@ def meta(html: str, prop: str) -> str:
 
 
 # ======================================================== 1. 목록 페이지 -> 이벤트 링크
+def root_domain(host: str) -> str:
+    parts = host.split(":")[0].split(".")
+    return ".".join(parts[-3:]) if len(parts) >= 3 and parts[-2] in ("go", "or", "co", "ne") else ".".join(parts[-2:])
+
+
 def resolve_js_link(onclick: str, list_url: str):
     """href="#" + onclick="jsView('게시판코드','글번호')" 형태(수원시 등)를 실제 상세 주소로 변환"""
     m = re.search(r"\w*(?:[vV]iew|[dD]etail|[rR]ead)\w*\(\s*['\"]?(\w+)['\"]?\s*,\s*['\"]?(\w+)['\"]?", onclick or "")
@@ -235,6 +241,8 @@ def find_event_links(list_html: str, list_url: str, keywords=None, limit=30, acc
         url = urllib.parse.urljoin(list_url, htmllib.unescape(href))
         if url in seen:
             continue
+        if root_domain(urllib.parse.urlparse(url).netloc) != root_domain(urllib.parse.urlparse(list_url).netloc):
+            continue  # 같은 기관 사이트 안의 글만 (SNS 공유/외부 링크 제외)
         seen.add(url)
         found.append({"url": url, "link_text": text})
         if len(found) >= limit:
@@ -677,8 +685,13 @@ def main():
                                  "candidates": 0, "found": 0, "kept": 0, "reasons": Counter()})
                 break
             print(f"[{i}/{len(targets)}] {t['name']}  <- {t['list_url']}", flush=True)
-            got, log, st, lh = smart_collect(net, t, args.max, today)
-            print("\n".join(log))
+            try:
+                got, log, st, lh = smart_collect(net, t, args.max, today)
+            except Exception as e:  # 한 곳이 이상해도 전체가 멈추지 않게
+                import traceback
+                traceback.print_exc()
+                got, log, st, lh = [], [f"  [-] 예기치 못한 오류: {e}"], {"error": f"예외: {e}", "candidates": 0}, ""
+            print("\n".join(log), flush=True)
             for r in got:
                 r["_source"] = t["name"]
             results += got
@@ -687,6 +700,11 @@ def main():
             if not st["error"] and st["candidates"] == 0:
                 row["debug"] = save_debug(t["name"], lh)
             rows.append(row)
+            if i % 5 == 0 and not (args.html_file or args.url):  # 5개마다 중간 저장 (중간에 죽어도 결과 보존)
+                _k, _d = filter_and_dedup([r for r in results if not (
+                    (args.keep_ended and r["skip_reason"] == "마감됨") or (args.allow_no_date and r["skip_reason"] == "기간 확인 불가"))],
+                    args.min_score)
+                save_json(_k, args.out if os.path.isabs(args.out) else os.path.join(HERE, args.out))
 
     if args.keep_ended or args.allow_no_date:
         for r in results:
