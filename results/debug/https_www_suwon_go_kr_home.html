@@ -117,8 +117,8 @@ function checkInAPI(){
 	var port = "80";
 	var pageUrl = "/index.do" || document.location.pathname;	// 현재 페이지 정보
 	pageUrl = tracerPageUrlReplace(pageUrl);
-	var ip = "172.212.207.114";	// 클라이언트 IP
-	var loginId = "172.212.207.114";	// 클라이언트 IP 또는 로그인 ID
+	var ip = "172.169.254.182";	// 클라이언트 IP
+	var loginId = "172.169.254.182";	// 클라이언트 IP 또는 로그인 ID
 
 	callTracerApiInput(host, ip, loginId, port, pageUrl, this);
 }
@@ -128,8 +128,8 @@ function checkOutAPI(){
 	var port = "80";
 	var pageUrl = "/index.do" || document.location.pathname;	// 현재 페이지 정보
 	pageUrl = tracerPageUrlReplace(pageUrl);
-	var ip = "172.212.207.114";	// 클라이언트 IP
-	var loginId = "172.212.207.114";	// 클라이언트 IP 또는 로그인 ID
+	var ip = "172.169.254.182";	// 클라이언트 IP
+	var loginId = "172.169.254.182";	// 클라이언트 IP 또는 로그인 ID
 
 	callTracerApiOutput(host, ip, loginId, port, pageUrl, this);
 }

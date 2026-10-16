@@ -1,0 +1,374 @@
+K-Gift Hunter v2.1 진단 리포트  2026-10-16 08:56
+결과: 사용 18건 / 제외 306건
+============================================================
+[ERR] 평택시 (첫 화면)
+      주소: https://www.pyeongtaek.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 오산시 (첫 화면)
+      주소: https://www.osan.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 시흥시 (첫 화면)
+      주소: https://www.siheung.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: <urlopen error timed out>
+[ERR] 의왕시 (첫 화면)
+      주소: https://www.uiwang.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 하남시 (첫 화면)
+      주소: https://www.hanam.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 김포시 (첫 화면)
+      주소: https://www.gimpo.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 포천시 (첫 화면)
+      주소: https://www.pocheon.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 여주시 (첫 화면)
+      주소: https://www.yeoju.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: <urlopen error timed out>
+[ERR] 연천군 (첫 화면)
+      주소: https://www.yeoncheon.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[ERR] 양평군 (첫 화면)
+      주소: https://www.yp21.go.kr
+      후보 0 -> 추출 0 -> 사용 0
+      진단: robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+[OK ] 수원시 게시판(bbsCd=1381, 참여형 행사)
+      주소: https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1381
+      후보 8 -> 추출 8 -> 사용 1
+      진단: 정상
+[ERR] 성남시 행사/강좌/공모
+      주소: https://www.seongnam.go.kr/apply/event.do
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 주소 오류 또는 접근 거부(HTTP Error 404: 404). 게시판 주소를 확인해야 합니다.
+[OK ] 고양시 축제·행사
+      주소: https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1007
+      후보 3 -> 추출 3 -> 사용 2
+      진단: 정상
+[ERR] 용인시 시민참여플랫폼 행사안내
+      주소: https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294
+      후보 8 -> 추출 2 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 2건). 샘플은 debug/용인시_시민참여플랫폼_행사안내_detail.html.
+[OK ] 경기도 뉴스포털
+      주소: https://gnews.gg.go.kr
+      후보 7 -> 추출 7 -> 사용 1
+      진단: 정상
+[ERR] 경기관광공사
+      주소: https://ggtour.or.kr
+      후보 1 -> 추출 1 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (마감됨 1건). 샘플은 debug/경기관광공사_detail.html.
+[OK ] 성남시 · 행사보기
+      주소: https://www.seongnam.go.kr/pm010201?nowym=
+      후보 2 -> 추출 2 -> 사용 1
+      진단: 정상
+[ERR] 성남시 · 민원참여
+      주소: https://www.seongnam.go.kr/sn020101
+      후보 7 -> 추출 7 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건). 샘플은 debug/성남시_민원참여_detail.html.
+[ERR] 성남시 · 제안·참여안내
+      주소: https://www.seongnam.go.kr/sn02032601
+      후보 2 -> 추출 2 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (중복 2건, 기간 확인 불가 2건). 샘플은 debug/성남시_제안_참여안내_detail.html.
+[ERR] 성남시 · 제안·참여안내
+      주소: https://www.seongnam.go.kr/sn0205000
+      후보 2 -> 추출 2 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (중복 2건, 기간 확인 불가 2건). 샘플은 debug/성남시_제안_참여안내_detail.html.
+[ERR] 의정부시 · 문화, 한눈에 달력(행사·축제정보)
+      주소: https://www.ui4u.go.kr/portal/contents.do?mId=0301170000
+      후보 4 -> 추출 4 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건, 신뢰도 낮음(40) 1건). 샘플은 debug/의정부시_문화_한눈에_달력_행사_축제정보__detail.html.
+[ERR] 의정부시 · 행사축제 더보기
+      주소: https://www.ui4u.go.kr/portal/eventNoti/list.do?mId=0301170100
+      후보 4 -> 추출 4 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건, 신뢰도 낮음(40) 1건). 샘플은 debug/의정부시_행사축제_더보기_detail.html.
+[ERR] 의정부시 · 행사정보
+      주소: https://www.ui4u.go.kr/tour/contents.do?mId=0602000000
+      후보 2 -> 추출 2 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 2건). 샘플은 debug/의정부시_행사정보_detail.html.
+[ERR] 의정부시 · 시민참여
+      주소: https://www.ui4u.go.kr/portal/contents.do?mId=0400000000
+      후보 4 -> 추출 4 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건, 신뢰도 낮음(40) 1건). 샘플은 debug/의정부시_시민참여_detail.html.
+[OK ] 안양시 · 참여하기
+      주소: https://www.anyang.go.kr/main/popElection.do
+      후보 0 -> 추출 0 -> 사용 2
+      진단: 이벤트 링크를 못 찾음. 페이지를 debug/안양시_참여하기_list.html 에 저장했습니다 (구조 확인 필요).
+[OK ] 안양시 · 참여하기
+      주소: https://www.anyang.go.kr/main/selectQestnarWebList.do?key=64&qestnarGroupNo=1
+      후보 8 -> 추출 8 -> 사용 2
+      진단: 정상
+[OK ] 안양시 · 참여하기
+      주소: https://www.anyang.go.kr/reserve/index.do
+      후보 8 -> 추출 8 -> 사용 2
+      진단: 정상
+[ERR] 부천시 · 부천의축제
+      주소: https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001010001001
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_부천의축제_detail.html.
+[ERR] 부천시 · 부천국제 만화축제
+      주소: https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001001005
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_부천국제_만화축제_detail.html.
+[ERR] 부천시 · 설문참여
+      주소: https://www.bucheon.go.kr/site/program/svy/list?menuid=148003012003
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_설문참여_detail.html.
+[ERR] 부천시 · 참여소통
+      주소: https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148003016001001
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_참여소통_detail.html.
+[OK ] 광명시 · 행사ㆍ축제
+      주소: https://www.gm.go.kr/pt/ns/gmFestival/list.do
+      후보 8 -> 추출 8 -> 사용 2
+      진단: 정상
+[ERR] 광명시 · 시 주간행사
+      주소: https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2035
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (마감됨 6건, 중복 2건). 샘플은 debug/광명시_시_주간행사_detail.html.
+[ERR] 광명시 · 장애인단체 행사일정
+      주소: https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2194
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/광명시_장애인단체_행사일정_detail.html.
+[ERR] 광명시 · 종목별 가맹단체 및 행사일정
+      주소: https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2361
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (마감됨 7건, 기간 확인 불가 1건). 샘플은 debug/광명시_종목별_가맹단체_및_행사일정_detail.html.
+[OK ] 동두천시 · 행사·교육
+      주소: https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105
+      후보 8 -> 추출 8 -> 사용 1
+      진단: 정상
+[ERR] 동두천시 · 행사일정
+      주소: https://www.ddc.go.kr/ddc/selectClturCldrTotalList.do?key=2327
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/동두천시_행사일정_detail.html.
+[ERR] 동두천시 · 시민참여
+      주소: https://www.ddc.go.kr/ddc/contents.do?key=189
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/동두천시_시민참여_detail.html.
+[ERR] 동두천시 · 예산설문조사
+      주소: https://www.ddc.go.kr/ddc/selectQestnarList.do?key=199&qestnarType=%EC%98%88%EC%82%B0%EC%84%A4%EB%AC%B8%EC%A1%B0%EC%82%AC
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/동두천시_예산설문조사_detail.html.
+[ERR] 안산시 · 화학사고 대피장소 퀴즈 이벤트 알림
+      주소: https://www.ansan.go.kr/www/common/bbs/selectBbsDetail.do?bbs_code=B0214&bbs_seq=1684860
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 마감됨 1건). 샘플은 debug/안산시_화학사고_대피장소_퀴즈_이벤트_알림_detail.html.
+[ERR] 안산시 · 행사/활동
+      주소: https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=C0001253
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/안산시_행사_활동_detail.html.
+[ERR] 안산시 · 시민참여
+      주소: https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=www01628
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/안산시_시민참여_detail.html.
+[ERR] 안산시 · 통합축제
+      주소: https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=www01723
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/안산시_통합축제_detail.html.
+[OK ] 고양시 · 설문·이벤트
+      주소: https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do
+      후보 8 -> 추출 8 -> 사용 2
+      진단: 정상
+[ERR] 고양시 · 행사일정
+      주소: https://www.goyang.go.kr/www/user/eventCldr/BD_selectEventCldrList.do
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 5건, 중복 3건). 샘플은 debug/고양시_행사일정_detail.html.
+[ERR] 고양시 · 시민참여
+      주소: https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1001
+      후보 1 -> 추출 1 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 1건). 샘플은 debug/고양시_시민참여_detail.html.
+[ERR] 과천시 · 행사일정
+      주소: https://www.gccity.go.kr/portal/contents.do?mId=0301020000
+      후보 3 -> 추출 3 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건). 샘플은 debug/과천시_행사일정_detail.html.
+[ERR] 과천시 · 설문조사
+      주소: https://www.gccity.go.kr/jumin/poll/list.do?mId=0100000000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 이벤트 링크를 못 찾음. 페이지를 debug/과천시_설문조사_list.html 에 저장했습니다 (구조 확인 필요).
+[ERR] 과천시 · 주민참여
+      주소: https://www.gccity.go.kr/jumin/main.do
+      후보 3 -> 추출 3 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건). 샘플은 debug/과천시_주민참여_detail.html.
+[ERR] 과천시 · 주민참여 포털
+      주소: https://www.gccity.go.kr/jumin
+      후보 3 -> 추출 3 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건). 샘플은 debug/과천시_주민참여_포털_detail.html.
+[OK ] 구리시 · 이벤트 정보
+      주소: https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=59&key=621
+      후보 8 -> 추출 8 -> 사용 1
+      진단: 정상
+[ERR] 구리시 · 문화행사
+      주소: https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=37&key=381
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건, 마감됨 2건). 샘플은 debug/구리시_문화행사_detail.html.
+[ERR] 구리시 · 문화행사 더보기
+      주소: https://www.guri.go.kr/sub.do?key=381
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 주소 오류 또는 접근 거부(HTTP Error 404: Not Found). 게시판 주소를 확인해야 합니다.
+[ERR] 구리시 · 시민참여
+      주소: https://www.guri.go.kr/www/contents.do?key=150
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건, 신뢰도 낮음(40) 2건). 샘플은 debug/구리시_시민참여_detail.html.
+[OK ] 남양주시 · 전국이벤트
+      주소: https://www.nyj.go.kr/www/selectBbsNttList.do?key=2510&bbsNo=73
+      후보 8 -> 추출 8 -> 사용 2
+      진단: 정상
+[ERR] 남양주시 · 크크낙낙이벤트
+      주소: https://www.nyj.go.kr/www/contents.do?key=4988
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/남양주시_크크낙낙이벤트_detail.html.
+[ERR] 남양주시 · 문화행사
+      주소: https://www.nyj.go.kr/www/selectTnResrceListU.do?key=4691&si1=23&si2=33&so1=SDT
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/남양주시_문화행사_detail.html.
+[ERR] 남양주시 · 문화행사 달력
+      주소: https://www.nyj.go.kr/www/selectTnResrceListUC.do?key=4690&si1=23&si2=33
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/남양주시_문화행사_달력_detail.html.
+[OK ] 군포시 · 교육문화행사포털
+      주소: https://www.gunpo.go.kr/portal/index.do
+      후보 2 -> 추출 2 -> 사용 1
+      진단: 정상
+[OK ] 군포시 · 인터넷접수(통합예약 행사/모집)
+      주소: https://www.gunpo.go.kr/portal/webEtcResveList.do?key=1008275&rep=1
+      후보 8 -> 추출 1 -> 사용 1
+      진단: 정상
+[ERR] 군포시 · 주간행사
+      주소: https://www.gunpo.go.kr/www/selectBbsNttList.do?bbsNo=1003417&key=1008929
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[ERR] 군포시 · 문화행사
+      주소: https://www.gunpo.go.kr/www/selectBbsNttList.do?bbsNo=684&key=3892
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[ERR] 용인시 · 문화행사/공연
+      주소: https://www.yongin.go.kr/partInfo/cultureArt/BD_selectCultureArtCalList.do
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 마감됨 1건). 샘플은 debug/용인시_문화행사_공연_detail.html.
+[OK ] 용인시 · 시민참여플랫폼
+      주소: https://www.yongin.go.kr/citizen/index.do
+      후보 8 -> 추출 8 -> 사용 1
+      진단: 정상
+[ERR] 용인시 · 설문조사
+      주소: https://www.yongin.go.kr/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 중복 1건). 샘플은 debug/용인시_설문조사_detail.html.
+[ERR] 용인시 · 제안·참여
+      주소: https://www.yongin.go.kr/citizen/proposal/BD_selectProposalReq.do?mCode=PC002
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 중복 1건). 샘플은 debug/용인시_제안_참여_detail.html.
+[ERR] 파주시 · 체육행사신청
+      주소: https://www.paju.go.kr/www/paticipation/paticipation_04/paticipation_04_11.jsp
+      후보 6 -> 추출 6 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건). 샘플은 debug/파주시_체육행사신청_detail.html.
+[ERR] 파주시 · 이달의문화행사
+      주소: http://tour.paju.go.kr/user/link/cultural/BD_index.do
+      후보 1 -> 추출 1 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (신뢰도 낮음(40) 1건). 샘플은 debug/파주시_이달의문화행사_detail.html.
+[ERR] 파주시 · 설문조사
+      주소: https://www.paju.go.kr/user/poll/BD_pollList.do
+      후보 8 -> 추출 8 -> 사용 0
+      진단: 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건, 마감됨 2건). 샘플은 debug/파주시_설문조사_detail.html.
+[ERR] 파주시 · 소통·참여
+      주소: https://www.paju.go.kr/user/board/BD_board.list.do?bbsCd=1001
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 이천시 · 행사/축제
+      주소: https://www.icheon.go.kr/portal/contents.do?mid=0401030000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 이천시 · 행사 예산 공개
+      주소: https://www.icheon.go.kr/portal/contents.do?mid=0304120000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 이천시 · 주간행사
+      주소: https://www.icheon.go.kr/portal/contents.do?mid=0401020000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 이천시 · 이천도자기축제
+      주소: https://www.icheon.go.kr/icheonceramic/main.do
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 광주시 · 문화ㆍ행사소식
+      주소: https://www.gjcity.go.kr/portal/contents.do?mId=0201030000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 광주시 · 주간행사
+      주소: https://www.gjcity.go.kr/portal/contents.do?mId=0201050000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 광주시 · 시민참여
+      주소: https://www.gjcity.go.kr/portal/contents.do?mId=0500000000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 광주시 · 시민참여제도
+      주소: https://www.gjcity.go.kr/portal/contents.do?mId=0501000000
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 양주시 · 행사소식
+      주소: https://www.yangju.go.kr/www/selectBbsNttList.do?bbsNo=14&key=203
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 양주시 · 양주시 문화예술행사 소식 알리미
+      주소: https://www.yangju.go.kr/www/selectCovidSmsWebList.do?key=4051&smsGubun=EVENT
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 양주시 · 교육정보 및 교육행사소식 알리미
+      주소: https://www.yangju.go.kr/www/selectCovidSmsWebList.do?key=4310&smsGubun=EDUEVENT
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+[ERR] 양주시 · 청소년문화행사
+      주소: https://www.yangju.go.kr/www/contents.do?key=497
+      후보 0 -> 추출 0 -> 사용 0
+      진단: 접속 실패: 시간 초과로 건너뜀
+
+------------------------------------------------------------
+[제외된 항목 샘플]
+  - (기간 확인 불가) 2026 수원수목원 가을꽃축제 개최 알림  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 수원수목원 야간운영 「밤빛정원」 관람 유의사항 안내  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 수원수목원 26. 10. 5.(월) 운영 안내 [※ 10. 6.(화) 임시휴원]  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 2026년도 수원수목원 추석연휴 운영 일정 안내  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 일월호수공원 물놀이장 집중운영기간(주6일) 변경 안내  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 수원수목원 8. 17.(월) 운영 안내 [※ 8. 18.(화) 임시휴원]  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 2026년 일월수목원 특별·기획전시 만족도 조사  <수원시 게시판(bbsCd=1381, 참여형 행사)>
+  - (기간 확인 불가) 유아숲체험원  <고양시 축제·행사>
+  - (기간 확인 불가) 척척 SNS민원창구 < 시민소통 < 시민참여플랫폼  <용인시 시민참여플랫폼 행사안내>
+  - (기간 확인 불가) 기부금 접수·운용 현황 < 고향사랑 기부제 < 정보안내 < 시민참여플랫폼  <용인시 시민참여플랫폼 행사안내>
+  - (기간 확인 불가) 추미애 경기도지사, 취임 100일 별도 행사 없이 `교통혁신` 현장으로  <경기도 뉴스포털>
+  - (신뢰도 낮음(40)) 열 번째 생일 맞은 경기상상캠퍼스…‘상상이 피는 숲’으로 놀러 오세요!  <경기도 뉴스포털>
+  - (마감됨) “한글의 숨결 따라 걷고, 읽고, 체험하다”…한글날 경기 기행  <경기도 뉴스포털>
+  - (기간 확인 불가) 하나 된 경기, 빛나는 도전!｜제107회 전국체육대회  <경기도 뉴스포털>
+  - (기간 확인 불가) 하나 된 경기, 빛나는 도전!｜제107회 전국체육대회  <경기도 뉴스포털>
+  - (기간 확인 불가) 경기도, 제18회 장애인직업재활의 날 기념행사 개최  <경기도 뉴스포털>
+  - (마감됨) 축제/행사안내  <경기관광공사>
+  - (중복) 성남시 Seongnam City  <성남시 · 행사보기>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 민원참여>
+  - (중복) 성남시 Seongnam City  <성남시 · 제안·참여안내>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 제안·참여안내>
+  - (중복) 성남시 Seongnam City  <성남시 · 제안·참여안내>
+  - (기간 확인 불가) 성남시 Seongnam City  <성남시 · 제안·참여안내>
+  - (신뢰도 낮음(40)) 서식민원 처리 공개  <의정부시 · 문화, 한눈에 달력(행사·축제정보)>
+  - (기간 확인 불가) 바로넘어가기 메뉴  <의정부시 · 문화, 한눈에 달력(행사·축제정보)>
+  - (기간 확인 불가) 건너뛰기 메뉴  <의정부시 · 문화, 한눈에 달력(행사·축제정보)>
+  - (기간 확인 불가) 건너뛰기 메뉴  <의정부시 · 문화, 한눈에 달력(행사·축제정보)>
+  - (신뢰도 낮음(40)) 서식민원 처리 공개  <의정부시 · 행사축제 더보기>
+  - (기간 확인 불가) 바로넘어가기 메뉴  <의정부시 · 행사축제 더보기>
+  - (기간 확인 불가) 건너뛰기 메뉴  <의정부시 · 행사축제 더보기>
+  - (기간 확인 불가) 건너뛰기 메뉴  <의정부시 · 행사축제 더보기>
+  - (기간 확인 불가) 건너뛰기 메뉴  <의정부시 · 행사정보>
+  - (기간 확인 불가) 건너뛰기 메뉴  <의정부시 · 행사정보>
+  - (신뢰도 낮음(40)) 서식민원 처리 공개  <의정부시 · 시민참여>

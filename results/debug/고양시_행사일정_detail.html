@@ -1,0 +1,87 @@
+
+
+
+
+
+
+
+	
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>고양시</title>
+	<link rel="stylesheet" type="text/css" href="/resources/www/css/default.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/resources/www/css/layout.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/resources/www/css/common.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/resources/www/css/content.css" media="all">
+
+	<!-- customize -->
+					<link rel="stylesheet" type="text/css" href="/resources/openworks4/css/openworks4-custom.css">
+    <script type="text/javascript">var CTX_PATH="";</script>
+					<!-- jquery core -->
+					<script type="text/javascript" src="/resources/common/js/jquery-1.11.3.min.js"></script>
+					<script type="text/javascript" src="/resources/libs/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+
+					<!-- 설정 동기화 -->
+					<script type="text/javascript" src="/component/js/ND_globalConfig.do" ></script>
+					<script type="text/javascript" src="/component/js/ND_massageConfig.do" ></script>
+
+					<!-- Openworks 공통 메소드 -->
+					<script type="text/javascript" src="/resources/openworks4/js/openworks.global.js"></script>
+					<script type="text/javascript" src="/resources/openworks4/js/openworks.message.js"></script>
+					<script type="text/javascript" src="/resources/openworks4/js/openworks.initialize.js"></script>
+
+					<!-- 쿠키 라이브러리 -->
+					<script type="text/javascript" src="/resources/libs/js-cookie-1.5.1/js.cookie.js"></script>
+					<!-- SNS/url복사/프린트 -->
+					<script type="text/javascript" src="/resources/common/js/snsCopyPrint.js"></script>
+					<script type="text/javascript" src="/resources/common/js/jquery.mb.browser.min.js"></script>
+					<script type="text/javascript" src="/resources/common/js/jquery.printElement.min.js"></script>
+    
+
+	<script type="text/javascript">
+		//<![CDATA[
+		var goLogin = function() {
+			location.href = CTX_PATH + OpConfig.urls.userLogin;
+		}
+		//]]>
+	</script>
+</head>
+
+<body class="goyang-sub layout-error">
+	<div id="container">
+		<article id="content">
+			<div class="inner">
+				<div class="error-wrap">
+					<p class="tit">이용권한이 없습니다.</p>
+					<span class="line"></span>
+					<div class="text-center error-img-wrap">
+						<img src="/resources/www/images/content/ico-error.png" alt="에러">
+					</div>
+					
+					<p> 회원만 이용 가능합니다.</p>
+					<div class="btn-group">
+						<a href="#" class="btn btn-primary" onclick="goLogin();">로그인하기</a>
+						<a href="#" class="btn btn-white" onclick="history.back();">이전화면</a>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+	<script src="/resources/www/js/jquery-1.11.3.min.js"></script>
+	<script src="/resources/www/js/jquery.easing.1.3.min.js"></script>
+	<script src="/resources/www/js/slick.min.js"></script>
+	<script src="/resources/www/js/calendar.js"></script>
+	<script src="/resources/www/js/ui-common.js"></script>
+	<script>
+		// 페이지 개별 스크립트
+	</script>
+</body>
+</html>

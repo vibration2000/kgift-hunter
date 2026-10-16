@@ -1,0 +1,1044 @@
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+	    <meta name="description" content="파주시 문화관광포털입니다. 볼거리,즐길거리 등 다양한 문화관광정보를 제공합니다.">
+		<meta property="og:locale:alternate" content="ko_KR">
+		<meta property="og:title" content="파주시 문화관광포털">
+		<meta property="og:url" content="https://tour.paju.go.kr">
+		<meta property="og:image" content="http://www.paju.go.kr/resources/user/common/images/pajucity.png">
+		<meta property="og:description" content="파주시 문화관광포털입니다. 볼거리,즐길거리 등 다양한 문화관광정보를 제공합니다.">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="파주시 문화관광포털">
+		<meta name="twitter:url" content="https://tour.paju.go.kr">
+		<meta name="twitter:image" content="http://www.paju.go.kr/resources/user/common/images/pajucity.png">
+		<meta name="twitter:description" content="파주시 문화관광포털입니다. 볼거리,즐길거리 등 다양한 문화관광정보를 제공합니다.">
+
+		<title>문화행사서브  : HOME &gt; 축제/전시/공연 &gt; 이달의 문화행사 &gt; 문화행사서브</title>
+
+		<script type="text/javascript">CTX_PATH="";</script>
+    	<script type="text/javascript" src="/resources/openworks/spi/jquery/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/openworks/spi/jquery/printPreview/print-preview.css" >
+    <script type="text/javascript" src="/resources/openworks/spi/jquery/printPreview/jquery.print-preview.js"></script>
+    
+
+    	<script type="text/javascript" src="/component/callcfg/ND_globalConfig.do"></script>
+		<script src="/resources/user/_common/js/jquery-1.12.4.min.js"></script>
+		<script src="/resources/user/_common/plugins/slick/slick.min.js"></script>
+		<script src="/resources/user/_common/plugins/bx/bxslider.min.js"></script>
+		<script src="/resources/user/_common/plugins/rwdImageMaps/jquery.rwdImageMaps.min.js"></script>
+		<script src="/resources/user/_common/js/datepicker.js"></script>
+		<script src="/resources/user/_common/js/ui-global.js"></script>
+
+		<link rel="shortcut icon" href="/resources/user/_common/images/favicon.ico">
+		<link rel="stylesheet" href="/resources/user/tour/css/style.css">
+
+		<!-- 모니터링 -->
+		<script type='text/javascript'>
+	        var _bwa = [];
+	        _bwa.push(['setCollectorUrl', 'https://analy.paju.go.kr/openapi/collect']);
+	        _bwa.push(['setCustomerId', 'pajucity']);
+	        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	        g.type='text/javascript';
+	        g.src='/resources/user/commons/js/blueworksWebAgent-2.1-min.js';
+	        g.async=g.defer=true;
+	        s.parentNode.insertBefore(g, s);
+	    </script>
+		<script type="text/javascript">
+
+	        $().ready(function() {
+				function getCookieVal (offset) {
+				   var endstr = document.cookie.indexOf (";", offset);
+				   if (endstr == -1)
+				      endstr = document.cookie.length;
+				   return unescape(document.cookie.substring(offset, endstr));
+				}
+				//쿠키값 읽어오기
+				function GetCookie (name) {
+					var arg = name + "=";
+				   	var alen = arg.length;
+				   	var clen = document.cookie.length;
+				   	var i = 0;
+				   	while (i < clen) {
+						var j = i + alen;
+				      	if (document.cookie.substring(i, j) == arg)
+							return getCookieVal (j);
+				      	i = document.cookie.indexOf(" ", i) + 1;
+				      	if (i == 0)
+							break;
+					}
+					return null;
+				}
+				 //쿠키 항목 설정(유효기간, 디렉토리, 도메인, 보안)
+				 function SetCookie (name, value) {
+				   var argv = SetCookie.arguments;
+				   var argc = SetCookie.arguments.length;
+				   var expires = (2 < argc) ? argv[2] : null;
+				   var path = (3 < argc) ? argv[3] : null;
+				   var domain = (4 < argc) ? argv[4] : null;
+				   var secure = (5 < argc) ? argv[5] : false;
+				   document.cookie = name + "=" + escape (value) +
+				     ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+				     ((path == null) ? "" : ("; path=" + path)) +
+				     ((domain == null) ? "" : ("; domain=" + domain)) +
+				     ((secure == true) ? "; secure" : "");
+				}
+
+				 function DisplayInfo(count) {
+				   var expdate = new Date();
+				   var visit;
+				   // 쿠키 설정 날짜 지정(하루)
+				   expdate.setTime(expdate.getTime() +  (24 * 3600 * 1000 * 1));
+				   if(!(visit = GetCookie("visit")))
+				      visit = 0;
+				   visit++;
+				   SetCookie("visit", visit, expdate, "/", null, false);
+		           return visit;
+				}
+				//쿠키 초기화 조건
+				function ResetCounts() {
+				   var expdate = new Date();
+				   expdate.setTime(expdate.getTime() +  (24 * 3600 * 1000 * 1));
+				   visit = 0;
+				   SetCookie("visit", visit, expdate , "/", null, false);
+				}
+				
+					
+				
+	   			var request_os = window.navigator.userAgent.toLowerCase();
+	   			//MSIE 7(IE 7) Trident(IE 버전) 두가지 같이 존재 할 경우 호환성 보기 설정
+				if((window.navigator.userAgent.search("MSIE 7") > -1 && window.navigator.userAgent.search("Trident") > -1) && DisplayInfo() < 3) {
+					if(confirm("파주시청 홈페이지가 익스플로러 호환성 보기에 추가되어 있습니다.\n호환성보기를 해제하여 주시기 바랍니다. \n\n해제방법을 확인하시겠습니까?")) {
+							window.open("https://www.paju.go.kr/www/page_guide/page_guide_10.jsp");
+					}
+				}
+				//nt 6.0(windows 7) nt 6.1(windows 8) trident/4.0(IE 8)
+				if((request_os.indexOf("nt 6.0") > 0 || request_os.indexOf("nt 6.1") > 0) && request_os.indexOf("trident/4.0") > 0 && DisplayInfo() < 3) {
+					if(confirm("본 사이트는 Internet Explorer 9버젼 이상에 최적화 되어있습니다. \n원할한 사이트 이용을 위해 업데이트하여 주시기 바랍니다. \n확인을 누르면 업데이트 페이지로 이동합니다.")) {
+						window.open("http://windows.microsoft.com/ko-kr/internet-explorer/download-ie");
+					}
+				}
+				//nt 5.1(windowsXP)
+				if(request_os.indexOf("nt 5.1") > 0 && request_os.indexOf("chrome") < 0 && DisplayInfo() < 3) {
+					if(confirm("본 사이트는 Internet Explorer 9버전 이상에 최적화 되어있습니다. \n\n원할한 사이트 이용을 위해 윈도우 XP를 사용하시는 분은 크롬(chrome) 브라우저를 사용하셔야 합니다. \n\n확인을 누르면 크롬 설치 페이지로 이동합니다. \n\n설치 후 바탕화면에 크롬(chrome)아이콘을 클릭하여 홈페이지에 접속하여 주시기 바랍니다.")) {
+						window.open("http://www.google.com/intl/ko/chrome/browser/features.html");
+					}
+				}
+
+	        	//공유하기 횟수 가져오기
+	        	jsGetSnsShareCnt();
+	        	var curPage = document.location.href;
+
+	        });
+
+	        var jsDivPirnt = function() {
+	        	var initBody = document.body.innerHTML;
+	        	window.onbeforeprint  = function(){
+	        		document.body.innerHTML = document.getElementById("content").innerHTML;
+	        	}
+	        	window.onafterprint  = function(){
+	        		document.body.innerHTML = initBody;
+	        	}
+	       		window.print();
+	        }
+
+	    </script>
+
+    	
+
+<script type="text/javascript" src="/resources/openworks/spi/openworks/openworks.ui.js"></script>
+    <script type="text/javascript" src="/resources/openworks/spi/openworks/openworks.form.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="/resources/openworks/spi/jquery/highlight/jquery.highlight-3.css" >
+    <script type="text/javascript" src="/resources/openworks/spi/jquery/highlight/jquery.highlight-3.js"></script>
+    <script type="text/javascript" src="/resources/openworks/spi/jquery/form/jquery.form.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/openworks/spi/jquery/datepicker/jquery.datepicker.css" >
+    <script type="text/javascript" src="/resources/openworks/spi/jquery/datepicker/jquery.ui.core.js"></script>
+                    <script type="text/javascript" src="/resources/openworks/spi/jquery/datepicker/jquery.script.min.js"></script>
+                    <script type="text/javascript" src="/resources/openworks/spi/jquery/datepicker/jquery.script-addon.js"></script>
+    
+
+<!-- 기능별 스크립트 정의 -->
+<script type="text/javascript">
+
+	var jsRequestForm = function(cultMstSn) {
+         location.href = "BD_selectRequesterForm.do?q_cultMstSn=" + cultMstSn;
+     };
+
+     var jsCulturalView = function(cultMstSn) {
+         location.href = "BD_selectCulturalView.do?cultMstSn=" + cultMstSn + "&" + jsSearchQueryString("dataForm");
+     };
+
+     var jsSearch = function() {
+	        $("#dataForm").attr('action', 'BD_selectCulturalList.do');
+	        $("#q_currPage").val(1);
+	        $("#dataForm").submit();
+	 };
+
+     var jsSort = function(type){
+    	 $("#q_sortType").val(type);
+    	 jsSearch();
+     }
+
+    var jsMovePage = function(page) {
+        var p = 1;
+        if(page == 'page'){
+            p = $('input[name=page]').val();
+        }else{
+            p = page;
+        }
+        $("#dataForm input[name=q_currPage]").val(p);
+        $("#dataForm").submit();
+    };
+
+</script>
+
+	</head>
+	<body>
+		<!-- 로그인 -->
+		<form name="globalLoginForm" id="globalLoginForm" method="post" action="https://www.paju.go.kr/login/user/BD_index.do">
+			
+					<input type="hidden" name="returnUrl" value="https://tour.paju.go.kr/user/link/cultural/BD_selectCulturalList.do?q_month=&amp;" />
+				
+			<input type="submit" style="display:none; " />
+		</form>
+		<nav id="skip">
+			<ul>
+				<li><a href="#content">본문 바로가기</a></li>
+				<li><a href="#gnb">주메뉴 바로가기</a></li>
+				<li><a href="#footer">하단 바로가기</a></li>
+			</ul>
+		</nav>
+		<div class="wrapper">
+			<header id="header_culture">
+				
+				
+<nav id="top-nav">
+    <div class="container">
+        <ul class="top-nav-list">
+            <!-- [개발] 활성화 탭 li class="on" -->
+            <li class="www "><a href="https://www.paju.go.kr/index.do" >파주시청</a></li>
+            <li class="news "><a href="https://www.paju.go.kr/news/index.do" >파주뉴스</a></li>
+            <li class="tour "><a href="https://tour.paju.go.kr/user/tour/main/index.do" >문화관광</a></li>
+            <li class="safety "><a href="https://safe.paju.go.kr/safe/index.do" >재난안전</a></li>
+            <li class="mayor "><a href="https://mayor.paju.go.kr/mayor/index.do" >소통On 시장실</a></li>
+            <li class="council"><a href="http://www.pajucouncil.go.kr" target="_blank" title="새창">파주시의회</a></li>
+        </ul>
+        <ul class="member-menu">
+            
+                    <li><a href="https://www.paju.go.kr/login/user/BD_index.do" class="btn"><i class="ico ico-login-white"></i><span class="text">로그인</span></a></li>
+                    <li><a href="https://www.paju.go.kr/user/register/BD_index.do" class="btn"><i class="ico ico-join-white"></i><span class="text">회원가입</span></a></li>
+                
+        </ul>
+    </div>
+</nav>
+
+
+				<div class="gnb_top_area">
+					<div class="wrapper">
+						<a href="/user/link/cultural/BD_index.do"><img src="/resources/user/tour/images/culture/logo_culture.jpg" alt="평화도, 경제도, 파주로! 파주 문화행사" /></a>
+						<div class="banner" id="eventBannerDiv"></div>
+					</div>
+				</div>
+				<div id="gnb" class="gnb_category">
+					<ul class="wrapper">
+						<li><a href="/user/link/cultural/BD_selectCulturalList.do" class="on">전체</a></li>
+                    	
+	             		<li>
+	               			
+	                     	<a href="/user/link/cultural/BD_selectCulturalList.do?q_cultClassCd=1001" >
+	                        	축제
+	                     	</a>
+	                    </li>
+	                    
+	             		<li>
+	               			
+	                     	<a href="/user/link/cultural/BD_selectCulturalList.do?q_cultClassCd=1002" >
+	                        	행사
+	                     	</a>
+	                    </li>
+	                    
+	             		<li>
+	               			
+	                     	<a href="/user/link/cultural/BD_selectCulturalList.do?q_cultClassCd=1003" >
+	                        	전시
+	                     	</a>
+	                    </li>
+	                    
+	             		<li>
+	               			
+	                     	<a href="/user/link/cultural/BD_selectCulturalList.do?q_cultClassCd=1004" >
+	                        	공연
+	                     	</a>
+	                    </li>
+	                    
+	             		<li>
+	               			
+	                     	<a href="/user/link/cultural/BD_selectCulturalList.do?q_cultClassCd=1005" >
+	                        	체험
+	                     	</a>
+	                    </li>
+	                    
+	             		<li>
+	               			
+	                     	<a href="/user/link/cultural/BD_selectCulturalList.do?q_cultClassCd=1006" >
+	                        	기타
+	                     	</a>
+	                    </li>
+	                    
+					</ul>
+				</div>
+			</header>
+
+			<div id="container" class="container_culture">
+				<section class="wrapper" id="content">
+					<h2 class="sr-only">파주 이달의 문화행사</h2>
+					<div class="content-primary">
+					   <div class="location_area">
+			                <ul>
+			                    <li>홈</li>
+			                    <li>문화행사</li>
+			                    <li>전체</li>
+			                </ul>
+			           </div>
+
+			       	   
+	<div id="contents">
+        <div class="content-sub-list">
+        	<div class="wrapper">
+        		<form name="dataForm" id="dataForm" method="get" action="BD_selectCulturalList.do" class="search-form">
+	        		<input type="hidden" id="q_sortType" name="q_sortType" value=""/>
+	                <input type="hidden" name="q_cultClassCd" id="q_cultClassCd" value=""/>
+
+	        		<div class="box box-search mt-4">
+	                <fieldset>
+						<legend class="sr-only">검색조건 입력</legend>
+						<div class="search-form-group">
+							<div class="form-row form-row-keyword">
+								<div class="input-item md-full">
+                                    <label for="q_searchKey" id="label1" class="sr-only">검색</label>
+									<select name="q_searchKey" id="q_searchKey" class="form-control">
+										<option value="" selected="selected">전체</option>
+										<option value="1001" >행사명</option>
+										<option value="1002" >행사장소</option>
+									</select>
+								</div>
+								<div class="input-item md-full">
+									<input type="text" name="q_searchVal" id="q_searchVal" class="form-control" size="50" value="" title="검색어를 입력하세요"/>
+								</div>
+								<div class="input-item md-full">
+									<div class="btn-area">
+									<button type="submit" class="btn btn-md btn-primary btn_darkred_search">
+										<i class="ico ico-search-white">검색 아이콘</i>
+										<span>검색</span>
+									</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+		        	</div>
+
+					
+					
+
+<script type="text/javascript">
+$().ready(function(){
+			
+});
+var jsEmpathySort = function(type,nm){		
+	if($("#dataForm input[name=q_sortName]").val() != nm){
+		$("#dataForm input[name=q_sortOrder]").val("");
+	}
+	if($("#dataForm input[name=q_sortOrder]").val() == ""){
+		$("#dataForm input[name=q_sortOrder]").val("desc");
+	}else if($("#dataForm input[name=q_sortOrder]").val() == "desc"){
+		$("#dataForm input[name=q_sortOrder]").val("asc");
+	}else if($("#dataForm input[name=q_sortOrder]").val() == "asc"){
+		$("#dataForm input[name=q_sortOrder]").val("desc");
+	}
+	$("#dataForm input[name=q_sortType]").val(type);
+	$("#dataForm input[name=q_sortName]").val(nm);
+	$("#dataForm input[name=q_currPage]").val(1);
+	$("#rowChangeBtn").trigger("click");
+};
+
+var jsForestSort = function(type,nm){	
+	if($("#dataForm input[name=q_sortOrder]").val() == ""){
+		$("#dataForm input[name=q_sortOrder]").val("asc");
+	}else if($("#dataForm input[name=q_sortOrder]").val() == "desc"){
+		$("#dataForm input[name=q_sortOrder]").val("asc");
+	}else if($("#dataForm input[name=q_sortOrder]").val() == "asc"){
+		$("#dataForm input[name=q_sortOrder]").val("desc");
+	}
+	
+	if($("#dataForm input[name=q_sortType]").val() != type){
+		$("#dataForm input[name=q_sortOrder]").val("desc");
+	}
+	
+	$("#dataForm input[name=q_sortType]").val(type);
+	$("#dataForm input[name=q_sortName]").val(nm);
+	$("#dataForm input[name=q_currPage]").val(1);
+	$("#rowForestChangeBtn").trigger("click");
+};
+</script>
+<input type="hidden" name="q_currPage" id="q_currPage" value="1" />
+<input type="hidden" name="q_sortName" id="q_sortName" value="" />
+<input type="hidden" name="q_sortOrder" id="q_sortOrder" value="" />
+<input type="hidden" name="q_rowPerPage" id="q_rowPerPage" value="10" />
+<input type="hidden" name="q_chooseCnt" id="q_chooseCnt" value="" />
+<div class="list-info list-info-flex">
+	<div class="left">
+		
+				<div class="total">
+					
+					총 <strong>849</strong>건, 페이지 <strong>1</strong> / 85
+				</div>
+			
+	</div>
+	
+	
+	
+		<div class="right">
+			<ul class="list_select">
+				<li class="list_s_on"><a href="javascript:void(0);" onclick="jsSort('D')">최신순</a></li>
+	           	<li ><a href="javascript:void(0);" onclick="jsSort('R')">조회순</a></li>
+			</ul>
+		</div>
+		
+</div>
+					
+                </form>
+
+                <ul class="event_list">
+                	
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(962); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/7/902812e2-11a0-43a4-989c-6ca647c54c6a_t.jpg" alt="MIMESIS Craeate LAB ➋ 《조각, 조각》(만 6-11세 대상, 10/17) 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1003">[전시]</em>MIMESIS Craeate LAB ➋ 《조각, 조각》(만 6-11세 대상, 10/17)</span>
+                                </a>
+								<span class="list-con">
+                                
+                                MIMESISCreateLAB
+
+미술작가와함께하는공동창작워크숍🎨
+
+
+
+LAB2《조각, 조각》
+
+곽인탄작가와함께하는조각워크숍
+
+
+
+'나'의조각,'너'의조각을모아하나의커다란조각을만들어봅니다.곽인탄작가와함께손바닥만한작은조각을직접만들고,각자의조각을잇고더하며하나의커다란조각으로확장해봅니다.서로다른손에서만들어진조각들이한데모여어떤새로운형태와관계를만들어내는지같이탐구해봅니다.
+
+
+
+[개요및참여안내]
+
+◽일시:202..
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-17 ~ 2026-10-17</em>
+                                    <em><strong>장소 :</strong> 미메시스 아트 뮤지엄 B1F 교육실</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        유료
+                                                
+                                                (
+                                                
+                                                        10,000원
+                                                    
+                                                )
+                                                
+                                            
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(952); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/2/45571cde-a6fd-46d4-88df-b617c8445876_t.jpg" alt="제2회 파주에너지데이 썸네일"/>
+                                            
+                                        
+                                            
+                                        
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1002">[행사]</em>제2회 파주에너지데이</span>
+                                </a>
+								<span class="list-con">
+                                
+                                에너지의 날을 맞아 시민과 함께 에너지의 중요성을 되새기고, 일상생활 속 에너지에 대한 관심과 참여를 높일 수 있는
+시민 참여형 행사를 개최하오니, 많은 괌심 부탁드립니다.
+
+○ 행 사 명 : 제2회 PAJU Energy Day – 햇살 아래 즐기는 에너지 피크닉
+○ 주관/주최 : 파주시 / 기후솔루션 
+○ 일 시 : 2026. 10. 17.(토) 10:00 ~ 18:00
+○ 장 소 : 운정중앙공원(동패동 1629)..
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-17 ~ 2026-10-17</em>
+                                    <em><strong>장소 :</strong> 운정중앙공원</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(950); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/1/6fb53165-a823-4175-95f3-9265a3422460.jpg" alt="파주문화재단 &lt;파주 아트씨앗터&gt; 씨앗틔움 10회차 공연 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1004">[공연]</em>파주문화재단 <파주 아트씨앗터> 씨앗틔움 10회차 공연</span>
+                                </a>
+								<span class="list-con">
+                                
+                                깊어가는 가을, 전통의 선율과 함께하는 특별한 무대에 여러분을 초대합니다.
+
+소리얼국악단이 선보이는 공연 「홍랑지애(洪娘之愛)」가 오는 2026년 10월 21일(수) 오후 7시, 솔가람아트홀에서 개최됩니다.
+
+이번 공연은 우리 국악의 아름다움과 감성을 느낄 수 있는 뜻깊은 시간으로, 시민 여러분께 수준 높은 문화예술 향유 기회를 제공할 예정입니다. 많은 관심과 관람 바랍니다.
+
+
+□ 공연개요
+
+
+	공연명: 홍랑지애(洪娘之愛)
+..
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-21 ~ 2026-10-21</em>
+                                    <em><strong>장소 :</strong> 솔가람아트홀</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(965); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/12/bd823711-7dfc-40fb-92c5-0f99b9894ddf_t.jpg" alt="2026 경기건축문화제 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1002">[행사]</em>2026 경기건축문화제</span>
+                                </a>
+								<span class="list-con">
+                                
+                                파주시와 함께하는 2026 경기건축문화제
+
+* 행사명 : 2026 경기건축문화제
+* 일시 : 2026. 10. 23(금) ~ 10.25(일)
+* 장소 : 출판도시 내 "지혜의 숲"
+* 주최/주관 : 개막식, 어린이 건축물그리기대회, 건축학교, 전시 등
+
+[체험행사 안내]
+* 10.24(토) - 경기어린이건축뭏그리기대회
+* 10. 24(토) ~ 10.25(일) - 건축학교 '지음'
+* 10. 24..
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-23 ~ 2026-10-25</em>
+                                    <em><strong>장소 :</strong> 지혜의 숲</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(949); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/9/30/9737bc09-4980-49d9-85d6-e0058612488c_t.jpg" alt="건축학교 &#034;지음&#034; 참여자 모집 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1005">[체험]</em>건축학교 "지음" 참여자 모집</span>
+                                </a>
+								<span class="list-con">
+                                
+                                2026 경기건축문화제
+어린이 건축학교 ‘"지음" 참여자를 모집합니다.
+
+가족과 함께하는 세계 문화유산 모형 만들기, 
+어린이를 위한 스파게티면 건축 체험까지! 
+건축을 쉽고 재미있게 만나는 특별한 시간에 많은 관심과 신청 바랍니다.
+
+※ 행사개요
+- 행 사 명 : 건축학교 “지음”
+- 주 관 : 서영대학교, 두원공과대학교
+- 일 시 : 2026년 10월 24일(토) ~ 10...
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-24 ~ 2026-10-25</em>
+                                    <em><strong>장소 :</strong> 지혜의 숲</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+                                
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(951); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/2/ae62989b-7fc1-4593-8481-12405d2672aa_t.jpg" alt="제14회 경기어린이 건축물그리기대회 참여자 모집 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1002">[행사]</em>제14회 경기어린이 건축물그리기대회 참여자 모집</span>
+                                </a>
+								<span class="list-con">
+                                
+                                경기도민들이 참여하여 건축문화에 대한 이해를 높이고 지역사회의 건축적 가치를 공유하는
+2026 경기건축문화제가 파주에서 개최됩니다.
+이와 관련한 연계행사로 "경기어린이 건축물그리기대회"가 운영될 예정이니 관심있는 어린이의 참여를 기다립니다.
+
+【제14회 경기어린이 건축물그리기대회】○ 일 시 : 2026. 10. 24(토) 11:00 ~ 16:00
+○ 장 소 : 출판도시 내 "지혜의 숲"
+○ ..
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-24 ~ 2026-10-24</em>
+                                    <em><strong>장소 :</strong> 지혜의 숲</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+                                
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(964); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/12/c441f1e0-5675-404d-9813-7598dbac47d5_t.jpg" alt="2026 도시재생 성과공유회 「도시재생 페스타」 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1002">[행사]</em>2026 도시재생 성과공유회 「도시재생 페스타」</span>
+                                </a>
+								<span class="list-con">
+                                
+                                
+❍ 행 사 명 : 2026 파주시 도시재생 성과공유회 ‘도시재생 페스타’
+❍ 일 시 : 2026. 10. 24.(토) 10:00 ~ 18:00
+❍ 장 소 : 금촌어울림센터(파주시 금정로 45)
+❍ 주요내용
+- 개막식, 도시재생 현장투어, 성과사례 공유회, 체험프로그램 등
+- 사업별 전시 부스, 먹거리 및 체험부스 운영
+
+
+
+
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-24 ~ 2026-10-24</em>
+                                    <em><strong>장소 :</strong> 파주시 금정로 45, 금촌어울림센터</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(959); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/7/f92fc3c9-45a5-4904-af2b-4683ba41e846_t.jpg" alt="운정2동 주민자치회 돗자리음악회 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1002">[행사]</em>운정2동 주민자치회 돗자리음악회</span>
+                                </a>
+								<span class="list-con">
+                                
+                                마을에서 피어나는 소통의 하모니제2회 돗자리 음악회
+- 일시 : 2026년 10월 24일 10시
+- 장소 : 운정 건강공원 잔디밭(가온초등학교 옆)
+- 내용 : 플리마켓, 난타, 운정챔버오케스트라, 예일음악학원, 색소폰앙상블, 엔젤 고고 장구
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-24 ~ 2026-10-24</em>
+                                    <em><strong>장소 :</strong> 운정 건강공원 잔디밭</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(948); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/9/29/d005f61a-3126-4981-8c65-c92781b1c7c9_t.jpg" alt="제36회 율곡문화제 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1001">[축제]</em>제36회 율곡문화제</span>
+                                </a>
+								<span class="list-con">
+                                
+                                파주가 낳은 대선현인 율곡이이선생의 유덕을 추앙하고, 파주시민의 어우러짐을 위하여 마련되는 제36회 율곡문화제가 개최됩니다.
+
+<행사관련 주요 사항>
+○ 일 시 : 2026. 10. 24.(토) ~ 10. 25.(일)
+○ 장 소 : 파주이이유적지 (파주시 법원읍 자운서원로 204)
+○ 주요 프로그램 : 유가행렬, 추향제, 문화예술공연,전통문화 체험 등
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-24 ~ 2026-10-25</em>
+                                    <em><strong>장소 :</strong> 파주 이이유적지</em>
+                                    <br />
+                                    
+                                        <em><strong>모집 :</strong>  ~ </em>
+                                    
+                                    <em><strong>비용 :</strong>
+                                        무료
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+						<li>
+                            
+                            
+                            <p class="">
+                                <a href="javascript:void(0);" class="thumbnail_area" onclick="jsCulturalView(960); return false;">
+                                    <span class="thumb">
+                                        
+                                            
+                                                <img src="/upload/linkCultural//2026/10/7/d832fbe5-39b2-4952-b928-f40e6313254d_t.jpg" alt="DMZ OPEN 전시: 스테이징 썸네일"/>
+                                            
+                                        
+                                    </span>
+                                    <span class="titl"><em class="tit_cate_1003">[전시]</em>DMZ OPEN 전시: 스테이징</span>
+                                </a>
+								<span class="list-con">
+                                
+                                ₊˚ 「DMZ OPEN 전시: 스테이징」 ₊˚
+
+경계를 넘어, DMZ를 바라보는 다양한 시선을 만나다!
+DMZ를 바라보는 14명의 작가, 26점의 작품을 만나보세요.
+
+「DMZ OPEN 전시: 스테이징」은 사진, 회화, 영상, 설치 등 다양한 매체를 통해
+DMZ와 분단, 전쟁의 기억, 그리고 그곳에서 이어지는 사람과 자연의 이야기를
+새로운 시선으로 풀어낸 전시입니다.
+
+임진각 평화누리와 캠프그리브스에서 펼쳐지는 이번 전시에서는..
+                                </span>
+								<span class="list-info">
+                                    <em><strong>행사 :</strong> 2026-10-12 ~ 2026-11-29</em>
+                                    <em><strong>장소 :</strong> 임진각 평화누리, 캠프그리브스</em>
+                                    <br />
+                                    
+                                    <em><strong>비용 :</strong>
+                                        유료
+                                                
+                                            
+                                    </em>
+                                </span>
+                            </p>
+                            
+	                    </li>
+					
+                    
+                </ul>
+
+                
+
+
+
+
+
+<div class="pagination mt-md-4">
+	
+			
+			
+				
+					<strong>1</strong>
+				
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(2); return false;" title="2 페이지">2</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(3); return false;" title="3 페이지">3</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(4); return false;" title="4 페이지">4</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(5); return false;" title="5 페이지">5</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(6); return false;" title="6 페이지">6</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(7); return false;" title="7 페이지">7</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(8); return false;" title="8 페이지">8</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(9); return false;" title="9 페이지">9</a>
+				
+			
+				
+				
+					<a href="javascript:void(0);" onclick="jsMovePage(10); return false;" title="10 페이지">10</a>
+				
+			
+			
+				<a  href="javascript:void(0);" onclick="jsMovePage(11); return false;" class="direction next" title="다음페이지로 가기">다음페이지</a>
+				<a  href="javascript:void(0);" onclick="jsMovePage(85); return false;" class="direction last" title="마지막페이지로 가기"><img alt="마지막페이지" src="/resources/user/theme/default/images/btn/btn_paging_l.gif"/></a>
+			
+		
+</div>
+            </div><!-- //wrapper -->
+        </div>
+        <!-- //content-list -->
+    </div>
+	<!-- //컨텐츠영역 -->
+
+
+						<!--공공누리 S-->
+						
+						<!--공공누리 E-->
+				   </div>
+					<!-- //content-primary -->
+				</section>
+				<!-- //content -->
+			</div>
+			<!-- //header -->
+
+			<footer id="footer" class="bg-white">
+				
+<script>
+$(document).ready(function() {
+	if(isMobile()){
+		$("#footTopTag").hide();		
+	}else{
+		$("#footTopTag").show();
+	}
+});
+function isMobile() {
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+</script>
+<div class="container footer-util-container">
+    <p class="logo-bottom">
+        <a href="https://www.paju.go.kr/index.do">
+            <img src="/resources/user/_common/images/logo-paju-gray.png" alt="파주시" />
+        </a>
+    </p>
+
+	
+
+    <div class="btn-group-util">
+        <div class="top" id="footTopTag">
+        	
+        </div>
+
+        <ul class="sns-list" style="z-index: 1;">
+            <li>
+                <a href="https://twitter.com/pajusi" target="_blank" title="새창">
+                    <img src="/resources/user/_common/images/ico-sns-x@2x.png" alt="엑스">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/hopepaju/" target="_blank" title="새창">
+                    <img src="/resources/user/_common/images/ico-sns-facebook@2x.png" alt="페이스북">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCicR_6NEnfhLP-FvM4txuUA/featured?view_as=subscriber" target="_blank" title="새창">
+                    <img src="/resources/user/_common/images/ico-sns-yutube@2x.png" alt="유튜브">
+                </a>
+            </li>
+            <li>
+                <a href="http://blog.naver.com/paju_si" target="_blank" title="새창">
+                    <img src="/resources/user/_common/images/ico-sns-blog@2x.png" alt="블로그">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/paju_si/" target="_blank" title="새창">
+                    <img src="/resources/user/_common/images/ico-sns-insta@2x.png" alt="인스타그램">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container address-container">
+    <ul class="policy-list">
+        <li class="text-bold" style="color:#00a4b7;"><a href="https://www.paju.go.kr/www/page_guide/page_guide_01/page_guide_01_info.jsp" target="_blank" title="새창열림">개인정보처리방침</a></li>
+        <li><a href="https://www.paju.go.kr/www/page_guide/page_guide_cp.jsp" target="_blank" title="새창열림">저작권정책</a></li>
+        <li><a href="https://www.paju.go.kr/user/board/BD_board.list.do?bbsCd=9035" target="_blank" title="새창열림">이용안내</a></li>
+        <li><a href="https://www.paju.go.kr/www/intropaju/intro_cityhall/intro_cityhall_03/intro_cityhall_03_01.jsp" target="_blank" title="새창열림">찾아오시는길</a></li>
+    </ul>
+    <p class="no-spam" style="display: none;">파주시 홈페이지에 게시된 전자우편주소는 무단으로<br class="d-down-sm"> 수집할 수 없으며,<br/>위반시 정보통신망법에 의해 처벌됩니다.</p>
+    <address class="address">
+    	
+        	<p id="footTagPc" style="display: none;">(우 10932) 경기도 파주시 시청로 50 | 민원콜센터 : 031) 940-4114</p>
+        	<p id="footTagMobile" style="display: none;">(우 10932) 경기도 파주시 시청로 50 <br/> 민원콜센터 : 031) 940-4114</p>
+        	
+        <p>COPYRIGHT(C) 2021, PAJU CITY ALL RIGHTS RESERVED</p>
+        <!-- 워드앤코드 이재광차장 2024년 7월 19일 작업 CS센터 추가 시작 -->
+        <div class="foot-cs pc_">
+			
+			<p><span><img src="/resources/user/www/images/home/ico-main-service-4.png" alt="민원콜센터"></span>파주시 민원콜센터</p>
+            <dl>                
+                <dt>031-940-4114</dt>
+                <dd>평일 09:00 ~ 19:00(토·일·공휴일 제외)<br>상담시간 외 당직실 연결</dd>
+            </dl>
+        </div>
+		<!-- 워드앤코드 이재광차장 2024년 7월 19일 작업 CS센터 추가 끝 -->
+    </address>
+    <!-- 워드앤코드 이재광차장 2024년 7월 19일 작업 CS센터 추가 시작 -->
+    <div class="foot-cs mob_">
+        <div class="foot-cs-inner">
+        	<p><span><img src="/resources/user/www/images/home/ico-main-service-4.png" alt="민원콜센터"></span>파주시 민원콜센터</p>
+            <dl>                
+	    <dt><a href="tel:031-940-4114">031-940-4114</a></dt>
+                <dd>평일 09:00 ~ 19:00(토·일·공휴일 제외)<br>상담시간 외 당직실 연결</dd>
+            </dl>
+        </div>
+    </div>
+	<!-- 워드앤코드 이재광차장 2024년 7월 19일 작업 CS센터 추가 끝 -->
+</div>
+
+
+			</footer>
+		</div>
+	</body>
+</html>
+

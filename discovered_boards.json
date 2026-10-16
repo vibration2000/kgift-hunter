@@ -1,0 +1,68 @@
+{
+  "https://www.seongnam.go.kr": [
+    {
+      "text": "행사보기",
+      "url": "https://www.seongnam.go.kr/pm010201?nowym="
+    }
+  ],
+  "https://www.anyang.go.kr": [
+    {
+      "text": "참여하기",
+      "url": "https://www.anyang.go.kr/main/popElection.do"
+    },
+    {
+      "text": "참여하기",
+      "url": "https://www.anyang.go.kr/main/selectQestnarWebList.do?key=64&qestnarGroupNo=1"
+    },
+    {
+      "text": "참여하기",
+      "url": "https://www.anyang.go.kr/reserve/index.do"
+    }
+  ],
+  "https://www.gm.go.kr": [
+    {
+      "text": "행사ㆍ축제",
+      "url": "https://www.gm.go.kr/pt/ns/gmFestival/list.do"
+    }
+  ],
+  "https://www.ddc.go.kr": [
+    {
+      "text": "행사·교육",
+      "url": "https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105"
+    }
+  ],
+  "https://www.goyang.go.kr": [
+    {
+      "text": "설문·이벤트",
+      "url": "https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do"
+    }
+  ],
+  "https://www.guri.go.kr": [
+    {
+      "text": "이벤트 정보",
+      "url": "https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=59&key=621"
+    }
+  ],
+  "https://www.nyj.go.kr": [
+    {
+      "text": "전국이벤트",
+      "url": "https://www.nyj.go.kr/www/selectBbsNttList.do?key=2510&bbsNo=73"
+    }
+  ],
+  "https://www.gunpo.go.kr": [
+    {
+      "text": "교육문화행사포털",
+      "url": "https://www.gunpo.go.kr/portal/index.do"
+    },
+    {
+      "text": "인터넷접수(통합예약 행사/모집)",
+      "url": "https://www.gunpo.go.kr/portal/webEtcResveList.do?key=1008275&rep=1"
+    }
+  ],
+  "https://www.yongin.go.kr": [
+    {
+      "text": "시민참여플랫폼",
+      "url": "https://www.yongin.go.kr/citizen/index.do"
+    }
+  ]
+}

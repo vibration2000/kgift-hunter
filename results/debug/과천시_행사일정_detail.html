@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+<html lang="ko">
+<head>
+	<title>새올전자민원창구</title>
+	<script>
+		function move() {
+			
+			document.ForwardForm.submit();
+			
+		}
+	</script>
+</head>
+<body onload="move()">
+	<form name="ForwardForm" action="https://eminwon.gccity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do" method="post">
+		
+		<input type="hidden" name="jndinm" value="CafMwWdOpenEJB">
+		
+		<input type="hidden" name="context" value="NTIS">
+		
+		<input type="hidden" name="menu_id" value="CAFOPNWebMwOpenL">
+		
+		<input type="hidden" name="methodnm" value="selectListMwOpn">
+		
+		<input type="hidden" name="method" value="selectListMwOpn">
+		
+	</form>
+</body>
+</html>

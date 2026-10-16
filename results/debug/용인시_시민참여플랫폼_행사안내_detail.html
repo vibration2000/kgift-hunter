@@ -1,0 +1,4449 @@
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>
+		
+			
+			
+			
+		    
+		
+		    
+		
+		    
+		        척척 SNS민원창구 &lt; 시민소통 &lt; 시민참여플랫폼
+		    
+		
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="shortcut icon" href="/common/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/resources/user/main/css/2022_main.css">
+	<!-- customize -->
+<link rel="stylesheet" type="text/css" href="/resources/openworks4/css/openworks4-custom.css">
+    <script type="text/javascript">var CTX_PATH="";</script>
+<!-- jquery core -->
+<script type="text/javascript" src="/resources/libs/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/resources/libs/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+
+<!-- 설정 동기화 -->
+<script type="text/javascript" src="/component/js/ND_globalConfig.do"></script>
+<script type="text/javascript" src="/component/js/ND_massageConfig.do"></script>
+
+<!-- 공통 외부 라이브러리 -->
+<script type="text/javascript" src="/resources/libs/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/resources/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script type="text/javascript" src="/resources/libs/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Openworks 공통 메소드 -->
+<script type="text/javascript" src="/resources/openworks4/js/openworks.global.js"></script>
+<script type="text/javascript" src="/resources/openworks4/js/openworks.message.js"></script>
+<script type="text/javascript" src="/resources/openworks4/js/openworks.initialize.js"></script>
+    
+	
+    <!-- jquery core -->
+<script type="text/javascript" src="/resources/libs/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/resources/libs/jquery-ui-1.11.3.custom/jquery-ui.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="/resources/libs/jgrowl-1.4.1/css/jquery.jgrowl.min.css" /> -->
+    <script type="text/javascript" src="/resources/libs/jgrowl-1.4.1/js/jquery.jgrowl.min.js"></script>
+    <script type="text/javascript" src="/resources/libs/form-3.51.0/jquery.form.js"></script>
+    
+	<script type="text/javascript" src="/resources/user/web/js_search/bs_search.js"></script>
+	
+	<!--기존유지 페이지 -->
+	<link rel="stylesheet" href="/resources/user/mayor/css/dream.css" type="text/css">
+	<link rel="stylesheet" href="/resources/user/mayor/css/base.css" type="text/css">
+	<link rel="stylesheet" href="/resources/user/mayor/css/main2.css" type="text/css">
+	<link rel="stylesheet" href="/resources/user/web/css/layout.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/resources/user/mayor/css/ask_2021.css">
+	<script type="text/javascript" src="/resources/user/mayor/js/ask_2021.js"></script>
+	<!-- 2023개편 START -->
+	<link rel="stylesheet" type="text/css" href="/resources/user/citizen/css/global.css?v=20260814">
+	<script type="text/javascript" src="/resources/user/citizen/js/common.js"></script>
+	<script type="text/javascript" src="/resources/user/citizen/js/ui-global.js"></script>
+	
+	<script type="text/javascript">
+		$().ready(function() {
+			
+		});
+	
+		var jsDivPirnt = function() {
+			window.print();
+		};
+	
+		// 통합검색 (대표페이지로)
+		function goPopUpSearch() {
+			var f = document.searchTopForm;
+			var search_word = f.search_word.value;
+			search_word = $.trim(search_word);
+			$('#id_top_group_code2').val($("#h_search").val());
+	
+			// 검색어의 특수 기호 체크
+			if (hasSpecialCharacter(search_word)) {
+				alert("검색어에 특수문자는 올수없습니다.");
+				$("#id_top_search_word2").focus();
+				return;
+			}
+	
+			f.query_word.value = MakeBSquery(search_word);
+			f.submit();
+		}
+	</script>
+	<script type='text/javascript'>
+			var _bwa = [];
+			_bwa.push(['setCollectorUrl', 'https://www.yongin.go.kr/blueworks/api']);
+			_bwa.push(['setCustomerId', 'yongin']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript';
+			g.src='/resources/common/js/blueworksWebAgent-2.0.js';
+			g.async=g.defer=true;
+			s.parentNode.insertBefore(g, s);
+	</script>
+	
+	<!-- ai번역 -->
+	<!-- 20251231 -->
+	<script>
+		function setLanguage() {
+			let targetId = window.innerWidth > 1217 ? 'pc-lang' : 'mobile-lang'; //원한 위치 id="앞 이름"로 추가
+			window.aiTranslatorConfig = {
+				chat_bot_id: '1922afc5-262b-44f6-9cac-742c7b8fce25',
+				// 필수
+				select_user_name: 'yongin',
+				// 필수
+				panelClass: 'lang',
+				targetElementId: targetId,
+				currentDomain: 'https://yongin.han.kr' // 필수
+			};
+		}
+		setLanguage() let timerLang = null;
+		window.addEventListener('resize',
+			function() {
+				if (timerLang) {
+					clearTimeout(timerLang) timerLang = null;
+					return;
+				}
+				// pc  id 이름 설정
+				const pcChildElements = Array.from(document.getElementById('pc-lang').querySelectorAll('.ai-translate-panel.lang')).length;
+				// mobile  id 이름 설정
+				const mobileChildElements = Array.from(document.getElementById('mobile-lang').querySelectorAll('.ai-translate-panel.lang')).length;
+
+				if (window.innerWidth > 1217 && pcChildElements) {
+					return;
+				}
+				if (window.innerWidth <= 1217 && mobileChildElements) {
+					return;
+				}
+
+				timerLang = setTimeout(function() {
+						setLanguage();
+						const translatorScript = document.createElement('script');
+						translatorScript.type = 'text/javascript';
+						translatorScript.src = 'https://www.yongin.go.kr/resources/aiTranslation/js/ai-translator.js?v=20260428'; // ai-translator.js  위치 설정
+						translatorScript.async = true;
+						document.head.appendChild(translatorScript);
+					},
+					1000);
+			});
+	</script>
+	<script src="/resources/aiTranslation/js/ai-translator.js?v=20260428"></script>
+	
+	<!-- ai번역 끝-->
+	
+	<!-- S 2026-04-10 -->
+	<link rel="stylesheet" type="text/css" href="/resources/citizen/css/main-2026.css?v=20260605">
+	<link rel="stylesheet" type="text/css" href="/resources/citizen/css/sub-2026.css?v=20260605">
+	<!-- S 2026-04-10 -->
+	
+	
+
+
+<meta name="keywords" content="척척 SNS민원창구" />
+<meta name="description" content="척척 SNS민원창구" />
+
+
+<style>
+  #containerWrap.sub-2026 {
+    border-top: 1px solid #bd445b;
+  }
+
+  #containerWrap.sub-2026 #container {
+    padding: 50px 20px 240px;
+  }
+
+  .sub1-img-text1 {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .sub1-img-text1>dt {
+    width: calc(32% - 20px);
+  }
+
+  .sub1-img-text1>dd {
+    width: calc(68% - 20px);
+  }
+
+  .sub1-img-text1 p {
+    color: #888;
+    font-size: 18px;
+    line-height: 1.45;
+    word-break: keep-all;
+  }
+
+  .sub1-img-text1 h6 {
+    margin-bottom: 20px;
+    color: #311b92;
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: "GmarketSans";
+    font-weight: bold;
+    word-break: keep-all;
+  }
+
+  .sub1-img-text1 h6 span {
+    font-size: 22px;
+  }
+
+  .ImgBox01 {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ImgBox01>li {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .ImgBox01>li img {
+    width: 100%;
+  }
+
+.sub1-SNS1 {
+    margin: 65px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 기존 center → 왼쪽 정렬 */
+    gap: 10px; /* 요소 간 간격 추가  15->10 */ 
+    flex-wrap: nowrap; /* 줄바꿈 방지 */
+}
+  
+
+  .sub1-SNS1 img {
+    vertical-align: top;
+  }
+
+  /* .sub1-SNS1>* {
+    margin: 15px 12px 0;
+  } */
+  .sub1-SNS1>* {
+    margin: 0; /* 기존 15px 12px 0 제거 */
+}
+.sub1-SNS1-App1 {
+    display: block;
+    padding: 13px 20px 13px 65px;
+    background: #f2da01 url('../images/sub/sb1in2_bg1.jpg') no-repeat 18px center;
+    border-radius: 32px;
+
+    flex-shrink: 0; /* 버튼 크기 유지 */
+}
+
+  .sub1-SNS1-App1>dl {
+    padding: 12px 14px 12px 18px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  .sub1-SNS1-App1>dl>dt {
+    width: calc(100% - 20px);
+    color: #000;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-right: 19px;
+    position: relative;
+    word-break: keep-all;
+  }
+
+  .sub1-SNS1-App1>dl>dt::after {
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 9px;
+    width: 1px;
+    height: 14px;
+    background: #000;
+    content: "";
+  }
+
+  .sub1-SNS1-App1>dl>dd {
+    width: 20px;
+  }
+
+.sub1-SNS1-App2 {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+
+    flex-wrap: nowrap; /* 기존 wrap -> nowrap 변경 */
+
+    flex-shrink: 0; /* 추가 */
+}
+  .sub1-SNS1-App2 * {
+    font-size: inherit;
+  }
+
+  /* .sub1-SNS1-App2 .QR01 {
+    margin-right: 14px;
+    padding: 10px;
+    background: #03c75a;
+    border-radius: 10px;
+    display: block;
+  } */
+
+.sub1-SNS1-App2 .QR01 {
+    width: 78px;
+    height: 78px;
+    margin-right: 14px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    display: block;
+
+    border: 0; /* CSS 테두리 제거 */
+}
+  .sub1-SNS1-App2 .QR01 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .sub1-SNS1-App2 .bg01 {
+    display: flex;
+    align-items: end;
+  }
+
+  .sub1-SNS1-App2 .bg01::after {
+    margin-bottom: 10px;
+    display: block;
+    width: 43px;
+    height: 39px;
+    background: url('../images/sub/sb1in2_bg2.png') no-repeat;
+    content: "";
+  }
+
+  .sub-search-box1 {
+    margin-bottom: 35px;
+  }
+
+  .sub-search-box1 .search_form {
+    justify-content: center;
+  }
+
+  .sub-search-box1 .search_form>select.sele01 {
+    width: 140px;
+    height: 42px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0 36px 1px 12px;
+    background-position: right center;
+    border-radius: 3px;
+  }
+
+  .sub-search-box1 .search_form>.search_box {
+    height: 42px;
+    padding: 6px 12px;
+  }
+
+  .sub-search-box1 .search_form .btn_search {
+    width: 118px;
+    height: 42px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 20px;
+    background: #5858df url('../images/sub/sub_search1.png') no-repeat 28px center;
+  }
+
+  .sub-search-box1 .search_form .btn_reset {
+    width: 118px;
+    height: 42px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 24px;
+    background: #4b4d7e url('../images/sub/sub_reset1.png') no-repeat 14px center;
+  }
+
+  .sub3-photo-list1 {
+    overflow: hidden;
+  }
+
+  .sub3-photo-list1>ul {
+    margin: -20px -10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sub3-photo-list1>ul>li {
+    width: calc(25% - 20px);
+    margin: 20px 10px 0;
+    background: #fff;
+    border: 2px solid #e3e3e3;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .sub3-photo-list1>ul>li>a {
+    display: block;
+  }
+
+  .sub3-photo-list1 .photo>img {
+    width: 100%;
+  }
+
+  .sub3-photo-list1 .text-wrap {
+    padding: 20px 15px;
+    letter-spacing: -0.3px;
+  }
+
+  .sub3-photo-list1 .title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sub3-photo-list1 .ulli01>li:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  .sub3-photo-list1 .ulli01>li {
+    display: table;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .sub3-photo-list1 .ulli01>li>span:first-child {
+    min-width: 66px;
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+
+  .sub3-photo-list1 .ulli02>li:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .sub3-photo-list1 .ulli02>li {
+    display: table;
+    color: inherit;
+    font-size: inherit;
+    line-height: 1.25;
+  }
+
+  .sub3-photo-list1 .ulli02>li>span:first-child {
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+
+  .list-ping1>li:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .list-ping1>li {
+    display: table;
+  }
+
+  .list-ping1>li>span:first-child,
+  .list-ping1>li>strong:first-child {
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+
+  .only-ping1 {
+    display: table;
+  }
+
+  .only-ping1>span:first-child,
+  .only-ping1>strong:first-child {
+    display: table-cell;
+    vertical-align: top;
+    white-space: nowrap;
+    padding-right: 5px;
+  }
+
+  .sub3-viwe-IgTx1 {
+    padding: 35px;
+    background: #f6f7f7;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub3-viwe-IgTx1>dt {
+    width: 183px;
+  }
+
+  .sub3-viwe-IgTx1>dd {
+    max-width: calc(100% - 183px);
+    padding-left: 8.5%;
+  }
+
+  .sub3-viwe-IgTx1 .title {
+    margin-bottom: 18px;
+    color: #311b92;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "GmarketSans";
+    line-height: 1;
+  }
+
+  .sub3-viwe-IgTx1 .list-ping1>li:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  .sub3-viwe-IgTx1 .list-ping1>li {
+    color: #888;
+    font-size: 17px;
+    font-family: "GmarketSans";
+  }
+
+  .sub3-viwe-IgTx1 .list-ping1>li>* {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .sub3-viwe-IgTx1 .photo {
+    box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  .sub3-viwe-Text1 {
+    margin: 55px 0;
+    color: #888;
+    font-size: 17px;
+    font-family: "GmarketSans";
+    text-align: center;
+  }
+
+  .sub3-viwe-Text1 * {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .sub3-viwe-Text1>li:not(:first-child) {
+    margin-top: 35px;
+  }
+
+  .sub3-viwe-Text1>li>p+p {
+    margin-top: 10px !important;
+  }
+
+  .sub3-viwe-Text1 .blue01 {
+    color: #5858df;
+  }
+
+  .sub3-viwe-Text1 .only-ping1 {
+    margin: 0 auto;
+    text-align: left;
+    word-break: break-all;
+  }
+
+  .sub3-viwe-more1 {
+    display: table;
+    margin: 0 auto;
+  }
+
+  .sub3-viwe-more1>span {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    color: #888;
+    font-size: 17px;
+    font-family: "GmarketSans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub3-viwe-more1>span::after {
+    margin-left: 12px;
+    display: block;
+    width: 27px;
+    height: 21px;
+    background: url('../images/sub/sb3in1_bg1.png') no-repeat;
+    content: "";
+  }
+
+  .sub3-viwe-IgTx2 {
+    margin-top: 70px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub3-viwe-IgTx2>dt {
+    width: 210px;
+    display: flex;
+  }
+
+  .sub3-viwe-IgTx2>dt::before {
+    margin-top: 30px;
+    display: block;
+    width: 130px;
+    height: 110px;
+    background: url('../images/sub/sb3in1_bg2.png') no-repeat;
+    content: "";
+  }
+
+  .sub3-viwe-IgTx2>dt>a {
+    width: 80px;
+    height: 80px;
+    padding-top: 6px;
+    background: #beb0ff;
+    color: #fff;
+    font-size: 16px;
+    font-family: "GmarketSans";
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub3-viwe-IgTx2>dt>a::after {
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 15px solid #beb0ff;
+    content: "";
+  }
+
+  .sub3-viwe-IgTx2>dd {
+    max-width: calc(100% - 210px);
+    padding-left: 10%;
+  }
+
+  .sub3-viwe-IgTx2>dd>ul>li:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .sub3-viwe-IgTx2>dd>ul>li {
+    font-size: 17px;
+    font-family: "GmarketSans";
+    display: flex;
+  }
+
+  .sub3-viwe-IgTx2>dd>ul>li * {
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .sub3-viwe-IgTx2>dd>ul>li>span {
+    width: 90px;
+    min-height: 26px;
+    padding: 4px 5px 2px;
+    color: #fff;
+    background: #beb0ff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub3-viwe-IgTx2>dd>ul>li>p {
+    width: calc(100% - 90px);
+    min-height: 26px;
+    padding: 4px 0 0 15px;
+    line-height: 1.1;
+    color: #212121;
+    display: flex;
+    align-items: center;
+  }
+
+  .sub3-viwe-IgTx2>dd>ul>li>span.black {
+    background: #888;
+  }
+
+  .sub4-BgTx1.s4i1-bg1 {
+    background: #fef6ea url('../images/sub/s4i1_bg1.png') no-repeat right 6% bottom;
+  }
+
+  .sub4-BgTx1.s4i2-bg1 {
+    background: #f9f9f9 url('../images/sub/s4i2_bg1.png') no-repeat right 6% bottom;
+  }
+
+  .sub4-BgTx1 {
+    margin-bottom: 50px;
+    min-height: 260px;
+    padding: 40px 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .sub4-BgTx1 .title {
+    margin-bottom: 20px;
+    color: #311b92;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "GmarketSans";
+    line-height: 1.2;
+    word-break: keep-all;
+  }
+
+  .sub4-BgTx1 ul>li:not(:first-child) {
+    margin-top: 22px;
+  }
+
+  .sub4-BgTx1 ul>li {
+    color: #212128;
+    font-size: 20px;
+    font-family: "GmarketSans";
+    word-break: keep-all;
+  }
+
+  .sub4-BgTx1 ul>li span {
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .sub4-BgTx1 ul.ft17-Gy1>li {
+    color: #888;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .sub4-BgTx1 ul .blue1 {
+    color: #311b92 !important;
+  }
+
+  .sub4-BgTx1 ul .unline1 {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #9388b6;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #containerWrap.sub-2026 {
+      border-top: 0;
+    }
+
+    #containerWrap.sub-2026 #container {
+      padding: 35px 20px 80px;
+    }
+
+    .sub1-img-text1 {
+      display: block;
+    }
+
+    .sub1-img-text1 h6 {
+      margin-bottom: 12px;
+    }
+
+    .sub1-img-text1>dt {
+      width: 100%;
+      text-align: center;
+    }
+
+    .sub1-img-text1>dd {
+      width: 100%;
+      max-width: 680px;
+      margin: 20px auto 0;
+    }
+
+    .sub1-SNS1 {
+      margin-top: 35px;
+    }
+
+    .sub3-photo-list1>ul>li {
+      width: calc(33.33% - 20px);
+    }
+
+    .sub4-BgTx1 {
+      padding: 35px;
+    }
+
+    .sub4-BgTx1.s4i1-bg1 {
+      background-size: 38%;
+    }
+
+    .sub4-BgTx1.s4i2-bg1 {
+      background-size: 40%;
+    }
+
+    .sub4-BgTx1 .title,
+    .sub4-BgTx1 ul>li {
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .sub3-photo-list1>ul {
+      justify-content: center;
+    }
+
+    .sub3-photo-list1>ul>li {
+      max-width: 330px;
+      width: calc(50% - 20px);
+    }
+
+    .sub3-viwe-IgTx1 {
+      padding: 30px;
+      display: block;
+    }
+
+    .sub3-viwe-IgTx1>dt {
+      width: 100%;
+      max-width: 183px;
+    }
+
+    .sub3-viwe-IgTx1>dd {
+      max-width: 100%;
+      padding: 32px 0 0;
+    }
+
+    .sub3-viwe-IgTx1 .title {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .sub3-viwe-IgTx1 .list-ping1>li {
+      font-size: 16px;
+    }
+
+    .sub3-viwe-Text1 {
+      margin: 40px 0;
+      font-size: 16px;
+    }
+
+    .sub3-viwe-IgTx2 {
+      margin-top: 50px;
+      padding: 20px 6%;
+    }
+
+    .sub3-viwe-IgTx2>dd {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px 0 0;
+    }
+
+    .sub4-BgTx1 {
+      min-height: 200px;
+      padding: 30px;
+    }
+
+    .sub4-BgTx1 .title {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .sub4-BgTx1 ul>li:not(:first-child) {
+      margin-top: 18px;
+    }
+
+    .sub4-BgTx1 ul>li {
+      font-size: 18px;
+    }
+
+    .sub4-BgTx1 ul.ft17-Gy1>li {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .sub1-img-text1 p {
+      font-size: 16px;
+    }
+
+    .sub1-img-text1 h6 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .sub4-BgTx1 ul>li br {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #containerWrap.sub-2026 #container {
+      padding-bottom: 60px;
+    }
+
+    .sub3-photo-list1>ul>li {
+      width: calc(100% - 20px);
+    }
+
+    .sub3-viwe-IgTx2 {
+      margin-top: 40px;
+      padding: 15px;
+    }
+
+    .sub3-viwe-IgTx2>dd>ul>li {
+      font-size: 16px;
+    }
+
+    .sub4-BgTx1 .title {
+      font-size: 23px;
+    }
+
+    .sub4-BgTx1 {
+      padding: 25px;
+    }
+
+    .sub4-BgTx1 ul>li {
+      font-size: 17px;
+    }
+
+    .sub4-BgTx1 ul.ft17-Gy1>li {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .sub1-SNS1-App1 {
+      padding: 56px 10px 10px;
+      background-position: center 6px;
+      border-radius: 12px;
+    }
+
+    .sub1-SNS1-App1>dl {
+      padding: 10px 12px;
+    }
+
+    .sub1-SNS1-App1>dl>dt {
+      font-size: 16px;
+    }
+
+    .sub3-viwe-IgTx1 {
+      padding: 20px;
+    }
+
+    .sub3-viwe-IgTx1>dd {
+      padding-top: 28px;
+    }
+
+    .sub3-viwe-IgTx1 .title {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+
+    .sub3-viwe-IgTx1 .list-ping1>li {
+      font-size: 15px;
+    }
+
+    .sub3-viwe-IgTx1 .list-ping1>li:not(:first-child) {
+      margin-top: 6px;
+    }
+
+    .sub3-viwe-Text1 {
+      font-size: 15px;
+    }
+
+    .sub3-viwe-Text1>li:not(:first-child) {
+      margin-top: 25px;
+    }
+
+    .sub3-viwe-Text1>li>p+p {
+      margin-top: 8px !important;
+    }
+  }
+  .kakaoQR {
+      border: 2px solid #25c05a;
+      box-sizing: border-box;
+  }
+  .sub1-SNS1-App2 .QR01.kakaoQR img {
+      border: 2px solid #25c05a; /* 카카오 QR 이미지에 직접 테두리 */
+      box-sizing: border-box;
+  }
+</style>
+
+
+
+<script type="text/javascript">
+    var anlzSessionId = "2BkPSMCqai0HaP19pR3A64aLa0mEoD3jXvDlu9t8crHHEClmTbaCIRdLc2VQcD1U.eW9uZ2luX2RvbWFpbi95b25naW53YXMxX2hvbWVwYWdl";
+    var anlzClientIp = "172.169.254.182";
+    var anlzMenuCode = "citizenMENU8_02";
+</script>
+<script type="text/javascript" src="/resources/openworks4/js/analyze/tracker.js"></script>
+
+
+
+</head>
+<body>
+	<div id="skipNav">
+		<p><a href="#container">본문바로가기</a></p>
+		<p><a href="#header">주메뉴바로가기</a></p>
+	</div>
+
+	<!-- header START -->
+	<!-- gnb -->
+	<div id="wrap-2026">
+		<div id="header-2026" class="header_gnb">
+			<div class="header_top_line">
+				<div class="header_top_inner">
+					<div class="site_list">
+						<ul>
+							<li><a href="https://www.yongin.go.kr/index.do" target="_blank" title="용인특례시 새창열림">용인특례시</a></li>
+						</ul>
+					</div><!-- site_list end -->
+					<div class="right_area">
+						<div class="login_area">
+							<ul>
+								
+									
+									
+										<li><a href="https://www.yongin.go.kr/login/BD_login.do" title="로그인 화면 이동">로그인</a></li>
+										<li><a href="https://www.yongin.go.kr/user/join/BD_userTypeChoose.do" title="회원가입 화면 이동">회원가입</a></li>
+									
+								
+							</ul>
+						</div><!-- login_area end -->
+						<div class="btn_print"><a href="#" onclick="jsDivPirnt(); return false;" title="프린트하기">프린트하기</a></div>
+						<div class="magnify">
+							<dl>
+								<dt>화면</dt>
+								<dd class="txt_plus"><a class="js-zoomin" href="#txt_plus"><img src="/resources/user_renewal/_common/images/ico-plus@2x.png" alt="글자크기 확대" /></a></dd>
+								<dd class="txt_minus"><a class="js-zoomout" href="#txt_minus"><img src="/resources/user_renewal/_common/images/ico-minus@2x.png" alt="글자크기 축소" /></a></dd>
+							</dl>
+						</div>
+						<!-- 20251231 -->
+						<div id="pc-lang"></div>
+						<style>
+							#pc-lang::before{content: "";display: inline-block;margin: 0 16px 0 15px;width: 1px;height: 14px;background: #000;opacity: .24;} 
+							#pc-lang {display: flex;align-items: center;height: 40px;} 
+							#pc-lang > div{display: flex;position: static;} 
+							#pc-lang > div button{background: none;} 
+							@media screen and (max-width: 1217px){ 
+								#pc-lang{display:none;} 
+							}
+						</style>
+						<!-- //20251231 -->
+					</div><!-- right_area end -->
+				</div><!-- header_top_inner end -->
+				<!-- 20251231 -->
+				<div id="mobile-lang"></div>
+				<style>
+					#mobile-lang{display: none;position: fixed;right: 0;top: 3px;} 
+					#mobile-lang > div{display: flex;position: static;margin-right: 0;} 
+					#mobile-lang > div button{background: none;padding: 0;} 
+					#mobile-lang > div button.dropdown-toggle{padding: 0 16px 0 0;} 
+					@media screen and (max-width: 1217px){ 
+						#mobile-lang{display:block;} 
+					}
+				</style>
+				<!-- //20251231 -->
+			</div><!-- header_top_line end -->
+			<!-- //gnb  -->
+	
+			<!-- navi -->
+			<div class="header_nav inner_wrap">
+				<h1 class="head_logo">
+					<a href="/citizen/index.do" title="용인특례시 시민참여플랫폼"><img src="/resources/citizen/images/logo.png?v=20260623" alt="용인특례시 시민참여플랫폼" ></a>
+				</h1>
+				<h2 class="blind">주메뉴</h2>
+				<div class="gnblist-wrap">
+					<ul class="nav" id="nav">
+						
+							
+								
+									
+									
+									
+								
+	
+								
+								
+									
+										
+											
+											
+										
+									
+										
+									
+										
+									
+								
+	
+								
+								
+	
+								
+									
+										<li><a href="/citizen/ctznPetit/BD_selectCtznPetitList.do"><span>시민소통</span></a>
+											<div class="lnb">
+												<div class="container">
+													<ul class="lnb-list">
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/ctznPetit/BD_selectCtznPetitList.do" >시민청원 두드림</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU8/citizenMENU8_02.jsp" target="_blank" title="새창으로 이동합니다.">척척 SNS민원창구</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp" >규제개혁/적극행정</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp" >규제개혁이란</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_02.jsp" >행정규제 등록현황</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_03.jsp" >용인시 규제신고센터</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_04.jsp" >규제입증 시민요청</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1025&amp;q_clCode=3" >알림 및 자료실</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_06.jsp" >적극행정/소극행정</a></li>
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+													</ul>
+												</div>
+											</div>
+										</li>
+									
+									
+								
+							
+						
+							
+								
+									
+									
+									
+								
+	
+								
+								
+									
+										
+											
+											
+												
+													
+														
+														
+													
+												
+													
+												
+													
+												
+											
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+	
+								
+								
+	
+								
+									
+										<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002"><span>제안·참여</span></a>
+											<div class="lnb">
+												<div class="container">
+													<ul class="lnb-list">
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																		
+																	
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002" >시민제안</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002" >나의 제안 보기</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC001" >시민제안</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1189" >제안 및 공모 심사 결과</a></li>
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/citizenMENU9/citizenMENU9_02/citizenMENU9_02_01.jsp" >예산참여</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU9/citizenMENU9_02/citizenMENU9_02_01.jsp" >예산낭비 신고</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="https://pb.lofin365.go.kr/YONGIN/main" target="_blank" title="새창으로 이동합니다.">주민참여예산</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114" >설문조사</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/pssrpBsns/BD_selectPssrpBsnsList.do" >공모참여</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/user/onlineReqst/BD_selectOnlineReqstDocList.do" >온라인 신청</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/user/web/radondetector/BD_selectRadonDetectorList.do" >실내 라돈측정기 대여신청</a>
+																	
+																</li>
+															
+														
+													</ul>
+												</div>
+											</div>
+										</li>
+									
+									
+								
+							
+						
+							
+								
+									
+									
+									
+								
+	
+								
+								
+									
+										
+											
+											
+										
+									
+										
+									
+										
+									
+								
+	
+								
+								
+	
+								
+									
+										<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294"><span>정보안내</span></a>
+											<div class="lnb">
+												<div class="container">
+													<ul class="lnb-list">
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294" >행사 안내</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																		
+																	
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/citizenMENU10/citizenMENU10_02/citizenMENU10_02_01.jsp" >민관협치</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU10/citizenMENU10_02/citizenMENU10_02_01.jsp" >제도안내</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1128" >공지사항</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1212" >협치백서</a></li>
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																		
+																	
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/citizenMENU10/citizenMENU10_03/citizenMENU10_03_01.jsp" >고향사랑 기부제</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU10/citizenMENU10_03/citizenMENU10_03_01.jsp" >고향사랑 기부제란?</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1264" >기부자 명예의전당</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1280" >기부금 접수·운용 현황</a></li>
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+													</ul>
+												</div>
+											</div>
+										</li>
+									
+									
+								
+							
+						
+							
+								
+									
+									
+									
+								
+	
+								
+								
+									
+										
+											
+											
+										
+									
+										
+									
+										
+									
+								
+	
+								
+								
+	
+								
+									
+										<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1295"><span>시민설계실</span></a>
+											<div class="lnb">
+												<div class="container">
+													<ul class="lnb-list">
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1295" >사업안내</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114&q_realmCode=citizen01" >의견 들려주기 : 시민의 설(說)</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1296" >설계로 답하기 : 우리의 설(設)</a>
+																	
+																</li>
+															
+														
+													</ul>
+												</div>
+											</div>
+										</li>
+									
+									
+								
+							
+						
+							
+								
+									
+									
+									
+								
+	
+								
+								
+									
+										
+											
+											
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								
+	
+								
+								
+	
+								
+									
+										<li><a href="/citizen/citizenMENU12/citizenMENU12_01.jsp"><span>시민신고센터</span></a>
+											<div class="lnb">
+												<div class="container">
+													<ul class="lnb-list">
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU12/citizenMENU12_01.jsp" >칭찬합니다</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU12/citizenMENU12_02.jsp" >불법 사금융 피해 신고센터</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU12/citizenMENU12_12.jsp" >부패·공익 신고</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																		
+																	
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_01.jsp" >시민고충처리 위원회</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_01.jsp" >시민고충처리위원회 소개</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_02.jsp" >시민고충처리위원회 운영</a></li>
+																				
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_03.jsp" >시민고충처리위원회 고충민원 신청</a></li>
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU12/citizenMENU12_05.jsp" >부동산 불법중개 행위 신고</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU12/citizenMENU12_06.jsp" >부동산 거래질서 교란행위 신고</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																<li >
+																	<a href="/citizen/citizenMENU12/citizenMENU12_07.jsp" >지방세 탈루/체납자의 은닉재산 신고</a>
+																	
+																</li>
+															
+														
+															
+																
+																
+																
+															
+	
+															
+																
+																
+																	
+																		
+																			
+																			
+																		
+																	
+																
+																<li class="collapse">
+																	<a href="/citizen/citizenMENU12/citizenMENU12_9/citizenMENU12_10.jsp" >지방보조금 부정수급 신고센터</a>
+																	
+																		<ul>
+																			
+																				
+																					
+																					
+																					
+																				
+																				
+																				
+																				
+																					<li><a href="/citizen/citizenMENU12/citizenMENU12_9/citizenMENU12_10.jsp" >지방보조금 부정수급 신고센터</a></li>
+																				
+																			
+																		</ul>
+																	
+																</li>
+															
+														
+													</ul>
+												</div>
+											</div>
+										</li>
+									
+									
+								
+							
+						
+					</ul>
+					<div class="gnb-icon">
+						<form name="searchTopForm" method="post" onsubmit="return false;" action="/user/web/search/search.do">
+							<input type="hidden" name="group_code" id="id_top_group_code2">
+							<input type="hidden" name="query_word">
+							<input type="hidden" id="testUserId" value=""/>
+							<button type="button" class="gnb-icon__btn-search" id="btn_search_open"><span class="sr-only">통합검색 열기</span></button>
+	
+							<div class="gnb-icon__searchbox" id="header_search">
+								<p class="sr-only">통합검색</p>
+								<div class="gnb-icon__search-inputbox header_search_input">
+									<input type="text" title="검색어 입력" class="header_keyword" placeholder="검색어를 입력해주세요." id="id_top_search_word2" name="search_word" value="" onkeyup="if (event.keyCode == 13) goPopUpSearch();">
+									<button type="button" onclick="goPopUpSearch();" class="btn_header_search"><img src="/resources/user/main/img/layout/btn_search_open.png" alt="검색버튼" class="tabletHide" /></button>
+								</div>
+							</div>
+							<button type="button" class="gnb-icon__btn-close" id="btn_search_close"><span class="sr-only">통합검색 닫기</span></button>
+							<button type="button" class="gnb-icon__btn-sitemap" title="사이트맵 바로가기"><span class="sr-only">사이트맵</span></button>
+						</form>
+					</div><!-- header_icon_group end -->
+					<div class="gnb-sitemap">
+						<ul class="gnb-sitemap__depth1">
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									
+										
+											
+												
+												
+											
+										
+											
+										
+											
+										
+									
+	
+									
+									
+	
+									
+										
+											<li>
+												<a href="/citizen/ctznPetit/BD_selectCtznPetitList.do" class="gnb-sitemap__list-item">시민소통</a>
+												<ul class="gnb-sitemap__depth2">
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/ctznPetit/BD_selectCtznPetitList.do"  class="gnb-sitemap__list-item">시민청원 두드림</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU8/citizenMENU8_02.jsp" target="_blank" title="새창으로 이동합니다." class="gnb-sitemap__list-item">척척 SNS민원창구</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+																	
+																
+																	
+																
+																	
+																
+																	
+																
+																	
+																
+															
+															<li>
+																<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp"  class="gnb-sitemap__list-item">규제개혁/적극행정</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp"  class="gnb-sitemap__list-item">규제개혁이란</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_02.jsp"  class="gnb-sitemap__list-item">행정규제 등록현황</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_03.jsp"  class="gnb-sitemap__list-item">용인시 규제신고센터</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_04.jsp"  class="gnb-sitemap__list-item">규제입증 시민요청</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1025&amp;q_clCode=3"  class="gnb-sitemap__list-item">알림 및 자료실</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_06.jsp"  class="gnb-sitemap__list-item">적극행정/소극행정</a></li>
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+												</ul>
+											</li>
+										
+										
+									
+								
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									
+										
+											
+												
+												
+													
+														
+															
+															
+														
+													
+														
+													
+														
+													
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									
+	
+									
+									
+	
+									
+										
+											<li>
+												<a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002" class="gnb-sitemap__list-item">제안·참여</a>
+												<ul class="gnb-sitemap__depth2">
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+																	
+																
+																	
+																
+															
+															<li>
+																<a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002"  class="gnb-sitemap__list-item">시민제안</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002"  class="gnb-sitemap__list-item">나의 제안 보기</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC001"  class="gnb-sitemap__list-item">시민제안</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1189"  class="gnb-sitemap__list-item">제안 및 공모 심사 결과</a></li>
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+																	
+																
+																	
+																
+																	
+																
+																	
+																
+																	
+																
+															
+															<li>
+																<a href="/citizen/citizenMENU9/citizenMENU9_02/citizenMENU9_02_01.jsp"  class="gnb-sitemap__list-item">예산참여</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU9/citizenMENU9_02/citizenMENU9_02_01.jsp"  class="gnb-sitemap__list-item">예산낭비 신고</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="https://pb.lofin365.go.kr/YONGIN/main" target="_blank" title="새창으로 이동합니다." class="gnb-sitemap__list-item">주민참여예산</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114"  class="gnb-sitemap__list-item">설문조사</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/pssrpBsns/BD_selectPssrpBsnsList.do"  class="gnb-sitemap__list-item">공모참여</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/user/onlineReqst/BD_selectOnlineReqstDocList.do"  class="gnb-sitemap__list-item">온라인 신청</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/user/web/radondetector/BD_selectRadonDetectorList.do"  class="gnb-sitemap__list-item">실내 라돈측정기 대여신청</a>
+																
+															</li>
+														
+													
+												</ul>
+											</li>
+										
+										
+									
+								
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									
+										
+											
+												
+												
+											
+										
+											
+										
+											
+										
+									
+	
+									
+									
+	
+									
+										
+											<li>
+												<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294" class="gnb-sitemap__list-item">정보안내</a>
+												<ul class="gnb-sitemap__depth2">
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294"  class="gnb-sitemap__list-item">행사 안내</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+																	
+																
+																	
+																
+															
+															<li>
+																<a href="/citizen/citizenMENU10/citizenMENU10_02/citizenMENU10_02_01.jsp"  class="gnb-sitemap__list-item">민관협치</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU10/citizenMENU10_02/citizenMENU10_02_01.jsp"  class="gnb-sitemap__list-item">제도안내</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1128"  class="gnb-sitemap__list-item">공지사항</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1212"  class="gnb-sitemap__list-item">협치백서</a></li>
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+																	
+																
+																	
+																
+															
+															<li>
+																<a href="/citizen/citizenMENU10/citizenMENU10_03/citizenMENU10_03_01.jsp"  class="gnb-sitemap__list-item">고향사랑 기부제</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU10/citizenMENU10_03/citizenMENU10_03_01.jsp"  class="gnb-sitemap__list-item">고향사랑 기부제란?</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1264"  class="gnb-sitemap__list-item">기부자 명예의전당</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1280"  class="gnb-sitemap__list-item">기부금 접수·운용 현황</a></li>
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+												</ul>
+											</li>
+										
+										
+									
+								
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									
+										
+											
+												
+												
+											
+										
+											
+										
+											
+										
+									
+	
+									
+									
+	
+									
+										
+											<li>
+												<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1295" class="gnb-sitemap__list-item">시민설계실</a>
+												<ul class="gnb-sitemap__depth2">
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1295"  class="gnb-sitemap__list-item">사업안내</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114&q_realmCode=citizen01"  class="gnb-sitemap__list-item">의견 들려주기 : 시민의 설(說)</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1296"  class="gnb-sitemap__list-item">설계로 답하기 : 우리의 설(設)</a>
+																
+															</li>
+														
+													
+												</ul>
+											</li>
+										
+										
+									
+								
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									
+										
+											
+												
+												
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+											
+										
+									
+	
+									
+									
+	
+									
+										
+											<li>
+												<a href="/citizen/citizenMENU12/citizenMENU12_01.jsp" class="gnb-sitemap__list-item">시민신고센터</a>
+												<ul class="gnb-sitemap__depth2">
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_01.jsp"  class="gnb-sitemap__list-item">칭찬합니다</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_02.jsp"  class="gnb-sitemap__list-item">불법 사금융 피해 신고센터</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_12.jsp"  class="gnb-sitemap__list-item">부패·공익 신고</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+																	
+																
+																	
+																
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_01.jsp"  class="gnb-sitemap__list-item">시민고충처리 위원회</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_01.jsp"  class="gnb-sitemap__list-item">시민고충처리위원회 소개</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_02.jsp"  class="gnb-sitemap__list-item">시민고충처리위원회 운영</a></li>
+																			
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_03.jsp"  class="gnb-sitemap__list-item">시민고충처리위원회 고충민원 신청</a></li>
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_05.jsp"  class="gnb-sitemap__list-item">부동산 불법중개 행위 신고</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_06.jsp"  class="gnb-sitemap__list-item">부동산 거래질서 교란행위 신고</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_07.jsp"  class="gnb-sitemap__list-item">지방세 탈루/체납자의 은닉재산 신고</a>
+																
+															</li>
+														
+													
+														
+															
+															
+															
+														
+	
+														
+															
+															
+																
+																	
+																		
+																		
+																	
+																
+															
+															<li>
+																<a href="/citizen/citizenMENU12/citizenMENU12_9/citizenMENU12_10.jsp"  class="gnb-sitemap__list-item">지방보조금 부정수급 신고센터</a>
+																
+																	<ul class="gnb-sitemap__depth3">
+																		
+																			
+																				
+																				
+																				
+																			
+																			
+																			
+																			
+																				<li><a href="/citizen/citizenMENU12/citizenMENU12_9/citizenMENU12_10.jsp"  class="gnb-sitemap__list-item">지방보조금 부정수급 신고센터</a></li>
+																			
+																		
+																	</ul>
+																
+															</li>
+														
+													
+												</ul>
+											</li>
+										
+										
+									
+								
+							
+						</ul>
+					</div>
+				</div>
+			</div><!-- header_nav END -->
+		</div><!-- header_gnb END -->
+	
+		<!-- [반응형] 모바일 헤더 -->
+		<header id="m_header">
+			<h1 id="m_logo" class="major_logo"><a href="/citizen/index.do" title="용인특례시 시민참여플랫폼"><img src="/resources/citizen/images/logo.png?v=20251001" alt="용인특례시 시민참여플랫폼"></a></h1>
+			<a href="#allmenu" id="btn_allmenu" role="button">전체메뉴</a>
+			<nav id="allmenu">
+				<span class="bg"></span>
+				<ul>
+					
+						
+							
+								
+								
+								
+							
+	
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+							
+								
+									<li><a href="#none">시민소통</a>
+										<ul>
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/ctznPetit/BD_selectCtznPetitList.do" >시민청원 두드림</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU8/citizenMENU8_02.jsp" target="_blank" title="새창으로 이동합니다.">척척 SNS민원창구</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+	
+													<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp" >규제개혁/적극행정</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp" >규제개혁이란</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_02.jsp" >행정규제 등록현황</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_03.jsp" >용인시 규제신고센터</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_04.jsp" >규제입증 시민요청</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1025&q_clCode=3" >알림 및 자료실</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_06.jsp" >적극행정/소극행정</a></li>
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</li>
+								
+								
+							
+						
+					
+						
+							
+								
+								
+								
+							
+	
+							
+							
+								
+									
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+										
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+							
+								
+									<li><a href="#none">제안·참여</a>
+										<ul>
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+	
+													<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002" >시민제안</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC002" >나의 제안 보기</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/proposal/BD_selectProposalReq.do?mCode=PC001" >시민제안</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1189" >제안 및 공모 심사 결과</a></li>
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+															
+														
+													
+	
+													<li><a href="/citizen/citizenMENU9/citizenMENU9_02/citizenMENU9_02_01.jsp" >예산참여</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU9/citizenMENU9_02/citizenMENU9_02_01.jsp" >예산낭비 신고</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="https://pb.lofin365.go.kr/YONGIN/main" target="_blank" title="새창으로 이동합니다.">주민참여예산</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114" >설문조사</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/pssrpBsns/BD_selectPssrpBsnsList.do" >공모참여</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/user/onlineReqst/BD_selectOnlineReqstDocList.do" >온라인 신청</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/user/web/radondetector/BD_selectRadonDetectorList.do" >실내 라돈측정기 대여신청</a>
+														
+															
+														
+													</li>
+												
+											
+										</ul>
+									</li>
+								
+								
+							
+						
+					
+						
+							
+								
+								
+								
+							
+	
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+							
+								
+									<li><a href="#none">정보안내</a>
+										<ul>
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294" >행사 안내</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+	
+													<li><a href="/citizen/citizenMENU10/citizenMENU10_02/citizenMENU10_02_01.jsp" >민관협치</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU10/citizenMENU10_02/citizenMENU10_02_01.jsp" >제도안내</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1128" >공지사항</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1212" >협치백서</a></li>
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+	
+													<li><a href="/citizen/citizenMENU10/citizenMENU10_03/citizenMENU10_03_01.jsp" >고향사랑 기부제</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU10/citizenMENU10_03/citizenMENU10_03_01.jsp" >고향사랑 기부제란?</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1264" >기부자 명예의전당</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1280" >기부금 접수·운용 현황</a></li>
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</li>
+								
+								
+							
+						
+					
+						
+							
+								
+								
+								
+							
+	
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+							
+							
+								
+									<li><a href="#none">시민설계실</a>
+										<ul>
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1295" >사업안내</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114&q_realmCode=citizen01" >의견 들려주기 : 시민의 설(說)</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1296" >설계로 답하기 : 우리의 설(設)</a>
+														
+															
+														
+													</li>
+												
+											
+										</ul>
+									</li>
+								
+								
+							
+						
+					
+						
+							
+								
+								
+								
+							
+	
+							
+							
+								
+									
+										
+										
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+									
+								
+							
+							
+								
+									<li><a href="#none">시민신고센터</a>
+										<ul>
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_01.jsp" >칭찬합니다</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_02.jsp" >불법 사금융 피해 신고센터</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_12.jsp" >부패·공익 신고</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+															
+														
+															
+														
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_01.jsp" >시민고충처리 위원회</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_01.jsp" >시민고충처리위원회 소개</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_02.jsp" >시민고충처리위원회 운영</a></li>
+																		
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU12/citizenMENU12_04/citizenMENU12_04_03.jsp" >시민고충처리위원회 고충민원 신청</a></li>
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_05.jsp" >부동산 불법중개 행위 신고</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_06.jsp" >부동산 거래질서 교란행위 신고</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_07.jsp" >지방세 탈루/체납자의 은닉재산 신고</a>
+														
+															
+														
+													</li>
+												
+											
+												
+													
+													
+													
+												
+	
+												
+													
+													
+														
+															
+																
+																
+															
+														
+													
+	
+													<li><a href="/citizen/citizenMENU12/citizenMENU12_9/citizenMENU12_10.jsp" >지방보조금 부정수급 신고센터</a>
+														
+															
+																<ul>
+																	
+																		
+																			
+																			
+																			
+																		
+	
+																		
+																			
+																			
+																		
+																		
+																			<li><a href="/citizen/citizenMENU12/citizenMENU12_9/citizenMENU12_10.jsp" >지방보조금 부정수급 신고센터</a></li>
+																		
+																	
+																</ul>
+															
+														
+													</li>
+												
+											
+										</ul>
+									</li>
+								
+								
+							
+						
+					
+				</ul>
+				<button type="button" id="btn_allmenu_close"><span class="sr-only">전체메뉴 닫기</span></button>
+				
+					
+						<a href="https://www.yongin.go.kr/login/BD_login.do" class="btn_login" role="button">로그인</a>
+					
+					
+				
+			</nav>
+		</header>
+		<!-- // [반응형] 모바일 헤더 -->
+	
+		<div class="containerWrap sub-2026" id="containerWrap">
+			<div class="container" id="container" style="position: relative;">
+				<!--왼쪽메뉴시작-->
+				<div id="lnb">
+					<div>
+						<h2 class="topMenu">시민소통</h2>
+						<ul>
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									<li class="
+										
+											
+									">
+										
+										
+	
+										
+										
+	
+										<a href="/citizen/ctznPetit/BD_selectCtznPetitList.do" >시민청원 두드림</a>
+										
+									</li>
+								
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									<li class="
+										on
+											
+									">
+										
+										
+	
+										
+										
+	
+										<a href="/citizen/citizenMENU8/citizenMENU8_02.jsp" target="_blank" title="새창으로 이동합니다.">척척 SNS민원창구</a>
+										
+									</li>
+								
+							
+								
+									
+										
+										
+										
+									
+	
+									
+									<li class="
+										
+											
+									">
+										
+										
+											
+												
+													
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+	
+										
+										
+	
+										<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp" >규제개혁/적극행정</a>
+										
+											<ul>
+												
+													
+														
+															
+															
+															
+														
+	
+														
+														
+														<li class="
+															
+															
+															
+														">
+															<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_01.jsp" >규제개혁이란</a>
+														</li>
+													
+												
+													
+														
+															
+															
+															
+														
+	
+														
+														
+														<li class="
+															
+															
+															
+														">
+															<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_02.jsp" >행정규제 등록현황</a>
+														</li>
+													
+												
+													
+														
+															
+															
+															
+														
+	
+														
+														
+														<li class="
+															
+															
+															
+														">
+															<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_03.jsp" >용인시 규제신고센터</a>
+														</li>
+													
+												
+													
+														
+															
+															
+															
+														
+	
+														
+														
+														<li class="
+															
+															
+															
+														">
+															<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_04.jsp" >규제입증 시민요청</a>
+														</li>
+													
+												
+													
+														
+															
+															
+															
+														
+	
+														
+														
+														<li class="
+															
+															
+															
+														">
+															<a href="/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1025&q_clCode=3" >알림 및 자료실</a>
+														</li>
+													
+												
+													
+														
+															
+															
+															
+														
+	
+														
+														
+														<li class="
+															
+															
+															
+														">
+															<a href="/citizen/citizenMENU8/citizenMENU8_03/citizenMENU8_03_06.jsp" >적극행정/소극행정</a>
+														</li>
+													
+												
+											</ul>
+										
+									</li>
+								
+							
+						</ul>
+					</div>
+				</div>
+				<!--왼쪽메뉴끝-->
+	
+				<div class="contents">
+					<div class="h3_box">
+						<h3 class="top_banner_bbs">
+							<!-- 본문 타이틀 -->
+							
+							척척 SNS민원창구
+						</h3>
+						<ul class="location">
+							<!-- 로케이션 -->
+							
+							
+								<li class="first">시민참여플랫폼 </li>
+							
+								<li class=""> 시민소통 </li>
+							
+								<li class="end"> 척척 SNS민원창구</li>
+							
+						</ul>
+					</div>
+	
+					<!-- 작업 시작 -->
+					<div class="cont_box">
+						
+	
+						
+    
+<div class="cont_box">
+    <dl class="sub1-img-text1">
+      <dt>
+        <h6>"척척SNS 민원창구"<span>는</span></h6>
+        <p>시민의 생활 속 불편사항을 신고하고 효율적으로 처리하기 위한 온라인 소통공간입니다.</p>
+        <p><strong>카카오톡, 인스타그램, 페이스북</strong>으로</p>
+        <p>도로 파손, 가로등 고장, 쓰레기 투기 등 <strong>일상생활에서 발생하는 간단민원</strong>을 간편하게 접수할 수 있습니다</p>
+      </dt>
+      <dd>
+        <ul class="ImgBox01">
+          
+            <li><img src="/webcontent/resrce/1/2026/4/23/ee3072a8-bc43-4d28-929e-529daf5c0da6.jpg"
+                alt="sb1in2_img1.jpg" /></li>
+            
+              <li><img src="/webcontent/resrce/1/2026/4/23/266adb20-ba77-4dbb-a192-1dacbbc8343f.jpg"
+                  alt="sb1in2_img2.jpg" /></li>
+        </ul>
+      </dd>
+    </dl>
+    <div class="sub1-SNS1">
+      <a class="sub1-SNS1-App1" href="https://pf.kakao.com/_SxkxoYxl/chat">
+        <dl>
+          <dt>용인시 SNS 민원 바로가기</dt>
+          
+            <dd>
+              <img src="/webcontent/resrce/1/2026/4/23/3fe64043-47cf-4ffb-9125-9fea9545d0d1.jpg"
+                alt="sb1in2_img3.jpg" />
+            </dd>
+        </dl>
+      </a>
+      <div class="sub1-SNS1-App2">
+        
+          <a href="#" class="QR01"><img src="/webcontent/resrce/1/2026/4/23/da3a49c6-c2ae-4a87-8dd3-53bb7dc9726a.jpg" alt="sb1in2_img4.jpg" /></a>
+          <div>
+            <p class="bg01">용인시</p> 카카오채널 바로가기
+          </div>
+      </div>
+      <div class="sub1-SNS1-App2">
+        <a href="#" class="QR01"><img src="/webcontent/resrce/1/2026/5/29/4a4a26bb-d83a-4905-8328-7e443990f3bc.png" alt="instarQR" /></a>
+        <div>
+          <p class="bg01">용인시</p> 인스타그램 바로가기
+        </div>
+      </div>
+      <div class="sub1-SNS1-App2">
+        <a href="#" class="QR01"><img src="/webcontent/resrce/1/2026/5/29/0d75f2c4-af3b-46e4-b5bd-8fbe793fdcf0.png" alt="facebookQR" /></a>
+        <div>
+          <p class="bg01">용인시</p> 페이스북 바로가기
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+
+
+	
+						
+					</div>
+					<!-- 작업 끝 -->
+				</div>
+				
+				
+
+
+
+
+
+
+
+
+	
+				
+
+
+
+
+
+	
+				<!-- satisfaction -->
+				
+				
+			</div>
+		</div>
+		
+	
+		<footer id="footer-2026" class="footer_2021">
+			<div class="familysite"></div>
+			<div class="footer_body">
+				<ul class="footer_sns">
+					<li><a href="https://ko-kr.facebook.com/yicity/" target="_blank" title="용인시 페이스북 새창열림"><img src="https://www.yongin.go.kr/resources/user/main/img/main/facebook_icon.png" alt="페이스북 아이콘" /></a></li>
+					<li><a href="https://blog.naver.com/govlrodtnr" target="_blank" title="용인시 네이버블로그 새창열림"><img src="https://www.yongin.go.kr/resources/user/main/img/main/naverblog_icon.png" alt="네이버블로그 아이콘" /></a></li>
+					<li><a href="https://www.instagram.com/yongin_stagram/?hl=ko" target="_blank" title="용인시 인스타그램 새창열림"><img src="https://www.yongin.go.kr/resources/user/main/img/main/instagram_icon.png" alt="인스타그램 아이콘" /></a></li>
+					<li><a href="https://www.youtube.com/user/TheYongin" target="_blank" title="용인시 유튜브 새창열림"><img src="https://www.yongin.go.kr/resources/user/main/img/main/youtube_icon.png" alt="유튜브 아이콘" /></a></li>
+					<li><a href="https://story.kakao.com/ch/yongincity" target="_blank" title="용인시 카카오스토리 새창열림"><img src="https://www.yongin.go.kr/resources/user/main/img/main/kakaostory_icon.png" alt="카카오스토리 아이콘" /></a></li>
+				</ul>
+				<!-- footer_sns end -->
+				<ul class="footer_menu">
+					<li><a href="https://www.yongin.go.kr/home/yonginInfo/yonginInfo_11.jsp"><span>개인정보처리방침</span></a></li>
+					<li><a href="https://www.yongin.go.kr/home/yonginInfo/yonginInfo_05.jsp"><span>저작권정책</span></a></li>
+					<!-- <li><a href="https://www.yongin.go.kr/home/yonginInfo/yonginInfo_06.jsp"><span>이메일무단수집거부</span></a></li> -->
+					<li><a href="https://www.yongin.go.kr/home/yiIf/yiIfHall/yiIfHall04.jsp"><span>부서별FAX번호</span></a></li>
+				</ul>
+				<!-- footer_menu end -->
+				<ul class="complaint_center">
+					<li class="callcenter"><strong>민원상담콜센터</strong> (09:00 ~ 18:00)   1577-1122 / 031-6193-2114 (<span class="tooltip-box">유료 <img src="/resources/site/www_2025/images/common/ico-info-gray.png" style="padding-top: 5px; cursor: pointer;" /><div class="tooltip-layer">‘용인시 민원상담콜센터’의 통화요금은 행정기관의 서비스 제공에 대한 수익자 부담원칙에 따라 별도의 정보이용료 없이 일반 통화요금이 부과되며, 휴대전화 이용 시 본인이 가입한 이동통신사의 요금체계에 따릅니다.</div></span>) &nbsp; 
+						<span>※상담시간 외 보이스봇 응대 및 당직실 연결</span>
+					</li>
+					<li class="messagecenter"><strong>휴대전화 문자상담</strong> (09:00 ~ 18:00)  1577-1122</li>
+				</ul>
+				<!-- complaint_center end -->
+				<div class="address">(17019) 경기도 용인시 처인구 중부대로 1199(삼가동) <p class="copy">COPYRIGHT(C) YONGIN CITY. ALL RIGHTS RESERVED.</p></div>
+			</div>
+			<!-- footer_body end -->
+		</footer>
+	</div>
+
+	<style>
+		.tooltip-box {position: relative; display: inline-block; z-index: 1000; /* 부모 기준으로도 충분히 위 */ } 
+		.tooltip-layer { position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #ffffff !important; /* 배경 강제 */ color: #666 !important; /* 글자색 강제 */ padding: 12px 14px !important; border: 1px solid #ccc !important;; border-radius: 6px; width: 260px; font-size: 13px !important; box-shadow: 0 3px 12px rgba(0,0,0,0.25) !important; white-space: normal; line-height: 1.4 !important; display: none; z-index: 999999 !important; /* 최상단 표시 강제 */ opacity: 1 !important; /* 투명도 문제 방지 */ } 
+		.tooltip-box:hover .tooltip-layer { display: block !important; /* hover 시 강제 표시 */ }
+	</style>
+
+</body>
+</html>
