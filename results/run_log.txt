@@ -1,0 +1,175 @@
+[*] K-Gift Hunter v2.1 가동 (오늘: 2026-10-16)
+[*] 수원시: 메뉴에서 게시판 0개 자동 발견
+[*] 성남시: 메뉴에서 게시판 4개 자동 발견
+[-] 의정부시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[*] 안양시: 메뉴에서 게시판 3개 자동 발견
+[*] 부천시: 메뉴에서 게시판 4개 자동 발견
+[*] 광명시: 메뉴에서 게시판 4개 자동 발견
+[-] 평택시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[*] 동두천시: 메뉴에서 게시판 4개 자동 발견
+[*] 안산시: 메뉴에서 게시판 4개 자동 발견
+[*] 고양시: 메뉴에서 게시판 4개 자동 발견
+[*] 과천시: 메뉴에서 게시판 4개 자동 발견
+[*] 구리시: 메뉴에서 게시판 4개 자동 발견
+[*] 남양주시: 메뉴에서 게시판 4개 자동 발견
+[-] 오산시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[-] 시흥시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[*] 군포시: 메뉴에서 게시판 4개 자동 발견
+[-] 의왕시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[-] 하남시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[*] 용인시: 메뉴에서 게시판 4개 자동 발견
+[*] 파주시: 메뉴에서 게시판 4개 자동 발견
+[*] 이천시: 메뉴에서 게시판 4개 자동 발견
+[*] 안성시: 메뉴에서 게시판 0개 자동 발견
+[-] 김포시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[*] 화성시: 메뉴에서 게시판 0개 자동 발견
+[*] 광주시: 메뉴에서 게시판 4개 자동 발견
+[*] 양주시: 메뉴에서 게시판 4개 자동 발견
+[-] 포천시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[-] 여주시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[-] 연천군: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[*] 가평군: 메뉴에서 게시판 0개 자동 발견
+[-] 양평군: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[1/68] 수원시 게시판(bbsCd=1381, 참여형 행사)  <- https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1381
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[2/68] 성남시 행사/강좌/공모  <- https://www.seongnam.go.kr/apply/event.do
+  [-] 목록 접근 실패: HTTP Error 404: 404
+[3/68] 고양시 축제·행사  <- https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1007
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 3개 (키워드 방식)
+[4/68] 용인시 시민참여플랫폼 행사안내  <- https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 8개 (키워드 방식)
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20261014110537682 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20261014105852766 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260923085545332 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260921145618955 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260921145419043 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260914134925881 실패: HTTP Error 500: Internal Server Error
+[5/68] 경기도 뉴스포털  <- https://gnews.gg.go.kr
+  [*] 이벤트 후보 링크 7개 (키워드 방식)
+[6/68] 경기관광공사  <- https://ggtour.or.kr
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[7/68] 성남시 · 행사보기  <- https://www.seongnam.go.kr/pm010201?nowym=
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[8/68] 성남시 · 민원참여  <- https://www.seongnam.go.kr/sn020101
+  [*] 이벤트 후보 링크 7개 (게시판 전체 방식)
+    [-] https://www.seongnam.go.kr/pm02020101/81?curPage=1&sortType=1&cvlcptBizSn=81&srchType=&srchText=불친절 실패: 'ascii' codec can't encode characters in position 74-76: ordinal not in range(128)
+    [-] https://www.seongnam.go.kr/pm02020101/67?curPage=1&sortType=1&cvlcptBizSn=67&srchType=&srchText=공직 실패: 'ascii' codec can't encode characters in position 74-75: ordinal not in range(128)
+    [-] https://www.seongnam.go.kr/pm02020101/69?curPage=1&sortType=1&cvlcptBizSn=69&srchType=&srchText=고액 실패: 'ascii' codec can't encode characters in position 74-75: ordinal not in range(128)
+    [-] https://www.seongnam.go.kr/pm02020101/64?curPage=1&sortType=1&cvlcptBizSn=64&srchType=&srchText=개별공시 실패: 'ascii' codec can't encode characters in position 74-77: ordinal not in range(128)
+    [-] https://www.seongnam.go.kr/pm02020101/78?curPage=1&sortType=1&cvlcptBizSn=78&srchType=&srchText=적극행정 실패: 'ascii' codec can't encode characters in position 74-77: ordinal not in range(128)
+    [-] https://www.seongnam.go.kr/pm02020101/80?curPage=1&sortType=1&cvlcptBizSn=80&srchType=&srchText=친절공무원 실패: 'ascii' codec can't encode characters in position 74-78: ordinal not in range(128)
+[9/68] 성남시 · 제안·참여안내  <- https://www.seongnam.go.kr/sn02032601
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[10/68] 성남시 · 제안·참여안내  <- https://www.seongnam.go.kr/sn0205000
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[11/68] 안양시 · 참여하기  <- https://www.anyang.go.kr/main/popElection.do
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 0개 (키워드 방식)
+[12/68] 안양시 · 참여하기  <- https://www.anyang.go.kr/main/selectQestnarWebList.do?key=64&qestnarGroupNo=1
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[13/68] 안양시 · 참여하기  <- https://www.anyang.go.kr/reserve/index.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[14/68] 부천시 · 부천의축제  <- https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001010001001
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[15/68] 부천시 · 부천국제 만화축제  <- https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001001005
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[16/68] 부천시 · 설문참여  <- https://www.bucheon.go.kr/site/program/svy/list?menuid=148003012003
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[17/68] 부천시 · 참여소통  <- https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148003016001001
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[18/68] 광명시 · 행사ㆍ축제  <- https://www.gm.go.kr/pt/ns/gmFestival/list.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[19/68] 광명시 · 시 주간행사  <- https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2035
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[20/68] 광명시 · 장애인단체 행사일정  <- https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2194
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[21/68] 광명시 · 종목별 가맹단체 및 행사일정  <- https://www.gm.go.kr/pt/user/bbs/BD_selectBbsList.do?q_bbsCode=2361
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[22/68] 동두천시 · 행사·교육  <- https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[23/68] 동두천시 · 행사일정  <- https://www.ddc.go.kr/ddc/selectClturCldrTotalList.do?key=2327
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[24/68] 동두천시 · 시민참여  <- https://www.ddc.go.kr/ddc/contents.do?key=189
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[25/68] 동두천시 · 예산설문조사  <- https://www.ddc.go.kr/ddc/selectQestnarList.do?key=199&qestnarType=%EC%98%88%EC%82%B0%EC%84%A4%EB%AC%B8%EC%A1%B0%EC%82%AC
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[26/68] 안산시 · 화학사고 대피장소 퀴즈 이벤트 알림  <- https://www.ansan.go.kr/www/common/bbs/selectBbsDetail.do?bbs_code=B0214&bbs_seq=1684860
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 8개 (키워드 방식)
+[27/68] 안산시 · 행사/활동  <- https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=C0001253
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[28/68] 안산시 · 시민참여  <- https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=www01628
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[29/68] 안산시 · 통합축제  <- https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=www01723
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[30/68] 고양시 · 설문·이벤트  <- https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[31/68] 고양시 · 행사일정  <- https://www.goyang.go.kr/www/user/eventCldr/BD_selectEventCldrList.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[32/68] 고양시 · 시민참여  <- https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1001
+  [*] 이벤트 후보 링크 1개 (게시판 전체 방식)
+[33/68] 과천시 · 행사일정  <- https://www.gccity.go.kr/portal/contents.do?mId=0301020000
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://www.open.go.kr/com/main/mainView.do 실패: robots.txt 에서 수집을 허용하지 않는 페이지
+[34/68] 과천시 · 설문조사  <- https://www.gccity.go.kr/jumin/poll/list.do?mId=0100000000
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 0개 (키워드 방식)
+[35/68] 과천시 · 주민참여  <- https://www.gccity.go.kr/jumin/main.do
+  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
+[36/68] 과천시 · 주민참여 포털  <- https://www.gccity.go.kr/jumin
+  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
+[37/68] 구리시 · 이벤트 정보  <- https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=59&key=621
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://share.naver.com/web/shareView.nhn?url=https%3a%2f%2fwww.guri.go.kr%2fwww%2fselectBbsNttList.do%3fbbsNo%3d59%26key%3d621&title=%ea%b5%ac%eb%a6%ac%ec%8b%9c+%ea%b5%ac%eb%a6%ac%ec%8b%9c%ec%b2%ad+%ed%99%88%ed%8e%98%ec%9d%b4%ec%a7%80+%26gt%3b+%ec%9d%b4%eb%b2%a4%ed%8a%b8+%ec%a0%95%eb%b3%b4 실패: robots.txt 에서 수집을 허용하지 않는 페이지
+    [-] https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.guri.go.kr%2fwww%2fselectBbsNttList.do%3fbbsNo%3d59%26key%3d621 실패: robots.txt 에서 수집을 허용하지 않는 페이지
+[38/68] 구리시 · 문화행사  <- https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=37&key=381
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://share.naver.com/web/shareView.nhn?url=https%3a%2f%2fwww.guri.go.kr%2fwww%2fselectBbsNttList.do%3fbbsNo%3d37%26key%3d381&title=%ea%b5%ac%eb%a6%ac%ec%8b%9c+%ea%b5%ac%eb%a6%ac%ec%8b%9c%ec%b2%ad+%ed%99%88%ed%8e%98%ec%9d%b4%ec%a7%80+%26gt%3b+%eb%ac%b8%ed%99%94%ed%96%89%ec%82%ac 실패: robots.txt 에서 수집을 허용하지 않는 페이지
+    [-] https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.guri.go.kr%2fwww%2fselectBbsNttList.do%3fbbsNo%3d37%26key%3d381 실패: robots.txt 에서 수집을 허용하지 않는 페이지
+[39/68] 구리시 · 문화행사 더보기  <- https://www.guri.go.kr/sub.do?key=381
+  [-] 목록 접근 실패: HTTP Error 404: Not Found
+[40/68] 구리시 · 시민참여  <- https://www.guri.go.kr/www/contents.do?key=150
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[41/68] 남양주시 · 전국이벤트  <- https://www.nyj.go.kr/www/selectBbsNttList.do?key=2510&bbsNo=73
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[42/68] 남양주시 · 크크낙낙이벤트  <- https://www.nyj.go.kr/www/contents.do?key=4988
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[43/68] 남양주시 · 문화행사  <- https://www.nyj.go.kr/www/selectTnResrceListU.do?key=4691&si1=23&si2=33&so1=SDT
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[44/68] 남양주시 · 문화행사 달력  <- https://www.nyj.go.kr/www/selectTnResrceListUC.do?key=4690&si1=23&si2=33
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[45/68] 군포시 · 교육문화행사포털  <- https://www.gunpo.go.kr/portal/index.do
+  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
+[46/68] 군포시 · 인터넷접수(통합예약 행사/모집)  <- https://www.gunpo.go.kr/portal/webEtcResveList.do?key=1008275&rep=1
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1841 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1821 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1761 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1741 실패: <urlopen error timed out>
+[47/68] 군포시 · 주간행사  <- https://www.gunpo.go.kr/www/selectBbsNttList.do?bbsNo=1003417&key=1008929
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=326908&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=325939&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=325222&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=324689&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+[48/68] 군포시 · 문화행사  <- https://www.gunpo.go.kr/www/selectBbsNttList.do?bbsNo=684&key=3892
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=3892&bbsNo=684&nttNo=324956&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=3892&bbsNo=684&nttNo=324644&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error _ssl.c:993: The handshake operation timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=3892&bbsNo=684&nttNo=323167&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+[49/68] 용인시 · 문화행사/공연  <- https://www.yongin.go.kr/partInfo/cultureArt/BD_selectCultureArtCalList.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[50/68] 용인시 · 시민참여플랫폼  <- https://www.yongin.go.kr/citizen/index.do
