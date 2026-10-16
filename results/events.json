@@ -1,179 +1,9 @@
 {
   "status": "success",
   "version": "2.1",
-  "generated_at": "2026-10-16T08:56:06",
-  "count": 18,
+  "generated_at": "2026-10-16T21:31:52",
+  "count": 4,
   "events": [
-    {
-      "status": "success",
-      "confidence_score": 100,
-      "dedup_hash": "4b938348ae120ad39e70c3006a291270a6743eb3ce81ece1d168a3bd4e38fb3a",
-      "skip_reason": "",
-      "event_data": {
-        "title": "경기도, 10월 12일부터 ‘2026 DMZ OPEN 페스티벌’ 개최",
-        "org_name": "경기도",
-        "category": "참여형 행사",
-        "target_region": "경기도",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-12",
-          "end": "2026-11-29",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "기념품",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202610130902404472C049&s_code=C049&page=1&SchYear=&SchMonth=",
-        "apply_url": "https://gg.go.kr/",
-        "poster_image_url": "http://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202610/202610130924054786020.jpg",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 90,
-      "dedup_hash": "4a93428164ebd5f31ef7308003ad7864e2a26053960ad985c3452ff0132a8d78",
-      "skip_reason": "",
-      "event_data": {
-        "title": "초록으로 잇다, 두 수목원 발도장 꾹! 이벤트 연장 안내",
-        "org_name": "수원시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 수원",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-07-01",
-          "end": "2026-12-20",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "기념품",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.suwon.go.kr/web/board/BD_board.view.do?bbsCd=1381&seq=20260929224258236",
-        "apply_url": "https://www.suwon.go.kr/web/board/BD_board.view.do?bbsCd=1381&seq=20260929224258236",
-        "poster_image_url": "http://www.suwon.go.kr/resources/web/common/images/suwonsymbol.jpg",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 90,
-      "dedup_hash": "6f44f5b1d5237abb23d6bcbe1c39265c2d5fe762d9f9dfa724073e567dac80b7",
-      "skip_reason": "",
-      "event_data": {
-        "title": "설문조사",
-        "org_name": "고양시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 고양",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-13",
-          "end": "2026-10-27",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "지역화폐",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do",
-        "apply_url": "https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do",
-        "poster_image_url": "https://www.goyang.go.kr/resources/www/images/main2026/ht_sns_ic1.png",
-        "abuse_prevention_rule": "부정불량식품",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 90,
-      "dedup_hash": "b0b08952740a16bdde650e5d3945d59b0c16c154de1d40aa4864c0231e39c949",
-      "skip_reason": "",
-      "event_data": {
-        "title": "공개모집접수",
-        "org_name": "고양시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 고양",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-19",
-          "end": "2026-10-26",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "지역화폐",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.goyang.go.kr/www/publicRecruit/BD_selectPublicRecruitList.do",
-        "apply_url": "https://www.goyang.go.kr/www/publicRecruit/BD_selectPublicRecruitList.do",
-        "poster_image_url": "https://www.goyang.go.kr/resources/www/images/main2026/ht_sns_ic1.png",
-        "abuse_prevention_rule": "부정불량식품",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 90,
-      "dedup_hash": "f22a3c65d0c0ec6133eb2e4b4817e4f852f205980785eccc674c7b0290cf8056",
-      "skip_reason": "",
-      "event_data": {
-        "title": "교육문화행사포털",
-        "org_name": "군포시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 군포",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-15",
-          "end": "2026-10-22",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "추첨",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1841",
-        "apply_url": "https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1841",
-        "poster_image_url": "https://www.gunpo.go.kr/common/images/layout/wa_mark.png",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
     {
       "status": "success",
       "confidence_score": 85,
@@ -211,7 +41,7 @@
     {
       "status": "success",
       "confidence_score": 80,
-      "dedup_hash": "3c4410c43ac92b69d59e6ed127f1a413197cafb431c5d112865c6989bbd8c0e5",
+      "dedup_hash": "02f0562b4b02a97373ab41fc857f5fa0c5a0f813b5277ecd5c62f0d2da6b57ea",
       "skip_reason": "",
       "event_data": {
         "title": "빛을 품은 광명시",
@@ -223,7 +53,7 @@
         ],
         "period": {
           "start": "2026-10-16",
-          "end": "2026-10-23",
+          "end": "2026-10-30",
           "active_round": "",
           "next_round": "",
           "total_rounds": ""
@@ -245,7 +75,7 @@
     {
       "status": "success",
       "confidence_score": 80,
-      "dedup_hash": "cc485ef5db954207d2b47a8d34a3110d5ef88c0d9fa44ecae382e4ae6d8ee82b",
+      "dedup_hash": "00ab4bb41ebb5cfc39b3f5ae0c733298bb46fd6b135f25ace072c5a6b9574563",
       "skip_reason": "",
       "event_data": {
         "title": "빛을 품은 광명시",
@@ -256,8 +86,8 @@
           "ALL"
         ],
         "period": {
-          "start": "2026-10-12",
-          "end": "2026-10-19",
+          "start": "2026-10-19",
+          "end": "2026-10-26",
           "active_round": "",
           "next_round": "",
           "total_rounds": ""
@@ -309,341 +139,35 @@
         "abuse_prevention_rule": "",
         "announcement_info": ""
       }
-    },
-    {
-      "status": "success",
-      "confidence_score": 75,
-      "dedup_hash": "8212296d290aac8f3d1237d49ce61b08b01a26b6fb71492ee89e9c3cdfc0435b",
-      "skip_reason": "",
-      "event_data": {
-        "title": "교육문화행사포털",
-        "org_name": "군포시",
-        "category": "참여형 행사",
-        "target_region": "경기도 군포",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-28",
-          "end": "2026-11-28",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "경품 없음(참여형)",
-            "winners_count": 0,
-            "unit_price": 0
-          }
-        ],
-        "source_url": "https://www.gunpo.go.kr/portal/selectCtznEdcList.do?key=1008280",
-        "apply_url": "https://www.gunpo.go.kr/portal/selectCtznEdcList.do?key=1008280",
-        "poster_image_url": "https://www.gunpo.go.kr/common/images/layout/wa_mark.png",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 75,
-      "dedup_hash": "08a3918a812888ef0fb055b11868550ff8a2729c73210b2ba7dbd41b455df3df",
-      "skip_reason": "",
-      "event_data": {
-        "title": "온라인 신청 < 제안·참여 < 시민참여플랫폼",
-        "org_name": "용인시",
-        "category": "설문·퀴즈·투표",
-        "target_region": "경기도 용인",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2023-01-16",
-          "end": "2030-12-31",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "경품 없음(참여형)",
-            "winners_count": 0,
-            "unit_price": 0
-          }
-        ],
-        "source_url": "https://www.yongin.go.kr/citizen/user/onlineReqst/BD_selectOnlineReqstDocList.do",
-        "apply_url": "https://www.yongin.go.kr/citizen/user/onlineReqst/BD_selectOnlineReqstDocList.do",
-        "poster_image_url": "https://www.yongin.go.kr/resources/user_renewal/_common/images/ico-plus@2x.png",
-        "abuse_prevention_rule": "지방보조금 부정수급 신고센터",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 70,
-      "dedup_hash": "0b95128605cefd86321b233adabd83103aed0f37ebbd0106ae786eb2913537ee",
-      "skip_reason": "",
-      "event_data": {
-        "title": "성남시 Seongnam City",
-        "org_name": "성남시",
-        "category": "참여형 행사",
-        "target_region": "경기도 성남",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-01-01",
-          "end": "2026-12-31",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "포인트",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.seongnam.go.kr/pm010201",
-        "apply_url": "https://www.seongnam.go.kr/pm010201",
-        "poster_image_url": "https://www.seongnam.go.kr/humanframe/theme/global/assets/images/common/kakaotalk_thum.png",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 70,
-      "dedup_hash": "5fec4ddb1720c3a6290684ebdbbfadfc32483395dada945625062250b486b4fb",
-      "skip_reason": "",
-      "event_data": {
-        "title": "안양시 통합예약",
-        "org_name": "안양시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 안양",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-11-01",
-          "end": "2026-12-31",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "추첨",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.anyang.go.kr/reserve/selectEduLctreWebList.do?key=1376&searchDiv=1",
-        "apply_url": "https://www.anyang.go.kr/reserve/selectEduLctreWebList.do?key=1376&searchDiv=1",
-        "poster_image_url": "https://www.anyang.go.kr/common/images/program/kogl_open_4.png",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 70,
-      "dedup_hash": "7b95960c0358fc7eaa24586cc213def1593f14e73c23d34ee01a43e580373e61",
-      "skip_reason": "",
-      "event_data": {
-        "title": "안양시 통합예약",
-        "org_name": "안양시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 안양",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-20",
-          "end": "2026-10-21",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "추첨",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.anyang.go.kr/reserve/selectEduLctreWebList.do?key=5032&searchEdcCode=EDC000176",
-        "apply_url": "https://www.anyang.go.kr/reserve/selectEduLctreWebList.do?key=5032&searchEdcCode=EDC000176",
-        "poster_image_url": "https://www.anyang.go.kr/common/images/common/footer_taegeuggi.jpg",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 70,
-      "dedup_hash": "8df3e877b90219ea9f713549eaf8ec12953c61d4049db013c3d6e1abb2f37f37",
-      "skip_reason": "",
-      "event_data": {
-        "title": "1회용품 없는 사회만들기 범시민 서명운동",
-        "org_name": "고양시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 고양",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-01-01",
-          "end": "2026-12-31",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "지역화폐",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.goyang.go.kr/www/user/onlsign/BD_selectQestnar.do?q_sn=15",
-        "apply_url": "https://www.goyang.go.kr/www/user/onlsign/BD_selectQestnar.do?q_sn=15",
-        "poster_image_url": "https://www.goyang.go.kr/resources/www/images/main2026/ht_sns_ic1.png",
-        "abuse_prevention_rule": "부정불량식품",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 70,
-      "dedup_hash": "900652235c9a8ab1ac38fa45e123b59d3893a8db4673b3bc43f9b93527aa6001",
-      "skip_reason": "",
-      "event_data": {
-        "title": "고양특례시 UN 글로벌 AI 허브 유치 서명 운동",
-        "org_name": "고양시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 고양",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-09-03",
-          "end": "2027-09-02",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "지역화폐",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.goyang.go.kr/www/user/onlsign/BD_selectQestnar.do?q_sn=19",
-        "apply_url": "https://www.goyang.go.kr/www/user/onlsign/BD_selectQestnar.do?q_sn=19",
-        "poster_image_url": "https://www.goyang.go.kr/resources/www/images/main2026/ht_sns_ic1.png",
-        "abuse_prevention_rule": "부정불량식품",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 70,
-      "dedup_hash": "af1457805ff0222ab259c9865a75ddff44856c81d92c12f55bb57bee44cd479c",
-      "skip_reason": "",
-      "event_data": {
-        "title": "구리시청 홈페이지",
-        "org_name": "구리시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 구리",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-12",
-          "end": "2026-12-31",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "상품권",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.guri.go.kr/www/selectBbsNttView.do?key=621&bbsNo=59&nttNo=148634&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
-        "apply_url": "https://www.guri.go.kr/www/selectBbsNttView.do?key=621&bbsNo=59&nttNo=148634&searchCtgry=&searchCnd=all&searchKrwd=&integrDeptCode=&pageIndex=1",
-        "poster_image_url": "https://www.guri.go.kr/site/www_2026/images/sub/qr_img.jpg",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
-    },
-    {
-      "status": "success",
-      "confidence_score": 65,
-      "dedup_hash": "b60c2ba444c74ef4070a7da0c874fb6ec356cdea170bde3a15b1c54f568728de",
-      "skip_reason": "",
-      "event_data": {
-        "title": "대표 홈페이지",
-        "org_name": "동두천시",
-        "category": "경품 이벤트",
-        "target_region": "경기도 동두천",
-        "target_age": [
-          "ALL"
-        ],
-        "period": {
-          "start": "2026-10-17",
-          "end": "2026-10-17",
-          "active_round": "",
-          "next_round": "",
-          "total_rounds": ""
-        },
-        "rewards": [
-          {
-            "item_name": "추첨",
-            "unit_price": 0,
-            "winners_count": 0
-          }
-        ],
-        "source_url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=160681&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
-        "apply_url": "https://www.ddc.go.kr/ddc/selectBbsNttView.do?key=105&bbsNo=25&nttNo=160681&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode=",
-        "poster_image_url": "https://www.ddc.go.kr/ddc/대표 이미지 경로",
-        "abuse_prevention_rule": "",
-        "announcement_info": ""
-      }
     }
   ],
-  "confidence_score": 100,
-  "dedup_hash": "4b938348ae120ad39e70c3006a291270a6743eb3ce81ece1d168a3bd4e38fb3a",
+  "confidence_score": 85,
+  "dedup_hash": "c4d5b81e78a2029af15bcc2a0023678c19b4a5b802851935c5f71d0f801f1f2d",
   "event_data": {
-    "title": "경기도, 10월 12일부터 ‘2026 DMZ OPEN 페스티벌’ 개최",
-    "org_name": "경기도",
+    "title": "전국이벤트 - 지역소식 - 남양주소식",
+    "org_name": "남양주시",
     "category": "참여형 행사",
-    "target_region": "경기도",
+    "target_region": "경기도 남양주",
     "target_age": [
       "ALL"
     ],
     "period": {
-      "start": "2026-10-12",
-      "end": "2026-11-29",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
       "active_round": "",
       "next_round": "",
       "total_rounds": ""
     },
     "rewards": [
       {
-        "item_name": "기념품",
-        "unit_price": 0,
-        "winners_count": 0
+        "item_name": "경품 없음(참여형)",
+        "winners_count": 0,
+        "unit_price": 0
       }
     ],
-    "source_url": "https://gnews.gg.go.kr/news/news_detail.do?number=202610130902404472C049&s_code=C049&page=1&SchYear=&SchMonth=",
-    "apply_url": "https://gg.go.kr/",
-    "poster_image_url": "http://gnews.gg.go.kr/OP_UPDATA/UP_DATA/_FILEZ/202610/202610130924054786020.jpg",
+    "source_url": "https://www.nyj.go.kr/www/selectBbsNttView.do?key=2510&bbsNo=73&nttNo=549775&pageUnit=10&pageIndex=1&searchCnd=all",
+    "apply_url": "https://www.nyj.go.kr/vote/mvoteWebList.do?key=1042",
+    "poster_image_url": "https://www.nyj.go.kr/common/images/ci_img_3.png",
     "abuse_prevention_rule": "",
     "announcement_info": ""
   }
