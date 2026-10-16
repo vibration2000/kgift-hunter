@@ -20,7 +20,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -31,7 +31,7 @@ jobs:
       - name: 수집 실행 (Supabase 전송 없음)
         run: |
           mkdir -p results
-          python kgift_hunter.py --no-sync --out results/events.json --report results/hunter_report.txt 2>&1 | tee results/run_log.txt
+          python -u kgift_hunter.py --no-sync --time-budget 1500 --out results/events.json --report results/hunter_report.txt 2>&1 | tee results/run_log.txt
 
       - name: 진단 자료 정리
         if: always()

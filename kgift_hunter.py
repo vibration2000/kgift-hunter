@@ -64,6 +64,7 @@ class Net:
         self._robots = {}
         self._last = 0.0
         self.jar = http.cookiejar.CookieJar()  # 접속 확인(checker) 페이지가 쿠키를 심는 사이트 대응
+        self.fails = Counter()  # 호스트별 연속 접속 실패 횟수 (응답 없는 사이트는 빨리 포기)
 
     def _open(self, req, ctx, timeout):
         op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(self.jar),
@@ -89,7 +90,7 @@ class Net:
             rp = urllib.robotparser.RobotFileParser()
             try:
                 req = urllib.request.Request(base + "/robots.txt", headers={"User-Agent": UA})
-                with urllib.request.urlopen(req, context=self.ctx, timeout=10) as r:
+                with urllib.request.urlopen(req, context=self.ctx, timeout=6) as r:
                     rp.parse(r.read().decode("utf-8", errors="ignore").splitlines())
             except Exception:
                 rp = None  # robots.txt 없음/실패 -> 허용
@@ -98,6 +99,22 @@ class Net:
         return True if rp is None else rp.can_fetch(UA, url)
 
     def get(self, url):
+        host = urllib.parse.urlparse(url).netloc
+        if self.fails[host] >= 2:
+            raise ConnectionError("응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀")
+        try:
+            html = self._get(url)
+            self.fails[host] = 0
+            return html
+        except urllib.error.HTTPError:
+            raise  # 404 등 개별 페이지 오류는 사이트 전체 문제가 아님
+        except PermissionError:
+            raise
+        except Exception:
+            self.fails[host] += 1
+            raise
+
+    def _get(self, url):
         if not self.allowed(url):
             raise PermissionError("robots.txt 에서 수집을 허용하지 않는 페이지")
         wait = self.delay - (time.time() - self._last)
@@ -111,12 +128,12 @@ class Net:
                 hdr["Referer"] = prev
             req = urllib.request.Request(url, headers=hdr)
             try:
-                raw, ctype = self._open(req, self.ctx, 15)
+                raw, ctype = self._open(req, self.ctx, 10)
             except (ssl.SSLError, urllib.error.URLError, ConnectionError) as e:
                 # 일부 공공기관 서버는 구형 TLS 설정이라 기본 연결이 끊김 -> 완화된 설정으로 1회 재시도
                 if "SSL" not in str(e) and not isinstance(e, ssl.SSLError):
                     raise
-                raw, ctype = self._open(req, legacy_ctx(), 20)
+                raw, ctype = self._open(req, legacy_ctx(), 10)
             html = decode_html(raw, ctype)
             nxt = self.client_redirect(html, url)
             if not nxt or nxt == url:
@@ -587,6 +604,7 @@ def main():
     ap.add_argument("--accept-all", action="store_true", help="--list-url 이 행사/이벤트 전용 게시판이면 모든 게시글을 후보로")
     ap.add_argument("--out", default="events.json")
     ap.add_argument("--report", default="hunter_report.txt")
+    ap.add_argument("--time-budget", type=int, default=0, help="전체 제한 시간(초). 넘으면 중단하고 그때까지 결과 저장 (0=무제한)")
     ap.add_argument("--max", type=int, default=8, help="목록 하나당 최대 상세 수집 개수")
     ap.add_argument("--min-score", type=int, default=50, help="이 점수 미만은 제외 (기본 50)")
     ap.add_argument("--keep-ended", action="store_true", help="마감된 이벤트도 포함")
@@ -627,12 +645,17 @@ def main():
             homepages = [h for h in homepages if args.only in h["name"]]
         # 시청 첫 화면 -> 이벤트/행사 게시판 자동 탐색 (한 번 성공한 게시판은 캐시에 기억)
         if not args.no_discover:
+            td0 = time.time()
             for h in homepages:
+                if args.time_budget and time.time() - td0 > args.time_budget * 0.4:
+                    print("[!] 첫 화면 탐색 시간 초과: 나머지 시군은 다음 실행에서 탐색합니다.")
+                    break
                 boards = cache.get(h["url"])
                 if boards:
                     print(f"[*] {h['name']}: 기억해 둔 게시판 {len(boards)}개 사용")
                 else:
                     try:
+                        print(f"[*] {h['name']}: 첫 화면 탐색 중...", flush=True)
                         boards = discover_boards(net, h["url"])
                         print(f"[*] {h['name']}: 메뉴에서 게시판 {len(boards)}개 자동 발견")
                     except Exception as e:
@@ -645,8 +668,15 @@ def main():
                         continue  # 이미 수집 대상에 있는 게시판은 중복 수집하지 않음
                     targets.append({"name": f"{h['name']} · {b['text']}", "org": h.get("org", ""), "list_url": b["url"],
                                     "accept_all": True, "_home": h["url"], "_text": b["text"]})
+        t0 = time.time()
         for i, t in enumerate(targets, 1):
-            print(f"[{i}/{len(targets)}] {t['name']}  <- {t['list_url']}")
+            if args.time_budget and time.time() - t0 > args.time_budget:
+                print(f"[!] 제한 시간({args.time_budget}초) 초과: 남은 {len(targets) - i + 1}개 대상은 건너뜁니다.")
+                for rest in targets[i - 1:]:
+                    rows.append({"name": rest["name"], "url": rest["list_url"], "error": "시간 초과로 건너뜀",
+                                 "candidates": 0, "found": 0, "kept": 0, "reasons": Counter()})
+                break
+            print(f"[{i}/{len(targets)}] {t['name']}  <- {t['list_url']}", flush=True)
             got, log, st, lh = smart_collect(net, t, args.max, today)
             print("\n".join(log))
             for r in got:
