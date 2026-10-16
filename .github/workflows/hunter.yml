@@ -1,0 +1,54 @@
+name: K-Gift Hunter
+
+on:
+  workflow_dispatch:            # 수동 실행 버튼
+  schedule:
+    - cron: '0 21 * * *'        # 매일 한국시간 06:00
+  push:
+    paths:                      # 수집기/대상 목록이 바뀌면 자동 실행
+      - 'kgift_hunter.py'
+      - 'sources_gyeonggi.json'
+      - '.github/workflows/hunter.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hunter
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 수집 실행 (Supabase 전송 없음)
+        run: |
+          mkdir -p results
+          python kgift_hunter.py --no-sync --out results/events.json --report results/hunter_report.txt 2>&1 | tee results/run_log.txt
+
+      - name: 진단 자료 정리
+        if: always()
+        run: |
+          rm -rf results/debug
+          if [ -d debug ]; then mv debug results/debug; fi
+          rm -f hunter_debug.zip
+
+      - name: 결과를 저장소에 저장
+        if: always()
+        run: |
+          git config user.name "kgift-bot"
+          git config user.email "kgift-bot@users.noreply.github.com"
+          git add results
+          if [ -f discovered_boards.json ]; then git add discovered_boards.json; fi
+          if ! git diff --staged --quiet; then
+            git commit -m "results: 자동 수집 결과"
+            git pull --rebase
+            git push
+          fi
