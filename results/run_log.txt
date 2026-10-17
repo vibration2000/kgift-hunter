@@ -1,33 +1,40 @@
-[*] K-Gift Hunter v2.1 가동 (오늘: 2026-10-16)
+[*] K-Gift Hunter v2.1 가동 (오늘: 2026-10-17)
 [*] 수원시: 첫 화면 탐색 중...
-[-] 수원시: 첫 화면 접속 실패 (<urlopen error timed out>)
-[*] 성남시: 기억해 둔 게시판 1개 사용
+[*] 수원시: 메뉴에서 게시판 0개 자동 발견
+[*] 성남시: 첫 화면 탐색 중...
+[*] 성남시: 메뉴에서 게시판 4개 자동 발견
 [*] 의정부시: 첫 화면 탐색 중...
-[-] 의정부시: 첫 화면 접속 실패 (<urlopen error timed out>)
-[*] 안양시: 기억해 둔 게시판 3개 사용
+[*] 의정부시: 메뉴에서 게시판 4개 자동 발견
+[*] 안양시: 첫 화면 탐색 중...
+[*] 안양시: 메뉴에서 게시판 3개 자동 발견
 [*] 부천시: 첫 화면 탐색 중...
-[-] 부천시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[*] 부천시: 메뉴에서 게시판 4개 자동 발견
 [*] 광명시: 기억해 둔 게시판 1개 사용
 [*] 평택시: 첫 화면 탐색 중...
-[-] 평택시: 첫 화면 접속 실패 (<urlopen error timed out>)
-[*] 동두천시: 기억해 둔 게시판 1개 사용
+[-] 평택시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[*] 동두천시: 첫 화면 탐색 중...
+[*] 동두천시: 메뉴에서 게시판 4개 자동 발견
 [*] 안산시: 첫 화면 탐색 중...
-[-] 안산시: 첫 화면 접속 실패 (<urlopen error timed out>)
-[*] 고양시: 기억해 둔 게시판 1개 사용
+[*] 안산시: 메뉴에서 게시판 4개 자동 발견
+[*] 고양시: 첫 화면 탐색 중...
+[*] 고양시: 메뉴에서 게시판 4개 자동 발견
 [*] 과천시: 첫 화면 탐색 중...
 [*] 과천시: 메뉴에서 게시판 4개 자동 발견
-[*] 구리시: 기억해 둔 게시판 1개 사용
+[*] 구리시: 첫 화면 탐색 중...
+[*] 구리시: 메뉴에서 게시판 4개 자동 발견
 [*] 남양주시: 기억해 둔 게시판 1개 사용
 [*] 오산시: 첫 화면 탐색 중...
-[-] 오산시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[-] 오산시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
 [*] 시흥시: 첫 화면 탐색 중...
 [-] 시흥시: 첫 화면 접속 실패 (<urlopen error timed out>)
-[*] 군포시: 기억해 둔 게시판 2개 사용
+[*] 군포시: 첫 화면 탐색 중...
+[*] 군포시: 메뉴에서 게시판 4개 자동 발견
 [*] 의왕시: 첫 화면 탐색 중...
-[-] 의왕시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[-] 의왕시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
 [*] 하남시: 첫 화면 탐색 중...
-[-] 하남시: 첫 화면 접속 실패 (<urlopen error timed out>)
-[*] 용인시: 기억해 둔 게시판 1개 사용
+[-] 하남시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[*] 용인시: 첫 화면 탐색 중...
+[*] 용인시: 메뉴에서 게시판 4개 자동 발견
 [*] 파주시: 첫 화면 탐색 중...
 [*] 파주시: 메뉴에서 게시판 4개 자동 발견
 [*] 이천시: 첫 화면 탐색 중...
@@ -39,148 +46,304 @@
 [*] 화성시: 첫 화면 탐색 중...
 [*] 화성시: 메뉴에서 게시판 0개 자동 발견
 [*] 광주시: 첫 화면 탐색 중...
-[-] 광주시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[*] 광주시: 메뉴에서 게시판 4개 자동 발견
 [*] 양주시: 첫 화면 탐색 중...
-[-] 양주시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[*] 양주시: 메뉴에서 게시판 4개 자동 발견
 [*] 포천시: 첫 화면 탐색 중...
-[-] 포천시: 첫 화면 접속 실패 (<urlopen error timed out>)
+[-] 포천시: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
 [*] 여주시: 첫 화면 탐색 중...
 [-] 여주시: 첫 화면 접속 실패 (<urlopen error timed out>)
 [*] 연천군: 첫 화면 탐색 중...
 [-] 연천군: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
 [*] 가평군: 첫 화면 탐색 중...
-[-] 가평군: 첫 화면 접속 실패 (<urlopen error timed out>)
+[*] 가평군: 메뉴에서 게시판 0개 자동 발견
 [*] 양평군: 첫 화면 탐색 중...
-[-] 양평군: 첫 화면 접속 실패 (<urlopen error timed out>)
-[1/30] 수원시 게시판(bbsCd=1381, 참여형 행사)  <- https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1381
-  [-] 목록 접근 실패: <urlopen error timed out>
-[2/30] 성남시 행사/강좌/공모  <- https://www.seongnam.go.kr/apply/event.do
-  [-] 목록 접근 실패: <urlopen error timed out>
-[3/30] 고양시 축제·행사  <- https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1007
-  [-] 목록 접근 실패: <urlopen error timed out>
-[4/30] 용인시 시민참여플랫폼 행사안내  <- https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294
-  [-] 목록 접근 실패: <urlopen error timed out>
-[5/30] 경기도 뉴스포털  <- https://gnews.gg.go.kr
-  [-] 목록 접근 실패: <urlopen error timed out>
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (0건)
-[6/30] 경기관광공사  <- https://ggtour.or.kr
-  [*] 이벤트 후보 링크 1개 (키워드 방식)
-[7/30] 성남시 · 행사보기  <- https://www.seongnam.go.kr/pm010201?nowym=
-  [-] 목록 접근 실패: <urlopen error timed out>
-[8/30] 안양시 · 참여하기  <- https://www.anyang.go.kr/main/popElection.do
-  [-] 목록 접근 실패: <urlopen error timed out>
-[9/30] 안양시 · 참여하기  <- https://www.anyang.go.kr/main/selectQestnarWebList.do?key=64&qestnarGroupNo=1
-  [-] 목록 접근 실패: <urlopen error timed out>
-[10/30] 안양시 · 참여하기  <- https://www.anyang.go.kr/reserve/index.do
-  [-] 목록 접근 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (0건)
-[11/30] 광명시 · 행사ㆍ축제  <- https://www.gm.go.kr/pt/ns/gmFestival/list.do
+[-] 양평군: 첫 화면 접속 실패 (robots.txt 에서 수집을 허용하지 않는 페이지)
+[1/66] 수원시 게시판(bbsCd=1381, 참여형 행사)  <- https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1381
   [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
-[12/30] 동두천시 · 행사·교육  <- https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105
-  [-] 목록 접근 실패: <urlopen error timed out>
-[13/30] 고양시 · 설문·이벤트  <- https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do
-  [-] 목록 접근 실패: <urlopen error timed out>
-[14/30] 과천시 · 행사일정  <- https://www.gccity.go.kr/portal/contents.do?mId=0301020000
-  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
-    [-] http://eminwon.gccity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: <urlopen error timed out>
-[15/30] 과천시 · 설문조사  <- https://www.gccity.go.kr/jumin/poll/list.do?mId=0100000000
+[2/66] 성남시 행사/강좌/공모  <- https://www.seongnam.go.kr/apply/event.do
+  [-] 목록 접근 실패: HTTP Error 404: 404
+[3/66] 고양시 축제·행사  <- https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1007
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 3개 (키워드 방식)
+[4/66] 용인시 시민참여플랫폼 행사안내  <- https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 8개 (키워드 방식)
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20261014110537682 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20261014105852766 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260923085545332 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260921145618955 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260921145419043 실패: HTTP Error 500: Internal Server Error
+    [-] https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20260914134925881 실패: HTTP Error 500: Internal Server Error
+[5/66] 경기도 뉴스포털  <- https://gnews.gg.go.kr
+  [*] 이벤트 후보 링크 7개 (키워드 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (4건)
+[6/66] 경기관광공사  <- https://ggtour.or.kr
+  [*] 이벤트 후보 링크 1개 (키워드 방식)
+[7/66] 성남시 · 행사보기  <- https://www.seongnam.go.kr/pm010201?nowym=
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[8/66] 성남시 · 민원참여  <- https://www.seongnam.go.kr/sn020101
+  [*] 이벤트 후보 링크 7개 (게시판 전체 방식)
+[9/66] 성남시 · 제안·참여안내  <- https://www.seongnam.go.kr/sn02032601
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[10/66] 성남시 · 제안·참여안내  <- https://www.seongnam.go.kr/sn0205000
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 2개 (키워드 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (5건)
+[11/66] 의정부시 · 문화, 한눈에 달력(행사·축제정보)  <- https://www.ui4u.go.kr/portal/contents.do?mId=0301170000
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+[12/66] 의정부시 · 행사축제 더보기  <- https://www.ui4u.go.kr/portal/eventNoti/list.do?mId=0301170100
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+[13/66] 의정부시 · 행사정보  <- https://www.ui4u.go.kr/tour/contents.do?mId=0602000000
+  [*] 이벤트 후보 링크 2개 (게시판 전체 방식)
+[14/66] 의정부시 · 시민참여  <- https://www.ui4u.go.kr/portal/contents.do?mId=0400000000
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+[15/66] 안양시 · 참여하기  <- https://www.anyang.go.kr/main/popElection.do
   [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
   [~] 후보 0개 -> 반대 방식으로 자동 재시도
   [*] 이벤트 후보 링크 0개 (키워드 방식)
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (2건)
-[16/30] 과천시 · 주민참여  <- https://www.gccity.go.kr/jumin/main.do
-  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
-[17/30] 과천시 · 주민참여 포털  <- https://www.gccity.go.kr/jumin
-  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
-[18/30] 구리시 · 이벤트 정보  <- https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=59&key=621
-  [-] 목록 접근 실패: <urlopen error timed out>
-[19/30] 남양주시 · 전국이벤트  <- https://www.nyj.go.kr/www/selectBbsNttList.do?key=2510&bbsNo=73
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (5건)
+[16/66] 안양시 · 참여하기  <- https://www.anyang.go.kr/main/selectQestnarWebList.do?key=64&qestnarGroupNo=1
   [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
-[20/30] 군포시 · 교육문화행사포털  <- https://www.gunpo.go.kr/portal/index.do
-  [-] 목록 접근 실패: <urlopen error timed out>
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (4건)
-[21/30] 군포시 · 인터넷접수(통합예약 행사/모집)  <- https://www.gunpo.go.kr/portal/webEtcResveList.do?key=1008275&rep=1
-  [-] 목록 접근 실패: <urlopen error timed out>
-[22/30] 용인시 · 시민참여플랫폼  <- https://www.yongin.go.kr/citizen/index.do
-  [-] 목록 접근 실패: <urlopen error timed out>
-[23/30] 파주시 · 체육행사신청  <- https://www.paju.go.kr/www/paticipation/paticipation_04/paticipation_04_11.jsp
-  [*] 이벤트 후보 링크 6개 (게시판 전체 방식)
-    [-] https://eminwon.paju.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: <urlopen error timed out>
-[24/30] 파주시 · 이달의문화행사  <- http://tour.paju.go.kr/user/link/cultural/BD_index.do
+    [-] https://www.anyang.go.kr/main/selectBbsNttList.do?bbsNo=8&key=3415 실패: The read operation timed out
+[17/66] 안양시 · 참여하기  <- https://www.anyang.go.kr/reserve/index.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[18/66] 부천시 · 부천의축제  <- https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001010001001
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[19/66] 부천시 · 부천국제 만화축제  <- https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148006001001005
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[20/66] 부천시 · 설문참여  <- https://www.bucheon.go.kr/site/program/svy/list?menuid=148003012003
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (7건)
+[21/66] 부천시 · 참여소통  <- https://www.bucheon.go.kr/site/homepage/menu/viewMenu?menuid=148003016001001
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[22/66] 광명시 · 행사ㆍ축제  <- https://www.gm.go.kr/pt/ns/gmFestival/list.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[23/66] 동두천시 · 행사·교육  <- https://www.ddc.go.kr/ddc/selectBbsNttList.do?bbsNo=25&key=105
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[24/66] 동두천시 · 행사일정  <- https://www.ddc.go.kr/ddc/selectClturCldrTotalList.do?key=2327
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[25/66] 동두천시 · 시민참여  <- https://www.ddc.go.kr/ddc/contents.do?key=189
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (9건)
+[26/66] 동두천시 · 예산설문조사  <- https://www.ddc.go.kr/ddc/selectQestnarList.do?key=199&qestnarType=%EC%98%88%EC%82%B0%EC%84%A4%EB%AC%B8%EC%A1%B0%EC%82%AC
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[27/66] 안산시 · 화학사고 대피장소 퀴즈 이벤트 알림  <- https://www.ansan.go.kr/www/common/bbs/selectBbsDetail.do?bbs_code=B0214&bbs_seq=1684860
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 8개 (키워드 방식)
+[28/66] 안산시 · 행사/활동  <- https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=C0001253
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[29/66] 안산시 · 시민참여  <- https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=www01628
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[30/66] 안산시 · 통합축제  <- https://www.ansan.go.kr/www/common/cntnts/selectContents.do?cntnts_id=www01723
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (9건)
+[31/66] 고양시 · 설문·이벤트  <- https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[32/66] 고양시 · 행사일정  <- https://www.goyang.go.kr/www/user/eventCldr/BD_selectEventCldrList.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[33/66] 고양시 · 시민참여  <- https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1001
   [*] 이벤트 후보 링크 1개 (게시판 전체 방식)
-[25/30] 파주시 · 설문조사  <- https://www.paju.go.kr/user/poll/BD_pollList.do
+[34/66] 과천시 · 행사일정  <- https://www.gccity.go.kr/portal/contents.do?mId=0301020000
+  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
+[35/66] 과천시 · 설문조사  <- https://www.gccity.go.kr/jumin/poll/list.do?mId=0100000000
+  [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
+  [~] 후보 0개 -> 반대 방식으로 자동 재시도
+  [*] 이벤트 후보 링크 0개 (키워드 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (11건)
+[36/66] 과천시 · 주민참여  <- https://www.gccity.go.kr/jumin/main.do
+  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
+[37/66] 과천시 · 주민참여 포털  <- https://www.gccity.go.kr/jumin
+  [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
+[38/66] 구리시 · 이벤트 정보  <- https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=59&key=621
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[39/66] 구리시 · 문화행사  <- https://www.guri.go.kr/www/selectBbsNttList.do?bbsNo=37&key=381
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[40/66] 구리시 · 문화행사 더보기  <- https://www.guri.go.kr/sub.do?key=381
+  [-] 목록 접근 실패: HTTP Error 404: Not Found
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (12건)
+[41/66] 구리시 · 시민참여  <- https://www.guri.go.kr/www/contents.do?key=150
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[42/66] 남양주시 · 전국이벤트  <- https://www.nyj.go.kr/www/selectBbsNttList.do?key=2510&bbsNo=73
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[43/66] 군포시 · 교육문화행사포털  <- https://www.gunpo.go.kr/portal/index.do
+  [*] 이벤트 후보 링크 2개 (게시판 전체 방식)
+[44/66] 군포시 · 인터넷접수(통합예약 행사/모집)  <- https://www.gunpo.go.kr/portal/webEtcResveList.do?key=1008275&rep=1
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1821 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1781 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1741 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/portal/webEtcResveView.do?key=1008275&searchEtcResveNo=1681 실패: <urlopen error timed out>
+[45/66] 군포시 · 주간행사  <- https://www.gunpo.go.kr/www/selectBbsNttList.do?bbsNo=1003417&key=1008929
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=327135&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error _ssl.c:993: The handshake operation timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=326908&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: <urlopen error timed out>
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=326660&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=325939&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=325222&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=324963&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://www.gunpo.go.kr/www/selectBbsNttView.do?key=1008929&bbsNo=1003417&nttNo=324689&searchCtgry=&searchCnd=all&searchKrwd=&pageIndex=1&integrDeptCode= 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (16건)
+[46/66] 군포시 · 문화행사  <- https://www.gunpo.go.kr/www/selectBbsNttList.do?bbsNo=684&key=3892
+  [-] 목록 접근 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[47/66] 용인시 · 문화행사/공연  <- https://www.yongin.go.kr/partInfo/cultureArt/BD_selectCultureArtCalList.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[48/66] 용인시 · 시민참여플랫폼  <- https://www.yongin.go.kr/citizen/index.do
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[49/66] 용인시 · 설문조사  <- https://www.yongin.go.kr/citizen/qestnar/BD_selectQestnarList.do?q_domnCode=114
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[50/66] 용인시 · 제안·참여  <- https://www.yongin.go.kr/citizen/proposal/BD_selectProposalReq.do?mCode=PC002
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (17건)
+[51/66] 파주시 · 체육행사신청  <- https://www.paju.go.kr/www/paticipation/paticipation_04/paticipation_04_11.jsp
+  [*] 이벤트 후보 링크 6개 (게시판 전체 방식)
+[52/66] 파주시 · 이달의문화행사  <- http://tour.paju.go.kr/user/link/cultural/BD_index.do
+  [*] 이벤트 후보 링크 1개 (게시판 전체 방식)
+[53/66] 파주시 · 설문조사  <- https://www.paju.go.kr/user/poll/BD_pollList.do
   [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
     [-] https://eminwon.paju.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: <urlopen error timed out>
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (4건)
-[26/30] 파주시 · 소통·참여  <- https://www.paju.go.kr/user/board/BD_board.list.do?bbsCd=1001
+[54/66] 파주시 · 소통·참여  <- https://www.paju.go.kr/user/board/BD_board.list.do?bbsCd=1001
   [-] 목록 접근 실패: robots.txt 에서 수집을 허용하지 않는 페이지
-[27/30] 이천시 · 행사/축제  <- https://www.icheon.go.kr/portal/contents.do?mid=0401030000
+[55/66] 이천시 · 행사/축제  <- https://www.icheon.go.kr/portal/contents.do?mid=0401030000
   [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
   [~] 후보 0개 -> 반대 방식으로 자동 재시도
   [*] 이벤트 후보 링크 8개 (키워드 방식)
-[28/30] 이천시 · 행사 예산 공개  <- https://www.icheon.go.kr/portal/contents.do?mid=0304120000
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (17건)
+[56/66] 이천시 · 행사 예산 공개  <- https://www.icheon.go.kr/portal/contents.do?mid=0304120000
   [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
   [~] 후보 0개 -> 반대 방식으로 자동 재시도
   [*] 이벤트 후보 링크 8개 (키워드 방식)
-[29/30] 이천시 · 주간행사  <- https://www.icheon.go.kr/portal/contents.do?mid=0401020000
+[57/66] 이천시 · 주간행사  <- https://www.icheon.go.kr/portal/contents.do?mid=0401020000
   [*] 이벤트 후보 링크 0개 (게시판 전체 방식)
   [~] 후보 0개 -> 반대 방식으로 자동 재시도
   [*] 이벤트 후보 링크 8개 (키워드 방식)
-[30/30] 이천시 · 이천도자기축제  <- https://www.icheon.go.kr/icheonceramic/main.do
+[58/66] 이천시 · 이천도자기축제  <- https://www.icheon.go.kr/icheonceramic/main.do
   [*] 이벤트 후보 링크 3개 (게시판 전체 방식)
     [-] https://www.icheon.go.kr/portal/board/post/list.do?bcIdx=502&mid=0403000000 실패: robots.txt 에서 수집을 허용하지 않는 페이지
     [-] https://www.icheon.go.kr/portal/board/post/list.do?bcIdx=505&mid=0406000000 실패: robots.txt 에서 수집을 허용하지 않는 페이지
     [-] https://www.icheon.go.kr/portal/board/post/list.do?bcIdx=503&mid=0404000000 실패: robots.txt 에서 수집을 허용하지 않는 페이지
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (4건)
+[59/66] 광주시 · 문화ㆍ행사소식  <- https://www.gjcity.go.kr/portal/contents.do?mId=0201030000
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListAdmm&menu_id=CAFOPNWebAdmmOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListAdmm&context=NTIS 실패: timed out
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/emwp/cns/action/EmwpCnslWebAction.do?method=selectCnslWebPage&menu_id=EMWPCnslWebInqL&jndinm=EmwpCnslWebEJB&methodnm=selectCnslWebPage&context=NTIS 실패: timed out
+    [-] https://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[60/66] 광주시 · 주간행사  <- https://www.gjcity.go.kr/portal/contents.do?mId=0201050000
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListAdmm&menu_id=CAFOPNWebAdmmOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListAdmm&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/emwp/cns/action/EmwpCnslWebAction.do?method=selectCnslWebPage&menu_id=EMWPCnslWebInqL&jndinm=EmwpCnslWebEJB&methodnm=selectCnslWebPage&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (17건)
+[61/66] 광주시 · 시민참여  <- https://www.gjcity.go.kr/portal/contents.do?mId=0500000000
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListAdmm&menu_id=CAFOPNWebAdmmOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListAdmm&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/emwp/cns/action/EmwpCnslWebAction.do?method=selectCnslWebPage&menu_id=EMWPCnslWebInqL&jndinm=EmwpCnslWebEJB&methodnm=selectCnslWebPage&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[62/66] 광주시 · 시민참여제도  <- https://www.gjcity.go.kr/portal/contents.do?mId=0501000000
+  [*] 이벤트 후보 링크 4개 (게시판 전체 방식)
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListAdmm&menu_id=CAFOPNWebAdmmOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListAdmm&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] http://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/emwp/cns/action/EmwpCnslWebAction.do?method=selectCnslWebPage&menu_id=EMWPCnslWebInqL&jndinm=EmwpCnslWebEJB&methodnm=selectCnslWebPage&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    [-] https://eminwon.gjcity.go.kr/emwp/gov/mogaha/ntis/web/caf/mwwd/action/CafMwWdOpenAction.do?method=selectListMwOpn&menu_id=CAFOPNWebMwOpenL&jndinm=CafMwWdOpenEJB&methodnm=selectListMwOpn&context=NTIS 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+[63/66] 양주시 · 행사소식  <- https://www.yangju.go.kr/www/selectBbsNttList.do?bbsNo=14&key=203
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[64/66] 양주시 · 양주시 문화예술행사 소식 알리미  <- https://www.yangju.go.kr/www/selectCovidSmsWebList.do?key=4051&smsGubun=EVENT
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[65/66] 양주시 · 교육정보 및 교육행사소식 알리미  <- https://www.yangju.go.kr/www/selectCovidSmsWebList.do?key=4310&smsGubun=EDUEVENT
+  [*] 이벤트 후보 링크 8개 (게시판 전체 방식)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (19건)
+[!] 제한 시간(1300초) 초과: 남은 1개 대상은 건너뜁니다.
 
-[*] 수집 62건 -> 사용 4건 / 제외 58건
+[*] 수집 330건 -> 사용 19건 / 제외 311건
+    + [100점·참여형 행사] 경기도, 10월 12일부터 ‘2026 DMZ OPEN 페스티벌’ 개최 | 2026-10-12~2026-11-29 | 경기도
+    + [90점·경품 이벤트] 초록으로 잇다, 두 수목원 발도장 꾹! 이벤트 연장 안내 | 2026-07-01~2026-12-20 | 경기도 수원
+    + [90점·경품 이벤트] 설문조사 | 2026-10-13~2026-10-27 | 경기도 고양
+    + [90점·경품 이벤트] 공개모집접수 | 2026-10-19~2026-10-26 | 경기도 고양
+    + [90점·경품 이벤트] 교육문화행사포털 | 2026-10-15~2026-10-22 | 경기도 군포
     + [85점·참여형 행사] 전국이벤트 - 지역소식 - 남양주소식 | 2026-10-31~2026-10-31 | 경기도 남양주
-    + [80점·참여형 행사] 빛을 품은 광명시 | 2026-10-16~2026-10-30 | 경기도 광명
+    + [80점·참여형 행사] 빛을 품은 광명시 | 2026-10-16~2026-10-31 | 경기도 광명
     + [80점·참여형 행사] 빛을 품은 광명시 | 2026-10-19~2026-10-26 | 경기도 광명
     + [80점·참여형 행사] 전국이벤트 - 지역소식 - 남양주소식 | 2026-10-24~2026-10-24 | 경기도 남양주
+    + [75점·참여형 행사] 교육문화행사포털 | 2026-10-28~2026-11-28 | 경기도 군포
+    + [75점·설문·퀴즈·투표] 온라인 신청 < 제안·참여 < 시민참여플랫폼 | 2023-01-16~2030-12-31 | 경기도 용인
+    + [75점·설문·퀴즈·투표] 행사소식 | 2026-10-23~2026-10-25 | 경기도 양주
+    + [75점·참여형 행사] 행사소식 | 2026-09-29~2026-10-17 | 경기도 양주
+    + [70점·참여형 행사] 성남시 Seongnam City | 2026-10-17~2027-12-31 | 경기도 성남
+    + [70점·경품 이벤트] 안양시 통합예약 | 2026-11-01~2026-12-31 | 경기도 안양
+    + [70점·경품 이벤트] 안양시 통합예약 | 2026-10-20~2026-10-21 | 경기도 안양
+    + [70점·경품 이벤트] 1회용품 없는 사회만들기 범시민 서명운동 | 2026-01-01~2026-12-31 | 경기도 고양
+    + [70점·경품 이벤트] 고양특례시 UN 글로벌 AI 허브 유치 서명 운동 | 2026-09-03~2027-09-02 | 경기도 고양
+    + [70점·경품 이벤트] 구리시청 홈페이지 | 2026-10-12~2026-12-31 | 경기도 구리
 
 [*] 사이트별 진단
-    ERR 수원시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 의정부시 (첫 화면)                    후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 부천시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 평택시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 안산시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 오산시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
+    ERR 평택시 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+    ERR 오산시 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
     ERR 시흥시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 의왕시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 하남시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
+    ERR 의왕시 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+    ERR 하남시 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
     ERR 안성시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
     ERR 김포시 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
-    ERR 광주시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 양주시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 포천시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
+    ERR 포천시 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
     ERR 여주시 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
     ERR 연천군 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
-    ERR 가평군 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 양평군 (첫 화면)                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 수원시 게시판(bbsCd=1381, 참여형 행사)    후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 성남시 행사/강좌/공모                   후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 고양시 축제·행사                      후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 용인시 시민참여플랫폼 행사안내               후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 경기도 뉴스포털                       후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
+    ERR 양평군 (첫 화면)                     후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
+    OK  수원시 게시판(bbsCd=1381, 참여형 행사)    후보  8 -> 사용  1 | 정상
+    ERR 성남시 행사/강좌/공모                   후보  0 -> 사용  0 | 주소 오류 또는 접근 거부(HTTP Error 404: 404). 게시판 주소를 확인해야 합니다.
+    OK  고양시 축제·행사                      후보  3 -> 사용  2 | 정상
+    ERR 용인시 시민참여플랫폼 행사안내               후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 2건). 샘플은 debug/용인시_시민참여플랫폼_행사안내_de
+    OK  경기도 뉴스포털                       후보  7 -> 사용  1 | 정상
     ERR 경기관광공사                         후보  1 -> 사용  0 | 후보는 있었으나 전부 제외됨 (마감됨 1건). 샘플은 debug/경기관광공사_detail.html.
-    ERR 성남시 · 행사보기                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 안양시 · 참여하기                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 안양시 · 참여하기                     후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 안양시 · 참여하기                     후보  0 -> 사용  0 | 접속 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    OK  성남시 · 행사보기                     후보  2 -> 사용  1 | 정상
+    ERR 성남시 · 민원참여                     후보  7 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건). 샘플은 debug/성남시_민원참여_detail.htm
+    ERR 성남시 · 제안·참여안내                  후보  2 -> 사용  0 | 후보는 있었으나 전부 제외됨 (중복 2건, 기간 확인 불가 2건). 샘플은 debug/성남시_제안_참여안내_
+    ERR 성남시 · 제안·참여안내                  후보  2 -> 사용  0 | 후보는 있었으나 전부 제외됨 (중복 2건, 기간 확인 불가 2건). 샘플은 debug/성남시_제안_참여안내_
+    ERR 의정부시 · 문화, 한눈에 달력(행사·축제정보)     후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건, 신뢰도 낮음(40) 1건). 샘플은 debug/의정부시
+    ERR 의정부시 · 행사축제 더보기                후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건, 신뢰도 낮음(40) 1건). 샘플은 debug/의정부시
+    ERR 의정부시 · 행사정보                    후보  2 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 2건). 샘플은 debug/의정부시_행사정보_detail.ht
+    ERR 의정부시 · 시민참여                    후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건, 신뢰도 낮음(40) 1건). 샘플은 debug/의정부시
+    OK  안양시 · 참여하기                     후보  0 -> 사용  2 | 이벤트 링크를 못 찾음. 페이지를 debug/안양시_참여하기_list.html 에 저장했습니다 (구조 확인 
+    OK  안양시 · 참여하기                     후보  8 -> 사용  2 | 정상
+    OK  안양시 · 참여하기                     후보  8 -> 사용  2 | 정상
+    ERR 부천시 · 부천의축제                    후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_부천의축제_detail.ht
+    ERR 부천시 · 부천국제 만화축제                후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_부천국제_만화축제_detai
+    ERR 부천시 · 설문참여                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_설문참여_detail.htm
+    ERR 부천시 · 참여소통                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/부천시_참여소통_detail.htm
     OK  광명시 · 행사ㆍ축제                    후보  8 -> 사용  2 | 정상
-    ERR 동두천시 · 행사·교육                   후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 고양시 · 설문·이벤트                   후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 과천시 · 행사일정                     후보  3 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 2건). 샘플은 debug/과천시_행사일정_detail.htm
+    ERR 동두천시 · 행사·교육                   후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 신뢰도 낮음(40) 1건). 샘플은 debug/동두천시
+    ERR 동두천시 · 행사일정                    후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/동두천시_행사일정_detail.ht
+    ERR 동두천시 · 시민참여                    후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/동두천시_시민참여_detail.ht
+    ERR 동두천시 · 예산설문조사                  후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/동두천시_예산설문조사_detail.
+    ERR 안산시 · 화학사고 대피장소 퀴즈 이벤트 알림      후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 마감됨 1건). 샘플은 debug/안산시_화학사고_대피
+    ERR 안산시 · 행사/활동                    후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/안산시_행사_활동_detail.ht
+    ERR 안산시 · 시민참여                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/안산시_시민참여_detail.htm
+    ERR 안산시 · 통합축제                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/안산시_통합축제_detail.htm
+    OK  고양시 · 설문·이벤트                   후보  8 -> 사용  2 | 정상
+    ERR 고양시 · 행사일정                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 5건, 중복 3건). 샘플은 debug/고양시_행사일정_det
+    ERR 고양시 · 시민참여                     후보  1 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 1건). 샘플은 debug/고양시_시민참여_detail.htm
+    ERR 과천시 · 행사일정                     후보  3 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건). 샘플은 debug/과천시_행사일정_detail.htm
     ERR 과천시 · 설문조사                     후보  0 -> 사용  0 | 이벤트 링크를 못 찾음. 페이지를 debug/과천시_설문조사_list.html 에 저장했습니다 (구조 확인 
     ERR 과천시 · 주민참여                     후보  3 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건). 샘플은 debug/과천시_주민참여_detail.htm
     ERR 과천시 · 주민참여 포털                  후보  3 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 3건). 샘플은 debug/과천시_주민참여_포털_detail.
-    ERR 구리시 · 이벤트 정보                   후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
+    OK  구리시 · 이벤트 정보                   후보  8 -> 사용  1 | 정상
+    ERR 구리시 · 문화행사                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건, 마감됨 2건). 샘플은 debug/구리시_문화행사_de
+    ERR 구리시 · 문화행사 더보기                 후보  0 -> 사용  0 | 주소 오류 또는 접근 거부(HTTP Error 404: Not Found). 게시판 주소를 확인해야 합니다.
+    ERR 구리시 · 시민참여                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건, 신뢰도 낮음(40) 2건). 샘플은 debug/구리시_
     OK  남양주시 · 전국이벤트                   후보  8 -> 사용  2 | 정상
-    ERR 군포시 · 교육문화행사포털                 후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 군포시 · 인터넷접수(통합예약 행사/모집)        후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 용인시 · 시민참여플랫폼                  후보  0 -> 사용  0 | 접속 실패: <urlopen error timed out>
-    ERR 파주시 · 체육행사신청                   후보  6 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 5건). 샘플은 debug/파주시_체육행사신청_detail.h
+    OK  군포시 · 교육문화행사포털                 후보  2 -> 사용  1 | 정상
+    OK  군포시 · 인터넷접수(통합예약 행사/모집)        후보  8 -> 사용  1 | 정상
+    ERR 군포시 · 주간행사                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (신뢰도 낮음(40) 1건). 샘플은 debug/군포시_주간행사_detail.h
+    ERR 군포시 · 문화행사                     후보  0 -> 사용  0 | 접속 실패: 응답 없음: 같은 사이트에서 연속 접속 실패로 건너뜀
+    ERR 용인시 · 문화행사/공연                  후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 마감됨 1건). 샘플은 debug/용인시_문화행사_공연
+    OK  용인시 · 시민참여플랫폼                  후보  8 -> 사용  1 | 정상
+    ERR 용인시 · 설문조사                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 중복 1건). 샘플은 debug/용인시_설문조사_det
+    ERR 용인시 · 제안·참여                    후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 7건, 중복 1건). 샘플은 debug/용인시_제안_참여_de
+    ERR 파주시 · 체육행사신청                   후보  6 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 6건). 샘플은 debug/파주시_체육행사신청_detail.h
     ERR 파주시 · 이달의문화행사                  후보  1 -> 사용  0 | 후보는 있었으나 전부 제외됨 (신뢰도 낮음(40) 1건). 샘플은 debug/파주시_이달의문화행사_detai
     ERR 파주시 · 설문조사                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 5건, 마감됨 2건). 샘플은 debug/파주시_설문조사_de
     ERR 파주시 · 소통·참여                    후보  0 -> 사용  0 | robots.txt 가 자동 수집을 허용하지 않아 제외했습니다 (정책 준수).
@@ -188,8 +351,16 @@
     ERR 이천시 · 행사 예산 공개                 후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 4건, 마감됨 4건). 샘플은 debug/이천시_행사_예산_공
     ERR 이천시 · 주간행사                     후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 4건, 마감됨 4건). 샘플은 debug/이천시_주간행사_de
     ERR 이천시 · 이천도자기축제                  후보  3 -> 사용  0 | 후보는 있었으나 전부 제외됨 (원인 불명). 샘플은 debug 폴더.
+    ERR 광주시 · 문화ㆍ행사소식                  후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 1건). 샘플은 debug/광주시_문화_행사소식_detail.
+    ERR 광주시 · 주간행사                     후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 1건). 샘플은 debug/광주시_주간행사_detail.htm
+    ERR 광주시 · 시민참여                     후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 1건). 샘플은 debug/광주시_시민참여_detail.htm
+    ERR 광주시 · 시민참여제도                   후보  4 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 1건). 샘플은 debug/광주시_시민참여제도_detail.h
+    OK  양주시 · 행사소식                     후보  8 -> 사용  2 | 정상
+    ERR 양주시 · 양주시 문화예술행사 소식 알리미        후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/양주시_양주시_문화예술행사_소식_알
+    ERR 양주시 · 교육정보 및 교육행사소식 알리미        후보  8 -> 사용  0 | 후보는 있었으나 전부 제외됨 (기간 확인 불가 8건). 샘플은 debug/양주시_교육정보_및_교육행사소식_알
+    ERR 양주시 · 청소년문화행사                  후보  0 -> 사용  0 | 접속 실패: 시간 초과로 건너뜀
 [*] 진단 리포트 저장: /home/runner/work/kgift-hunte/kgift-hunte/results/hunter_report.txt
-[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (4건)
+[*] 로컬 JSON 저장 완료: /home/runner/work/kgift-hunte/kgift-hunte/results/events.json (19건)
 [*] 진단 자료 묶음: /home/runner/work/kgift-hunte/kgift-hunte/hunter_debug.zip  <- 문제가 있으면 이 파일 하나만 보내 주세요
 
 [+] 완료!

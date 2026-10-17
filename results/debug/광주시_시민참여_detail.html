@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>광주시교통정보센터</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="광주시교통정보센터">
+    <meta name="keywords" content="광주시교통정보센터">
+<meta name="naver-site-verification" content="a62acfc55ac5443f4cf58d19d372d31c142a2b54"/>
+    <link rel="shortcut icon" href="./favicon.ico">
+	<link rel="icon" href="./favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./css/lib/jquery.bxslider.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/commonForBase.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/m_style.css">
+	
+	<script src="./js/lib/jquery-1.12.4.min.js"></script>	
+	<script src="./js/lib/jquery.vticker.min.js"></script> 
+
+    <script src="./js/comm/common.js"></script>
+    <script src="./js/main.js"></script>
+    
+    <script type="text/javascript">
+    	var devType = 'W';
+   	</script>
+</head>
+    
+<body>
+    <div class="wrap">
+    
+        
+<div class="headbox">
+	<header>
+		<a href="#container" id="mainskip" title="본문 바로가기" class="mainskip" tabindex="0">본문 바로가기</a>
+		<h1><a href="index.view" alt="광주시 교통정보센터" title="광주시교통정보"></a></h1>
+		<button class="menubtn" title="메뉴">메뉴</button>
+	    <nav>
+	    	<ul>
+	    		<li class="menu">
+	    			<a href="traffic.view" title="교통정보">교통정보</a>
+	    			<ul class="submenu">
+	    				<li><a href="trafficPara.view?menuType=trmenu1" title="소통정보">소통정보</a></li>
+	    			    <li><a href="trafficPara.view?menuType=trmenu2" title="CCTV">CCTV</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu3" title="스마트교차로">스마트교차로</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu4" title="VMS">VMS</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu5" title="돌발정보">돌발정보</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu6" title="주차정보">주차정보</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu8" title="PIS">PIS</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu7" title="지하철정보">지하철정보</a></li>
+                        <li><a href="trafficPara.view?menuType=trmenu9" title="과속단속">과속단속</a></li>
+	    			</ul>
+	    		</li>
+	    		<li class="menu">
+	    			<a href="taxi1.view" title=" ">이음택시</a>
+	    			<ul class="submenu">
+	    				<li><a href="taxi1.view" title="이용방법">이용방법</a></li>
+	    				<li><a href="taxi2.view" title="운행마을">운행마을</a></li>
+	    			</ul>
+	    		</li> 
+	    		<li class="menu">
+	    			<a href="board.view" title="공지사항">공지사항</a>
+	    		</li>
+	    		<li class="menu">
+	    			<a href="statistics.view" title="교통통계">교통통계</a>
+	    		</li>
+	    		  <li class="menu">
+	    			<a href="introduce.view" title="센터소개">센터소개</a>
+	    			<ul class="submenu">
+	    				<li><a href="introduce.view" title="센터소개">센터소개</a></li>
+	    			  <li><a href="business_promotion.view" title="홍보영상">홍보영상</a></li>
+	    			</ul>
+	    		</li>
+	    		<li class="menu">
+	    			<a href="location.view" title="위치안내">위치안내</a>
+	    		</li>
+	    		
+	    	</ul>
+	    </nav>
+	    <div class="weatherbox weather1"> <!-- 맑음: weather1 , 구름많음및구름: weather2 , 흐림: weather3 , 비: weather4 , 눈: weather5 -->
+	    	<p class="txt"></p>
+	    	<p class="temperature"></p>
+	    </div>
+	</header>
+</div>
+
+        
+       
+        
+        <div class="mainconten1" id="container">
+        	<div class="maintraffic">
+        		<div class="maintraffic_top">
+	        		<article class="leftbox">
+	        			<h3>실시간 돌발 및 지정체 소통정보</h3>
+	        			<ul class="maintab">
+	        				<li><button title="선택됨" name="지체/정체구간" class="click"><img src="./images/main_arrow.png" alt="">지체/정체구간</button></li>
+	        				<li><button title="돌발상황 " name="돌발상황"><img src="./images/main_arrow.png" alt="">돌발상황</button></li> <!-- 선택 한 버튼 title=""에 '선택됨' 넣어주세요-->
+	        			</ul>
+	        			<!-- 지체/정체구간 -->
+	        			<section class="maintabcon">
+	        				<h4>지체/정체구간</h4>
+	        				<div id="tiredList" class="accbox" >
+	        					<ul class="maintrafficListset">
+	        					
+		        					<!-- <li style="margin: 0px; padding: 0px; height: 79px;">
+										<p class="accicon yellow">지체</p>
+										<p class="acctxt">
+										<span>[성남이천로] <strong>0 km/h</strong></span>
+										<span>직리IC동측 → 직리IC서측</span>
+										</p>
+									</li>
+									
+									<li style="margin: 0px; padding: 0px; height: 79px;">
+										<p class="accicon yellow">지체</p>
+										<p class="acctxt">
+										<span>[성남이천로] <strong>0 km/h</strong></span>
+										<span>직리IC동측 → 직리IC서측</span>
+										</p>
+								</li>
+								
+								<li style="margin: 0px; padding: 0px; height: 79px;">
+										<p class="accicon yellow">지체</p>
+										<p class="acctxt">
+										<span>[성남이천로] <strong>0 km/h</strong></span>
+										<span>직리IC동측 → 직리IC서측</span>
+										</p>
+								</li>
+								
+								<li style="margin: 0px; padding: 0px; height: 79px;">
+										<p class="accicon yellow">지체</p>
+										<p class="acctxt">
+										<span>[성남이천로] <strong>0 km/h</strong></span>
+										<span>직리IC동측 → 직리IC서측</span>
+										</p>
+								</li>
+								
+								<li style="margin: 0px; padding: 0px; height: 79px;">
+										<p class="accicon yellow">지체</p>
+										<p class="acctxt">
+										<span>[성남이천로] <strong>0 km/h</strong></span>
+										<span>직리IC동측 → 직리IC서측</span>
+										</p>
+								</li>
+		        					
+		        				<li style="margin: 0px; padding: 0px; height: 79px;">
+										<p class="accicon yellow">지체</p>
+										<p class="acctxt">
+										<span>[성남이천로] <strong>0 km/h</strong></span>
+										<span>직리IC동측 → 직리IC서측</span>
+										</p>
+								</li>	 -->
+	        					
+	        					
+	        					
+	            				</ul>
+	        				</div>
+	        					<ul class="btnset">
+	        						<li class="btndown"><button id="btn_tiredDown" title="이전">이전</button></li>
+                                	<li class="btnplay"><button id="btn_tiredPlay" title="재생">재생</button></li>  <!-- 재생버튼 클릭 시 .btnstop (정지)로 변경 -->
+                               	    <li class="btnup"><button id="btn_tiredUp" title="다음">다음</button></li>
+	        					</ul>
+	        			</section>
+	        			<!-- ./ 돌발상황 -->
+	        			<section class="maintabcon maintabcon1">
+	        				<h4>돌발상황</h4>
+	        				<div class="accbox" id="incdList">
+	        					<ul>
+	        					
+	        					<!-- <li>
+								  <a href="trafficPara.view?incdId=I31109170601&amp;menuType=trmenu5" title="[사고]회덕교 → 회덕교">
+								    <p class="accicon acc2">사고</p>
+									<p class="acctxt">
+										<span class="roadname">[행정타운로] <strong>회덕교 → 회덕교 </strong></span>
+	            						<span>2023-11-09 17:05</span>
+									</p>
+								   </a>
+							   </li>
+							   
+							   <li>
+								  <a href="trafficPara.view?incdId=I31109170601&amp;menuType=trmenu5" title="[사고]회덕교 → 회덕교">
+								    <p class="accicon acc2">사고</p>
+									<p class="acctxt">
+										<span class="roadname">[행정타운로] <strong>회덕교 → 회덕교 </strong></span>
+	            						<span>2023-11-09 17:05</span>
+									</p>
+								   </a>
+							   </li>
+	        					 -->
+	        					
+	        					</ul>
+	        					<a href="trafficPara.view?menuType=trmenu5" title="돌발정보 더보기" class="more">돌발정보 더보기</a>
+	        				</div>
+	        			</section>
+	        		</article>
+	        			
+	        		<article class="rightbox">
+	        			<h3>교통정보 바로가기</h3>
+	        			<a href="traffic.view" class="maingo maingo1" tabindex="0" title="소통정보"> 
+	        				
+	        				<span>광주시의 실시간 소통<br>정보를 안내해 드립니다.</span>
+	        				<img src="./images/main_1.png" alt="">
+	        			</a>        			
+	        			<a href="trafficPara.view?menuType=trmenu2" class="maingo maingo2" tabindex="0" title="실시간 CCTV"> 
+	        				
+	        				<span>교통상황을 CCTV 영상으로<br>보실 수 있습니다.</span>
+	        				<img src="./images/main_3.png" alt=""> 
+	        			</a>	
+	        			<a href="mdrt.view" class="maingo maingo3" tabindex="0" title="수요응답형 버스">
+	        			
+	        				<span>광역콜버스<br>(M-DRT)</span>
+	        				<img src="./images/main_2.png" alt="">
+	        			</a>
+	        			<a href="taxi1.view" class="maingo maingo4" tabindex="0" title="이음택시">
+	        			
+	        				<span>마을과 대중교통 사이를<br>편리하게 이동하세요.</span>
+	        				<img src="./images/main_4.png" alt="">
+	        			</a>
+	        			
+	        		</article>
+        		</div>
+        		<article class="bottombox">
+        			<h3>교통정보 즐겨찾기</h3>
+        			<div class="bookmark">
+        				<ul>
+        					<li class="mark1"><a href="https://map.naver.com/v5/directions/-/-/-/transit?c=13,0,0,0,dh" title="네이버길찾기 새창열기" target="_blank">네이버길찾기</a></li>
+        					<li class="mark2"><a href="https://map.kakao.com" title="카카오 길찾기 새창열기" target="_blank">카카오길찾기</a></li>
+        					<li class="mark3"><a href="trafficPara.view?menuType=trmenu4" title="도로전광판">도로전광판</a></li>
+        					<li class="mark4"><a href="https://www.gbis.go.kr/gbis2014/schBus.action?mapTabCd=1" title="경기도버스 새창열기" target="_blank">경기도버스</a></li>
+        					<li class="mark5"><a href="http://www.seoulmetro.co.kr/kr/cyberStation.do" title="지하철노선도 새창열기" target="_blank">지하철노선도</a></li>
+        					<li class="mark6"><a href="https://www.nlic.go.kr/nlic/front.action" title="국가물류통합정보센터 새창열기" target="_blank" style="letter-spacing: -2px; font-size:14px;">국가물류통합정보센터</a></li>
+        					<li class="mark7"><a href="http://www.gwangjutr.co.kr/" title="광주터미널 새창열림" target="_blank">광주터미널</a></li>
+        				</ul>
+        			</div>
+        		</article>
+        	</div>
+        </div>
+        <div class="mainconten2">
+	        <article>
+	        	<h2>공지사항 & 소식</h2>
+	        	<a href="board.view" title="공지사항 페이지로 이동" class="more">전체보기</a>	
+	        	<div id="main_noti" class="mainboardbox">
+	        		 <ul>
+	        		</ul> 
+	        	</div>
+	        </article>
+		</div>
+
+        
+<footer>
+	<address>경기광주시 중앙로 197-1</address>
+	COPYRIGHT © GWANGJU CITY. ALL RIGHTS RESERVED.
+	 <a href="./images/web_aut.pdf" target="_blank" title="pdf 새창열림" class="wamark">
+	 	<img src="./images/mark.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)">
+	 </a> 
+</footer>
+        
+        
+       
+   </div>
+   
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0, user-scalable=yes" />
+<meta name="robots" content="noindex, nofollow" />
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<title>수원특례시</title>
+</head>
+<body>
+<script src="/tracer/jquery.min.js"></script>
+		<script src="/tracer/tracerapi.js"></script>
+<script id="tracerApiTemplate" type="text/template">
+<style>
+#waitPage{display:none;position:fixed;top:0;left:0;width:100%;width:100vw;width:100dvw;height:100%;height:100vh;height:100dvh;z-index:9999;}
+#waitBackground{position:fixed;top:0;left:0;width:100%;width:100vw;width:100dvw;height:100%;height:100vh;height:100dvh;background-color:rgba(0,0,0,0.4);z-index:9990;}
+.login-containerT{max-width:none;width:560px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;}
+.login-containerT,
+.login-containerT .row,
+.login-containerT .col-md-12,
+.login-containerT .tracer-title h3,
+.login-containerT .hpanel{margin:0;padding:0;}
+.login-containerT .hpanel{background:#d0dcea;padding:16px;}
+.login-containerT .panel-bodyT{text-align:center;border:0 none;border-radius:0;}
+.login-containerT .row{display:none;position:relative;}
+.login-containerT .mobile-size{border:4px solid #033074;width:100%;height:auto;overflow:hidden;box-sizing:border-box;}
+.login-containerT .col-md-12{width:100%;padding:16px;background:#fff;border:8px solid #d0dcea;box-sizing:border-box;}
+.login-containerT .main_logo{position:absolute;right:24px;top:12px;}
+.login-containerT .main_logo img{width:90px;height:auto;margin-top:20px;}
+.login-containerT .tracer-title{margin:20px 0;}
+.login-containerT .tracer-title h3{font-weight:bold;font-size:22px;color:#033074;letter-spacing:-0.04em;text-align:center;}
+.login-containerT .sub_text{letter-spacing:-0.04em;font-weight:600;font-size:1.0em;color:#1e1e1e;}
+.login-containerT .copyright{text-align:right;padding:16px 10px 6px;font-size:10px;opacity:0.8;}
+#isWaitPage .sub_text{font-size:0.8em;padding:0 20px 0 20px;}
+#boxHeadLine{background:#4486d4;width:100%;height:4px;}
+#wait_value{color:#1e1e1e;font-weight:bold;font-size:1.2em;margin:0 0 20px 0;}
+#wait_value .wait_cnt{font-size:22px;color:red;}
+#loading3{display:flex;width:50%;justify-content:space-between;margin:30px auto;}
+#loading3 > div{width:8px;height:40px;margin-right:7px;background-color:#033074;border-radius:3px;-webkit-animation:strechdelay 1.5s ease-in-out infinite;animation:strechdelay 1.5s ease-in-out infinite;}
+#loading3 .line2{-webkit-animation-delay:-1.4s;animation-delay:-1.4s;}
+#loading3 .line3{-webkit-animation-delay:-1.3s;animation-delay:-1.3s;}
+#loading3 .line4{-webkit-animation-delay:-1.2s;animation-delay:-1.2s;}
+#loading3 .line5{-webkit-animation-delay:-1.1s;animation-delay:-1.1s;}
+#loading3 .line6{-webkit-animation-delay:-1.0s;animation-delay:-1.0s;}
+#loading3 .line7{-webkit-animation-delay:-0.9s;animation-delay:-0.9s;}
+#loading3 .line8{-webkit-animation-delay:-0.8s;animation-delay:-0.8s;}
+#loading3 .line9{-webkit-animation-delay:-0.7s;animation-delay:-0.7s;}
+#loading3 .line10{-webkit-animation-delay:-0.6s;animation-delay:-0.6s;}
+#loading3 .line11{-webkit-animation-delay:-0.5s;animation-delay:-0.5s;}
+#loading3 .line12{-webkit-animation-delay:-0.4s;animation-delay:-0.4s;}
+#loading3 .line13{-webkit-animation-delay:-0.3s;animation-delay:-0.3s;}
+#loading3 .line14{-webkit-animation-delay:-0.2s;animation-delay:-0.2s;}
+#loading3 .line15{-webkit-animation-delay:-0.1s;animation-delay:-0.1s;}
+#loading3 .line16{-webkit-animation-delay:-0.0s;animation-delay:-0.0s;}
+
+@keyframes strechdelay{
+	0%,
+	50%,
+	100%{
+		transform:scaleY(.7);
+	}
+	20%{
+		transform:scaleY(1);
+		background-color:#2d69c2;
+	}
+}
+
+@-webkit-keyframes strechdelay{
+	0%,
+	50%,
+	100%{
+		-webkit-transform:scaleY(.7);
+	}
+	20%{
+		-webkit-transform:scaleY(1);
+		background-color:#72a5f5;
+	}
+}
+
+@media (max-width :420px) {
+	.login-containerT{width:100%;}
+	.login-containerT .mobile-size{width:90%;margin:0 auto;}
+	.login-containerT .tracer-title h3{font-size:20px;}
+	.login-containerT .sub_text{font-size:0.8em;}
+	.login-containerT .main_logo{right:50%;transform:translate(50%);}
+	.login-containerT .main_logo img{width:110px;height:auto;}
+	.login-containerT .main_logo + .tracer-title{margin-top:52px;} 
+	#loading3{width:70%;}
+}
+</style>
+</script>
+<script>
+function showRealPage(){
+	$("#waitPage").css("display","none");
+}
+
+function showWaitPage(type){
+	$("#waitPage").css("display","block");
+	$("#isWaitPage").css("display","none");
+	$("#isRejectPage").css("display","none");
+	$("#isNotUse").css("display","none");
+	
+	if ( type == 'W' ){
+		$("#isWaitPage").css("display","block");
+	} else if ( type == 'NE' ){
+		$("#isNotUse").css("display","block");
+	} else if ( type == 'R' ){
+		$("#isRejectPage").css("display","block");
+	}
+}
+
+function checkInAPI(){
+	var host = "www.suwon.go.kr";
+	var port = "80";
+	var pageUrl = "/index.do" || document.location.pathname;	// 현재 페이지 정보
+	pageUrl = tracerPageUrlReplace(pageUrl);
+	var ip = "134.33.77.20";	// 클라이언트 IP
+	var loginId = "134.33.77.20";	// 클라이언트 IP 또는 로그인 ID
+
+	callTracerApiInput(host, ip, loginId, port, pageUrl, this);
+}
+
+function checkOutAPI(){
+	var host = "www.suwon.go.kr";
+	var port = "80";
+	var pageUrl = "/index.do" || document.location.pathname;	// 현재 페이지 정보
+	pageUrl = tracerPageUrlReplace(pageUrl);
+	var ip = "134.33.77.20";	// 클라이언트 IP
+	var loginId = "134.33.77.20";	// 클라이언트 IP 또는 로그인 ID
+
+	callTracerApiOutput(host, ip, loginId, port, pageUrl, this);
+}
+
+function callBackTracer(){
+    
+		document.location.replace('/index.do');
+	
+}
+
+function tracerPageUrlReplace(url){
+    if(url != null && url != ''){
+        url = url.replace(/(http|https)(:\/\/)(.*?)(\/)/g, '/');
+    }
+    return url;
+}
+
+function checkCntData(){
+	var host = this_host;
+	var ip =  this_ip;
+	var loginId = this_loginId;
+	var port = this_port;
+	var pageUrl = this_pageUrl;
+	var sendThis = this_sendThis;
+
+	callTracerApiInputData(host, ip, loginId, port, pageUrl, sendThis);
+
+	var waitCnt = this_waitCnt;
+	
+	if ( waitCnt == "0" || waitCnt == "E"){
+		showRealPage();
+		callBackTracer();
+	} else{
+		var $el = $("#wait_value");
+		var waitCnt = this_waitCnt;
+		if ( $.isNumeric(waitCnt) ){
+			$el.html("고객님의 대기순번은 <span class=\"wait_cnt\">"+comma(Math.floor(waitCnt))+"</span> 명입니다.");
+		} else{
+			// alert("AAA"+opener.this_waitCnt+"AAA");
+		}
+	}
+
+}
+
+playAlert = setInterval(function(){
+	if ( this_isWait == "T" ){
+		checkCntData();
+	}
+}, 1000);
+
+$(document).ready(function(){
+	var $el = $("#wait_value");
+	$el.html("고객님의 대기순번을 확인중입니다.");
+	//checkCntData();
+});
+
+function comma(num){
+	var len, point, str;
+
+	num = num + "";
+	point = num.length % 3 ;
+	len = num.length;
+
+	str = num.substring(0, point);
+	while (point < len){
+		if (str != "") str += ",";
+		str += num.substring(point, point + 3);
+		point += 3; 
+	} 
+
+	return str;
+}
+
+$(document).ready(function(){
+	$('head').append($('#tracerApiTemplate').html());
+	$('#tracerApiTemplate').remove();
+	checkInAPI();
+});
+</script>
+<div id="waitPage">
+	<div class="login-containerT">
+	    <div class="row" id="isWaitPage">
+		<div class="mobile-size">
+		    <div class="col-md-12">
+				<!-- <div class="main_logo"><img src="/tracer/logo2.png" alt="wellconn" /></div> -->
+				<div class="tracer-title">
+				    <h3>서비스 접근 대기 중입니다.</h3>
+				</div>
+				<div id="loading3">
+				    <div class="line1"></div><div class="line2"></div><div class="line3"></div><div class="line4"></div>
+				    <div class="line5"></div><div class="line6"></div><div class="line7"></div><div class="line8"></div>
+				    <div class="line9"></div><div class="line10"></div><div class="line11"></div><div class="line12"></div>
+				    <div class="line13"></div><div class="line14"></div><div class="line15"></div><div class="line16"></div>
+				</div>
+				<div class="hpanel">
+				    <div class="panel-bodyT">
+					<div id="wait_value"></div>
+					<div class="sub_text">현재 접속 사용자가 많아 대기중이며,<br />잠시만 기다리시면 자동 접속됩니다.</div>
+				    </div>
+				</div>
+				<!-- <div class="copyright">TRACER - Copyright 2018-2020  WELLCONN Corp.</div> -->
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="row" id="isRejectPage">
+		<div class="mobile-size">
+		    <div class="col-md-12">
+				<!-- <div class="main_logo"><img src="/tracer/logo2.png" alt="wellconn" /></div> -->
+				<div class="tracer-title">
+				    <h3>서비스 접속이 차단 되었습니다.</h3>
+				</div>
+				<div class="hpanel">
+				    <div class="panel-bodyT">
+					<div id="wait_value2"></div>
+					<div class="sub_text">현재 접속하신 아이피에서는<br />접속이 불가능합니다.</div>
+				    </div>
+				</div>
+				<!-- <div class="copyright">TRACER - Copyright 2018-2020  WELLCONN Corp.</div> -->
+		    </div>
+		</div>
+	    </div>
+
+	    <div class="row" id="isNotUse">
+		<div class="mobile-size">
+		    <div class="col-md-12">
+				<!-- <div class="main_logo"><img src="/tracer/logo2.png" alt="wellconn" /></div> -->
+				<div class="tracer-title">
+				    <h3>서비스 접속이 불가합니다.</h3>
+				</div>
+				<div class="hpanel">
+				    <div class="panel-bodyT">
+					<div id="wait_value2"></div>
+					<div class="sub_text">접속량이 많아 접속이 불가능합니다.<br /> 잠시 후 다시 접속해주세요</div>
+				    </div>
+				</div>
+				<!-- <div class="copyright">TRACER - Copyright 2018-2020  WELLCONN Corp.</div> -->
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div id="waitBackground"></div>
+</div>
+
+</body>
+</html>
+
+
