@@ -1,0 +1,32 @@
+name: Test Municipal Sites Connectivity (Geo-blocking Check)
+
+on:
+  workflow_dispatch: # GitHub 웹 UI에서 [Run workflow] 버튼으로 즉시 실행 가능
+  push:
+    paths:
+      - 'test_gh_connectivity.py'
+      - '.github/workflows/test_connectivity.yml'
+
+jobs:
+  check-connectivity:
+    name: Overseas IP Connectivity Test (GitHub Runner)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check Runner Public IP
+        run: |
+          echo "=== GitHub Actions Runner Public IP Information ==="
+          curl -s https://ipinfo.io/json || curl -s https://ifconfig.me
+          echo ""
+
+      - name: Run Municipal Connectivity & Geo-blocking Test
+        run: |
+          python -X utf8 test_gh_connectivity.py
