@@ -1,55 +1,50 @@
-name: K-Gift Hunter
+name: K-Gift Hunter Automation (24/7 Free Live Sync)
 
 on:
-  workflow_dispatch:            # 수동 실행 버튼
+  workflow_dispatch: # GitHub 웹 UI에서 [Run workflow] 버튼으로 즉시 실행 가능
   schedule:
-    - cron: '0 21 * * *'        # 매일 한국시간 06:00
+    # 6시간마다 매일 자동 실행 (UTC 00, 06, 12, 18시 -> 한국시간 09, 15, 21, 03시)
+    - cron: '0 0,6,12,18 * * *'
   push:
-    paths:                      # 수집기/대상 목록이 바뀌면 자동 실행
+    paths:
       - 'kgift_hunter.py'
+      - 'kgift_checker.py'
       - 'sources_gyeonggi.json'
       - '.github/workflows/hunter.yml'
 
-permissions:
-  contents: write
-
-concurrency:
-  group: hunter
-  cancel-in-progress: true
-
 jobs:
-  run:
+  hunt-and-verify:
+    name: Crawl, Free OCR, K-Checker Verify & Supabase Sync
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+
+    permissions:
+      contents: write # events.json 업데이트 커밋/푸시 권한
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
 
-      - name: 수집 실행 (Supabase 전송 없음)
+      - name: Install Free Tesseract OCR (Korean & English)
         run: |
-          mkdir -p results
-          timeout 1700 python -u kgift_hunter.py --no-sync --time-budget 1300 --out results/events.json --report results/hunter_report.txt 2>&1 | tee results/run_log.txt
+          echo "=== 100% 무료 Tesseract 한글 OCR 패키지 설치 ==="
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-kor
+          pip install --quiet pytesseract pillow
 
-      - name: 진단 자료 정리
-        if: always()
+      - name: Run K-Gift Hunter with Free OCR & Supabase Sync
         run: |
-          rm -rf results/debug
-          if [ -d debug ]; then mv debug results/debug; fi
-          rm -f hunter_debug.zip
+          echo "=== K-Gift Hunter 실시간 수집 및 K-Checker 무결성 검증 ==="
+          python -X utf8 kgift_hunter.py --ocr
 
-      - name: 결과를 저장소에 저장
-        if: always()
+      - name: Commit and Push Updated Results
         run: |
-          git config user.name "kgift-bot"
-          git config user.email "kgift-bot@users.noreply.github.com"
-          git add results
-          if [ -f discovered_boards.json ]; then git add discovered_boards.json; fi
-          if git diff --staged --quiet; then
-            echo "변경 없음"
-          else
-            git commit -m "results: 자동 수집 결과"
-            git push || (git pull --rebase && git push)
-          fi
+          git config --local user.email "action@github.com"
+          git config --local user.name "K-Gift Bot"
+          git add events.json events_review.json log.txt period_debug.txt
+          git diff-index --quiet HEAD || git commit -m "auto: 실시간 이벤트 수집 및 K-Checker 검증 완료 [skip ci]"
+          git push || echo "No changes to commit"
