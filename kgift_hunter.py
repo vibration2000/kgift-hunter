@@ -573,9 +573,40 @@ def _evidence(text: str, start: int, end: int, pad_before: int = 40, pad_after: 
     return re.sub(r"\s+", " ", text[max(0, start - pad_before): end + pad_after]).strip()
 
 
+def _norm_title(t: str) -> str:
+    """같은 행사가 '...공모' / '...' 처럼 제목만 조금 달라도 같은 해시가 되도록 정리"""
+    t = re.sub(r'[\s\[\]\(\)<>「」『』"\'·\-_:]+', '', t or '')
+    for _ in range(3):
+        t = re.sub(r'(공모전|공모|안내|접수|모집|이벤트|개최)$', '', t)
+    return t
+
+
 def parse_rewards(text: str) -> list:
     """본문(또는 포스터에서 옮겨 적은 글)에서 경품을 찾는다. 금액(원)·인원(명)이 모두 글자로 있고,
     '증정/지급/추첨/시상' 같은 지급 표현이 근처에 있을 때만 인정한다. 각 경품에 근거 문장(evidence)을 붙인다."""
+    rewards = []
+    # 0. "최우수상(1명) : 최대 상금 300만원" 처럼 인원이 금액보다 앞에 오는 시상 표기 (상 이름 + 자기 인원 + 자기 금액을 한 묶음으로)
+    pat0 = re.compile(
+        r'(최우수상|우수상|장려상|특별상|대상|금상|은상|동상|입선)\s*[\(\[]\s*(\d[\d,]*)\s*(명|인|팀|점)\s*[\)\]]'
+        r'[^0-9]{0,15}?(\d[\d,]*)\s*(만|천)?\s*원')
+    seen0 = set()
+    for m in pat0.finditer(text):
+        name, cnt, _cu, amt, unit = m.groups()
+        if name in seen0:
+            continue
+        mult = 10000 if unit == "만" else (1000 if unit == "천" else 1)
+        amount = int(amt.replace(",", "")) * mult
+        count = int(cnt.replace(",", ""))
+        ev_txt = _evidence(text, m.start(), m.end())
+        if not any(g in ev_txt for g in GIVE_WORDS):
+            ev_txt = _evidence(text, max(0, m.start() - 80), m.end() + 80)
+            if not any(g in ev_txt for g in GIVE_WORDS):
+                continue
+        if amount > 0 and 0 < count < 50000:
+            seen0.add(name)
+            rewards.append({"item_name": name, "unit_price": amount, "winners_count": count, "evidence": ev_txt})
+    if len(rewards) >= 2:
+        return rewards[:3]
     rewards = []
     # 1. 구체적 상품명/시상 + 금액/인원
     prize_kws = "상품권|기프티콘|쿠폰|커피|치킨|지역화폐|굿즈|기념품|선물|상금|시상금|대상|최우수상|우수상|장려상|특별상|금상|은상|동상|입선"
@@ -931,7 +962,7 @@ def extract_event(html: str, source_url: str, link_title: str = "", org_hint: st
     if apply_url != source_url:
         score += 5
 
-    dedup = hashlib.sha256(f"{org}:{final_title}:{start_date}:{end_date}".encode("utf-8")).hexdigest()
+    dedup = hashlib.sha256(f"{org}:{_norm_title(final_title)}:{start_date}:{end_date}".encode("utf-8")).hexdigest()
 
     return {
         "status": "success",
@@ -1269,8 +1300,11 @@ def main():
 
         for it in items:
             h = it["dedup_hash"]
-            if h not in seen_hashes:
+            d0 = it["event_data"]
+            h2 = (d0.get("org_name"), _norm_title(d0.get("title", "")))
+            if h not in seen_hashes and h2 not in seen_hashes:
                 seen_hashes.add(h)
+                seen_hashes.add(h2)
                 all_collected.append(it)
 
     print("\n" + "=" * 60)
