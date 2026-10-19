@@ -29,11 +29,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Free Tesseract OCR (Korean & English)
+      - name: Install Free Tesseract OCR (Korean & English) & Poppler
         run: |
-          echo "=== 100% 무료 Tesseract 한글 OCR 패키지 설치 ==="
+          echo "=== 100% 무료 Tesseract 한글 OCR 및 PDF 렌더링 패키지 설치 ==="
           sudo apt-get update -qq
-          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-kor
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-kor poppler-utils
           pip install --quiet pytesseract pillow
 
       - name: Run K-Gift Hunter with Free OCR & Supabase Sync
@@ -45,6 +45,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "K-Gift Bot"
-          git add events.json events_review.json log.txt period_debug.txt
+          for f in events.json events_review.json period_debug.txt posters log.txt; do
+            [ -e "$f" ] && git add "$f"
+          done
           git diff-index --quiet HEAD || git commit -m "auto: 실시간 이벤트 수집 및 K-Checker 검증 완료 [skip ci]"
           git push || echo "No changes to commit"
