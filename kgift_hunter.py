@@ -685,8 +685,10 @@ def pick_poster(html: str, source_url: str) -> tuple:
             score -= 5
         cands.append((score, u))
 
-    for m in re.finditer(r'<img\b[^>]*?\bsrc=["\']([^"\']+)["\']', html, re.I):
+    for m in re.finditer(r'<img\b[^>]*?\b(?:src|data-src|data-original|data-lazy-src|data-url)=["\']([^"\']+)["\']', html, re.I):
         add(m.group(1), 1)
+    for m in re.finditer(r'url\(\s*["\']?([^"\')\s]+)["\']?\s*\)', html, re.I):
+        add(m.group(1), 1)   # CSS background-image
     for m in re.finditer(r'<a\b[^>]*?\bhref=["\']([^"\']+)["\']', html, re.I):
         add(m.group(1), 2)   # 첨부파일 직접 링크
     og = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']*)["\']', html, re.I)
@@ -696,6 +698,105 @@ def pick_poster(html: str, source_url: str) -> tuple:
     cands.sort(key=lambda x: -x[0])   # 점수 높은 순 (동점이면 본문 등장 순서 유지)
     good = [u for sc, u in cands if sc >= 3]
     return (good[0] if good else ""), good[:5]
+
+
+GENERIC_OG = ["ogimage", "og_image", "og-image", "default", "sns_", "share_img", "main_visual"]
+POSTER_DIR = "posters"
+
+
+def _is_image_bytes(b: bytes) -> bool:
+    return b.startswith((b"\xff\xd8\xff", b"\x89PNG", b"GIF8")) or (b[:4] == b"RIFF" and b[8:12] == b"WEBP")
+
+
+def render_pdf_first_page(pdf_bytes: bytes, key: str) -> str:
+    """PDF 첨부 1쪽을 그림(JPG)으로 만들어 posters/ 에 저장. 성공하면 파일 경로, 실패하면 ''."""
+    import shutil
+    import subprocess
+    import tempfile
+    if not shutil.which("pdftoppm"):
+        return ""
+    os.makedirs(POSTER_DIR, exist_ok=True)
+    out_base = os.path.join(POSTER_DIR, key)
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tf:
+            tf.write(pdf_bytes)
+            tmp = tf.name
+        subprocess.run(["pdftoppm", "-jpeg", "-jpegopt", "quality=80", "-r", "90", "-f", "1", "-l", "1",
+                        "-singlefile", tmp, out_base], check=True, timeout=60,
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        os.unlink(tmp)
+    except Exception:
+        return ""
+    path = out_base + ".jpg"
+    return path if os.path.exists(path) and os.path.getsize(path) > 2000 else ""
+
+
+def public_poster_url(path: str) -> str:
+    """저장한 포스터 파일의 공개 주소 (GitHub raw). 저장소 정보를 모르면 ''."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "vibration2000/kgift-hunter")
+    branch = os.environ.get("GITHUB_REF_NAME", "main") or "main"
+    if not repo:
+        return ""
+    return f"https://raw.githubusercontent.com/{repo}/{branch}/{path.replace(os.sep, '/')}"
+
+
+def find_poster_hard(net, html: str, source_url: str, log: list) -> dict:
+    """pick_poster 가 못 찾았을 때 쓰는 '어떻게 해서든' 탐색. 찾으면
+    {"url":..., "local_path":...(선택), "how":...} 반환, 끝내 못 찾으면 {}.
+    순서: ① 완화된 본문 이미지 ② 확장자 없는 첨부(다운로드) 링크 — 이미지면 그대로, PDF면 1쪽을 그림으로."""
+    host = urllib.parse.urlparse(source_url).netloc
+    # ① 본문 이미지 중 로고/아이콘이 아닌 것 (점수 기준 완화, 사이트 공통 og:image 는 제외)
+    loose = []
+    for m in re.finditer(r'<img\b[^>]*?\b(?:src|data-src|data-original|data-lazy-src)=["\']([^"\']+)["\'][^>]*>', html, re.I):
+        raw = htmllib.unescape(m.group(1).strip())
+        if not raw or raw.startswith("data:"):
+            continue
+        u = urllib.parse.urljoin(source_url, raw)
+        path = urllib.parse.urlparse(u).path.lower()
+        if any(n in path for n in POSTER_NOISE) or any(g in path for g in GENERIC_OG):
+            continue
+        if not path.endswith(IMG_EXT):
+            continue
+        w = re.search(r'\bwidth=["\']?(\d+)', m.group(0), re.I)
+        if w and int(w.group(1)) < 150:
+            continue
+        loose.append(u)
+    for u in loose[:6]:
+        st, ct, n = net.probe_image(u, referer=source_url)
+        if st == 200 and "image" in ct.lower() and n > 500:
+            return {"url": u, "how": "본문 이미지(완화 기준)"}
+
+    # ② 첨부 링크 (확장자가 없는 download.do?idx=… 도 포함)
+    atts = []
+    for href, inner in re.findall(r'<a\b[^>]*?\bhref=["\']([^"\']+)["\'][^>]*>(.*?)</a>', html, re.I | re.S):
+        h = htmllib.unescape(href.strip())
+        t = re.sub(r"<[^>]+>", "", inner)
+        if h.startswith(("javascript:", "#", "mailto:")):
+            continue
+        hl = h.lower()
+        if any(k in hl for k in ("download", "filedown", "atch", "attach", "file")) or re.search(r"\.(pdf|jpe?g|png)\b", t, re.I):
+            if re.search(r"\.(hwp|hwpx|doc|docx|xls|xlsx|zip)\b", t, re.I):
+                continue   # 신청서 양식 등은 포스터가 아님
+            atts.append(urllib.parse.urljoin(source_url, h))
+    seen = set()
+    for u in atts[:6]:
+        if u in seen:
+            continue
+        seen.add(u)
+        raw, ctype = net.fetch_bytes(u, referer=source_url, max_bytes=15 * 1024 * 1024)
+        if not raw:
+            log.append(f"      · 첨부 확인 실패({ctype}): {u[-45:]}")
+            continue
+        if _is_image_bytes(raw):
+            return {"url": u, "how": "첨부 이미지"}
+        if raw.startswith(b"%PDF"):
+            key = hashlib.sha1(u.encode()).hexdigest()[:16]
+            lp = render_pdf_first_page(raw, key)
+            pub = public_poster_url(lp) if lp else ""
+            if lp and pub:
+                return {"url": pub, "local_path": lp, "how": "PDF 첨부 1쪽을 그림으로 변환"}
+            log.append("      · PDF 첨부는 찾았지만 그림 변환/공개 주소 생성에 실패 (pdftoppm 또는 GITHUB_REPOSITORY 확인)")
+    return {}
 
 
 def skipped(code: str, message: str) -> dict:
@@ -928,6 +1029,15 @@ def collect_from_target(net: Net, target: dict, max_items: int, today: dt.date):
                 log.append(f"    [-] 수집 제외 [{(ev or {}).get('skip_reason', 'UNKNOWN')}] {msg} (URL: {item['url'][:45]})")
                 continue
 
+            # 포스터 필수: 기본 탐색으로 못 찾았으면 더 강하게 찾는다 (끝내 없으면 체커가 POSTER_MISSING 으로 거절)
+            if not ev["event_data"].get("poster_image_url"):
+                found_p = find_poster_hard(net, detail_html, item["url"], log)
+                if found_p:
+                    ev["event_data"]["poster_image_url"] = found_p["url"]
+                    ev["event_data"]["poster_candidates"] = [found_p["url"]]
+                    if found_p.get("local_path"):
+                        ev["event_data"]["poster_local_path"] = found_p["local_path"]
+                    log.append(f"    [🖼] 포스터를 추가 탐색으로 찾음 ({found_p['how']}): {found_p['url'][-50:]}")
             # 🛡️ 2단계: K-Checker에게 실시간 검사 받기 (Zero-Lie Check)
             ok, rep = verify_single_event(ev["event_data"], extra_text=ev["event_data"].get("poster_text", ""), page_html=detail_html)
             if not ok:
@@ -938,13 +1048,13 @@ def collect_from_target(net: Net, target: dict, max_items: int, today: dt.date):
                 ptxt = read_poster_texts(net, ev["event_data"].get("poster_candidates") or [ev["event_data"]["poster_image_url"]], item["url"])
                 if ptxt:
                     ev["event_data"]["poster_text"] = ptxt[:1500]
-            # 포스터가 실제로 열리는 이미지인지 확인 (안 열리면 빈 값으로 두어 앱이 기본 이미지를 쓰게 함)
+            # 포스터가 실제로 열리는지 한 번 더 확인. 안 열리면 비우지 않고 이벤트 자체를 버린다 (가짜 이미지 금지)
             pu = ev["event_data"].get("poster_image_url", "")
-            if pu:
+            if pu and not ev["event_data"].get("poster_local_path"):
                 st, ct, n = net.probe_image(pu, referer=item["url"])
                 if not (st == 200 and "image" in ct.lower() and n > 500):
-                    log.append(f"    [!] 포스터 이미지가 열리지 않아 비워둡니다 ({st} {ct[:30]}): {pu[-50:]}")
-                    ev["event_data"]["poster_image_url"] = ""
+                    log.append(f"    [-] 포스터 이미지가 열리지 않아 이벤트를 제외합니다 ({st} {ct[:30]}): {pu[-50:]}")
+                    continue
             ev["_source"] = name
             ev["kchecker_verified"] = True
             ev["kchecker_report"] = rep["reason"]
