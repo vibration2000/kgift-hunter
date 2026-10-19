@@ -2,7 +2,108 @@
   "status": "success",
   "version": "2.9 (K-Checker v2 본문 대조 · Zero-Lie)",
   "region_scope": "경기도 31개 시·군 공식 실시간 이벤트",
-  "generated_at": "2026-10-19T01:00:56",
-  "count": 0,
-  "events": []
+  "generated_at": "2026-10-19T01:52:26",
+  "count": 1,
+  "events": [
+    {
+      "status": "success",
+      "confidence_score": 90,
+      "dedup_hash": "1096e6db4cbb63b3a75c38be72fb7e04593e11be602cbff1e07effd153ec314e",
+      "skip_reason": "",
+      "event_data": {
+        "title": "사회연대경제 사진공모전 「일상 속 가치있는 순간을 PICK!」 공모",
+        "org_name": "경기도",
+        "category": "시민참여 행사",
+        "target_region": "경기도",
+        "target_age": [
+          "ALL"
+        ],
+        "period": {
+          "start": "2026-09-15",
+          "end": "2026-10-25",
+          "active_round": "공고문 기재 일정: 2026-09-15 ~ 2026-10-25",
+          "next_round": "",
+          "total_rounds": ""
+        },
+        "rewards": [
+          {
+            "item_name": "최우수상",
+            "unit_price": 300000,
+            "winners_count": 3,
+            "evidence": "최종결과 2026. 11. 7.(토) 박람회 공식 홈페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종"
+          },
+          {
+            "item_name": "우수상",
+            "unit_price": 200000,
+            "winners_count": 3,
+            "evidence": "페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관"
+          },
+          {
+            "item_name": "장려상",
+            "unit_price": 100000,
+            "winners_count": 3,
+            "evidence": "정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관 행정안전부, 경기도, 고양특례"
+          }
+        ],
+        "source_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+        "apply_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+        "poster_image_url": "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg",
+        "poster_candidates": [
+          "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg"
+        ],
+        "abuse_prevention_rule": "K-Gift Shield 1인 1회 원칙 및 부정 참여 방지 안심 검증 적용",
+        "announcement_info": "해당 지자체 누리집 공식 발표 및 모바일 개별 안내",
+        "poster_local_path": "posters/2aee9f38d31f6611.jpg"
+      },
+      "kchecker_verified": true,
+      "kchecker_report": "본문 대조 통과 (제목 고유 키워드 ['사회연대경제', '사진공모전', '일상'], 참여 행동 ['응모', '신청'], 경품 근거 구절: \"하여신청정보작성후,제출자료및사진파일업로드-(제출서류)참가신청서·출품사진·개인정보제공동의서및초상권사용동의서·출품사진원본-(접수링\", 대조 방식: refetch)"
+    }
+  ],
+  "confidence_score": 90,
+  "dedup_hash": "1096e6db4cbb63b3a75c38be72fb7e04593e11be602cbff1e07effd153ec314e",
+  "event_data": {
+    "title": "사회연대경제 사진공모전 「일상 속 가치있는 순간을 PICK!」 공모",
+    "org_name": "경기도",
+    "category": "시민참여 행사",
+    "target_region": "경기도",
+    "target_age": [
+      "ALL"
+    ],
+    "period": {
+      "start": "2026-09-15",
+      "end": "2026-10-25",
+      "active_round": "공고문 기재 일정: 2026-09-15 ~ 2026-10-25",
+      "next_round": "",
+      "total_rounds": ""
+    },
+    "rewards": [
+      {
+        "item_name": "최우수상",
+        "unit_price": 300000,
+        "winners_count": 3,
+        "evidence": "최종결과 2026. 11. 7.(토) 박람회 공식 홈페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종"
+      },
+      {
+        "item_name": "우수상",
+        "unit_price": 200000,
+        "winners_count": 3,
+        "evidence": "페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관"
+      },
+      {
+        "item_name": "장려상",
+        "unit_price": 100000,
+        "winners_count": 3,
+        "evidence": "정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관 행정안전부, 경기도, 고양특례"
+      }
+    ],
+    "source_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+    "apply_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+    "poster_image_url": "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg",
+    "poster_candidates": [
+      "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg"
+    ],
+    "abuse_prevention_rule": "K-Gift Shield 1인 1회 원칙 및 부정 참여 방지 안심 검증 적용",
+    "announcement_info": "해당 지자체 누리집 공식 발표 및 모바일 개별 안내",
+    "poster_local_path": "posters/2aee9f38d31f6611.jpg"
+  }
 }
