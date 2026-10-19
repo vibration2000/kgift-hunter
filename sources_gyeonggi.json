@@ -1,45 +1,140 @@
 {
-  "_설명": "sources=이미 알고 있는 게시판 / homepages=시청 첫 화면(여기서 이벤트·행사 게시판을 자동으로 찾아감). enabled=false 면 건너뜀.",
-  "_주의": "homepages 주소는 제 기억 기준이라 틀린 곳이 있을 수 있습니다. 틀리면 리포트(hunter_report.txt)에 '첫 화면 접속 실패'로 나옵니다.",
+  "_설명": "K-Gift Hunter 경기도 31개 시·군 실시간 시민참여/이벤트/행사 공식 수집 대상 소스",
   "sources": [
     {
-      "name": "수원시 게시판(bbsCd=1381, 참여형 행사)",
+      "name": "경기도 공모전·이벤트",
+      "org": "경기도",
+      "list_url": "https://www.gg.go.kr/gongmo",
+      "accept_all": true,
+      "enabled": true,
+      "_note": "v62: 사진 공모전처럼 상금이 있는 공모 (상세 링크 bIdx= 로 수집)"
+    },
+    {
+      "name": "수원특례시 참여형 행사",
       "org": "수원시",
       "list_url": "https://www.suwon.go.kr/web/board/BD_board.list.do?bbsCd=1381",
       "accept_all": true,
       "enabled": true
     },
     {
-      "name": "성남시 행사/강좌/공모",
-      "org": "성남시",
-      "list_url": "https://www.seongnam.go.kr/apply/event.do",
-      "accept_all": true,
-      "enabled": true
-    },
-    {
-      "name": "고양시 축제·행사",
+      "name": "고양특례시 설문·이벤트",
       "org": "고양시",
-      "list_url": "https://www.goyang.go.kr/www/user/bbs/BD_selectBbsList.do?q_bbsCode=1007",
+      "list_url": "https://www.goyang.go.kr/www/user/qestnar/BD_selectQestnarList.do",
       "accept_all": true,
       "enabled": true
     },
     {
-      "name": "용인시 시민참여플랫폼 행사안내",
+      "name": "고양특례시 시민 축제·행사 일정",
+      "org": "고양시",
+      "list_url": "https://www.goyang.go.kr/www/user/eventCldr/BD_selectEventCldrList.do",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "용인특례시 시민참여플랫폼 행사안내",
       "org": "용인시",
       "list_url": "https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbsList.do?q_bbsCode=1294",
       "accept_all": true,
       "enabled": true
     },
     {
-      "name": "경기도 뉴스포털",
-      "org": "경기도",
-      "list_url": "https://gnews.gg.go.kr",
+      "name": "성남시 시민 행사보기",
+      "org": "성남시",
+      "list_url": "https://www.seongnam.go.kr/pm010201?nowym=",
+      "accept_all": true,
+      "enabled": false,
+      "_note": "목록 HTML에 글 링크가 없어(동적 로딩 추정) 현재 방식으로는 수집 불가. 대체 소스 확인 전까지 비활성."
+    },
+    {
+      "name": "안양시 행사교육",
+      "org": "안양시",
+      "list_url": "https://www.anyang.go.kr/main/selectBbsNttList.do?bbsNo=63&key=261",
+      "accept_all": true,
       "enabled": true
     },
     {
-      "name": "경기관광공사",
-      "org": "경기관광공사",
-      "list_url": "https://ggtour.or.kr",
+      "name": "화성특례시 행사·축제·교육",
+      "org": "화성시",
+      "list_url": "https://www.hscity.go.kr/www/user/eventCldr/BD_selectEventCldrList.do",
+      "accept_all": true,
+      "enabled": false,
+      "_note": "행사 달력 페이지에 글 링크가 HTML로 내려오지 않음(동적 로딩 추정). 대체 소스 확인 전까지 비활성."
+    },
+    {
+      "name": "남양주시 시민참여 소식",
+      "org": "남양주시",
+      "list_url": "https://www.nyj.go.kr/main/selectBbsNttList.do?bbsNo=464&key=747",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "시흥시 시민참여·이벤트",
+      "org": "시흥시",
+      "list_url": "https://www.siheung.go.kr/portal/bbs/list.do?mId=0401030000&bIdx=6",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "의정부시 시민참여",
+      "org": "의정부시",
+      "list_url": "https://www.ui4u.go.kr/portal/bbs/list.do?mId=0301010000&bIdx=1",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "김포시 설문조사·이벤트",
+      "org": "김포시",
+      "list_url": "https://www.gimpo.go.kr/portal/selectQestnarWebList.do?key=1202&qestnarGroupNo=1",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "광명시 온라인 설문조사",
+      "org": "광명시",
+      "list_url": "https://www.gm.go.kr/pt/user/qestnar/BD_selectQestnarList.do",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "광명시 행사·축제",
+      "org": "광명시",
+      "list_url": "https://www.gm.go.kr/pt/ns/gmFestival/list.do",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "안산시 새소식",
+      "org": "안산시",
+      "list_url": "https://www.ansan.go.kr/www/common/bbs/selectPageListBbs.do?bbs_code=B0214",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "파주시 시민 설문조사",
+      "org": "파주시",
+      "list_url": "https://www.paju.go.kr/user/poll/BD_pollList.do",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "양주시 시민 설문조사",
+      "org": "양주시",
+      "list_url": "https://www.yangju.go.kr/www/selectQestnarList.do?key=108",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "경기도 온라인 여론조사 (설문 추첨)",
+      "org": "경기도",
+      "list_url": "https://survey.gg.go.kr/app/cscenter/infoGrList.do",
+      "accept_all": true,
+      "enabled": true
+    },
+    {
+      "name": "경기도 뉴스포털 시정·행사",
+      "org": "경기도",
+      "list_url": "https://gnews.gg.go.kr",
+      "accept_all": true,
       "enabled": true
     }
   ],
@@ -51,105 +146,9 @@
       "enabled": true
     },
     {
-      "name": "성남시",
-      "org": "성남시",
-      "url": "https://www.seongnam.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "의정부시",
-      "org": "의정부시",
-      "url": "https://www.ui4u.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "안양시",
-      "org": "안양시",
-      "url": "https://www.anyang.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "부천시",
-      "org": "부천시",
-      "url": "https://www.bucheon.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "광명시",
-      "org": "광명시",
-      "url": "https://www.gm.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "평택시",
-      "org": "평택시",
-      "url": "https://www.pyeongtaek.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "동두천시",
-      "org": "동두천시",
-      "url": "https://www.ddc.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "안산시",
-      "org": "안산시",
-      "url": "https://www.ansan.go.kr",
-      "enabled": true
-    },
-    {
       "name": "고양시",
       "org": "고양시",
       "url": "https://www.goyang.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "과천시",
-      "org": "과천시",
-      "url": "https://www.gccity.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "구리시",
-      "org": "구리시",
-      "url": "https://www.guri.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "남양주시",
-      "org": "남양주시",
-      "url": "https://www.nyj.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "오산시",
-      "org": "오산시",
-      "url": "https://www.osan.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "시흥시",
-      "org": "시흥시",
-      "url": "https://www.siheung.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "군포시",
-      "org": "군포시",
-      "url": "https://www.gunpo.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "의왕시",
-      "org": "의왕시",
-      "url": "https://www.uiwang.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "하남시",
-      "org": "하남시",
-      "url": "https://www.hanam.go.kr",
       "enabled": true
     },
     {
@@ -159,27 +158,15 @@
       "enabled": true
     },
     {
-      "name": "파주시",
-      "org": "파주시",
-      "url": "https://www.paju.go.kr",
+      "name": "성남시",
+      "org": "성남시",
+      "url": "https://www.seongnam.go.kr",
       "enabled": true
     },
     {
-      "name": "이천시",
-      "org": "이천시",
-      "url": "https://www.icheon.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "안성시",
-      "org": "안성시",
-      "url": "https://www.anseong.go.kr",
-      "enabled": true
-    },
-    {
-      "name": "김포시",
-      "org": "김포시",
-      "url": "https://www.gimpo.go.kr",
+      "name": "부천시",
+      "org": "부천시",
+      "url": "https://www.bucheon.go.kr",
       "enabled": true
     },
     {
@@ -189,9 +176,81 @@
       "enabled": true
     },
     {
-      "name": "광주시",
-      "org": "광주시",
-      "url": "https://www.gjcity.go.kr",
+      "name": "안산시",
+      "org": "안산시",
+      "url": "https://www.ansan.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "남양주시",
+      "org": "남양주시",
+      "url": "https://www.nyj.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "안양시",
+      "org": "안양시",
+      "url": "https://www.anyang.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "평택시",
+      "org": "평택시",
+      "url": "https://www.pyeongtaek.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "시흥시",
+      "org": "시흥시",
+      "url": "https://www.siheung.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "파주시",
+      "org": "파주시",
+      "url": "https://www.paju.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "의정부시",
+      "org": "의정부시",
+      "url": "https://www.ui4u.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "김포시",
+      "org": "김포시",
+      "url": "https://www.gimpo.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "광명시",
+      "org": "광명시",
+      "url": "https://www.gm.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "하남시",
+      "org": "하남시",
+      "url": "https://www.hanam.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "군포시",
+      "org": "군포시",
+      "url": "https://www.gunpo.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "오산시",
+      "org": "오산시",
+      "url": "https://www.osan.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "이천시",
+      "org": "이천시",
+      "url": "https://www.icheon.go.kr",
       "enabled": true
     },
     {
@@ -201,9 +260,33 @@
       "enabled": true
     },
     {
+      "name": "구리시",
+      "org": "구리시",
+      "url": "https://www.guri.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "안성시",
+      "org": "안성시",
+      "url": "https://www.anseong.go.kr",
+      "enabled": true
+    },
+    {
       "name": "포천시",
       "org": "포천시",
       "url": "https://www.pocheon.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "의왕시",
+      "org": "의왕시",
+      "url": "https://www.uiwang.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "양평군",
+      "org": "양평군",
+      "url": "https://www.yp21.go.kr",
       "enabled": true
     },
     {
@@ -213,9 +296,15 @@
       "enabled": true
     },
     {
-      "name": "연천군",
-      "org": "연천군",
-      "url": "https://www.yeoncheon.go.kr",
+      "name": "동두천시",
+      "org": "동두천시",
+      "url": "https://www.ddc.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "과천시",
+      "org": "과천시",
+      "url": "https://www.gccity.go.kr",
       "enabled": true
     },
     {
@@ -225,9 +314,15 @@
       "enabled": true
     },
     {
-      "name": "양평군",
-      "org": "양평군",
-      "url": "https://www.yp21.go.kr",
+      "name": "연천군",
+      "org": "연천군",
+      "url": "https://www.yeoncheon.go.kr",
+      "enabled": true
+    },
+    {
+      "name": "광주시",
+      "org": "광주시",
+      "url": "https://www.gjcity.go.kr",
       "enabled": true
     }
   ]
