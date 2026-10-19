@@ -1,28 +1,7 @@
 {
   "status": "needs_review",
   "note": "경품 금액·인원이 포스터 이미지에만 있을 가능성이 있는 글. 운영자가 이미지를 보고 확인하기 전에는 공개하지 않음.",
-  "generated_at": "2026-10-19T00:46:58",
-  "count": 1,
-  "items": [
-    {
-      "title": "2026 제10회 용인시 사회적경제 한마당 행사 및 다가치 한마당 행사 안내",
-      "org_name": "용인시",
-      "target_region": "경기도 용인시",
-      "period": {
-        "start": "2026-10-24",
-        "end": "2026-10-24"
-      },
-      "source_url": "https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20261019094049892",
-      "poster_image_url": "https://www.yongin.go.kr/webcontent/upload/bbs/2026/10/19/a598b2fd-9fd8-445f-8cd9-657861fa2c00.jpg",
-      "poster_candidates": [
-        "https://www.yongin.go.kr/webcontent/upload/bbs/2026/10/19/a598b2fd-9fd8-445f-8cd9-657861fa2c00.jpg"
-      ],
-      "reward_hints": [
-        "경품"
-      ],
-      "review_reason": "경품 금액·인원이 본문 글자에 없고 포스터 이미지에만 있을 수 있음. 운영자가 이미지를 보고 확인 후 승인해야 공개 가능",
-      "kchecker_verified": false,
-      "_source": "용인시 시민참여플랫폼 행사안내"
-    }
-  ]
+  "generated_at": "2026-10-19T01:00:56",
+  "count": 0,
+  "items": []
 }
