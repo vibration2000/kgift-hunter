@@ -2,7 +2,110 @@
   "status": "success",
   "version": "2.9 (K-Checker v2 본문 대조 · Zero-Lie)",
   "region_scope": "경기도 31개 시·군 공식 실시간 이벤트",
-  "generated_at": "2026-10-22T00:41:11",
-  "count": 0,
-  "events": []
+  "generated_at": "2026-10-22T06:40:34",
+  "count": 1,
+  "events": [
+    {
+      "status": "success",
+      "confidence_score": 90,
+      "dedup_hash": "8b9f16aa3fd85f21baefe719d307868ab30f6af2d06eba6d7f4b065e1ce26543",
+      "skip_reason": "",
+      "event_data": {
+        "title": "사회연대경제 사진공모전 「일상 속 가치있는 순간을 PICK!」 공모",
+        "org_name": "경기도",
+        "category": "시민참여 행사",
+        "target_region": "경기도",
+        "target_age": [
+          "ALL"
+        ],
+        "period": {
+          "start": "2026-09-15",
+          "end": "2026-10-25",
+          "active_round": "공고문 기재 일정: 2026-09-15 ~ 2026-10-25",
+          "next_round": "",
+          "total_rounds": ""
+        },
+        "rewards": [
+          {
+            "item_name": "최우수상",
+            "unit_price": 300000,
+            "winners_count": 3,
+            "evidence": "최종결과 2026. 11. 7.(토) 박람회 공식 홈페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종"
+          },
+          {
+            "item_name": "우수상",
+            "unit_price": 200000,
+            "winners_count": 3,
+            "evidence": "페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관"
+          },
+          {
+            "item_name": "장려상",
+            "unit_price": 100000,
+            "winners_count": 3,
+            "evidence": "정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관 행정안전부, 경기도, 고양특례"
+          }
+        ],
+        "source_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+        "apply_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+        "poster_image_url": "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg",
+        "poster_candidates": [
+          "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg"
+        ],
+        "abuse_prevention_rule": "K-Gift Shield 1인 1회 원칙 및 부정 참여 방지 안심 검증 적용",
+        "announcement_info": "해당 지자체 누리집 공식 발표 및 모바일 개별 안내",
+        "poster_local_path": "posters/2aee9f38d31f6611.jpg",
+        "poster_text": "경기도사회적경제원 공고 제 2026-121호\n\n「제8회 대한민국 사회연대경제박람회 및 국제컨퍼런스 」\n사진 공모전 ‘ay 속 가치있는 순간을 PICK!\n참여자 모집공고\n\n“9886099 OFEEt PHASE 809 BZ FAO! MAY EFORANIA!”\n\n경기도사회적경제원은 제8회 대한민국 사회연대경제박람회 및 국제컨퍼런스\n행사와 연계하여, 사회연대경제의 역사적 가치를 되새기고 우리 사회의 다양한\n문제를 해결하는 생생한 사례를 시각적으로 공유하는 사진공모전을\n개최합니다.\n많은 분들의 관심과 참여 바랍니다.\n\n2026년 9월 15일\n경기도사회적경제원장\n\nEl 사진 공모전 개요\n\nBOY | ㆍ사회연대경제 사진 공모전 *부제: 일상 속 가치있는 순간을 PICK!\n\n참가대상 ㅣ ㆍ대한민국 국민 누구나(연령 및 지역 제한 없음)\n\nㆍ사진+스토리 통합 공모(과거 기록물 가능)\n\n- (사진) 사회연대경제의 과거 or 현재 or 미래가 담긴 사진\n\n- (스토리) 사진 속에 담긴 인물, 사건, 변화의 의미를 기술한 300자 내외\n인당 최대 2점까지 제출 가능하며, 1인당 SS 수상은 불가\n\n공모내용\n\n공모접수 | + 20264 9월 15일(화) ~ 10월 25일(일)\n\n전시계획 | \"공모전 선정작 > 박람회 내 전시 및 시상식 진행\n\n문의처 | ㆍ 경기도사회적경제원 사회가치평가팀 (031-258-3284, 3274, 3280)"
+      },
+      "kchecker_verified": true,
+      "kchecker_report": "본문 대조 통과 (제목 고유 키워드 ['사회연대경제', '사진공모전', '일상'], 참여 행동 ['응모', '신청'], 경품 근거 구절: \"하여신청정보작성후,제출자료및사진파일업로드-(제출서류)참가신청서·출품사진·개인정보제공동의서및초상권사용동의서·출품사진원본-(접수링\", 대조 방식: refetch)"
+    }
+  ],
+  "confidence_score": 90,
+  "dedup_hash": "8b9f16aa3fd85f21baefe719d307868ab30f6af2d06eba6d7f4b065e1ce26543",
+  "event_data": {
+    "title": "사회연대경제 사진공모전 「일상 속 가치있는 순간을 PICK!」 공모",
+    "org_name": "경기도",
+    "category": "시민참여 행사",
+    "target_region": "경기도",
+    "target_age": [
+      "ALL"
+    ],
+    "period": {
+      "start": "2026-09-15",
+      "end": "2026-10-25",
+      "active_round": "공고문 기재 일정: 2026-09-15 ~ 2026-10-25",
+      "next_round": "",
+      "total_rounds": ""
+    },
+    "rewards": [
+      {
+        "item_name": "최우수상",
+        "unit_price": 300000,
+        "winners_count": 3,
+        "evidence": "최종결과 2026. 11. 7.(토) 박람회 공식 홈페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종"
+      },
+      {
+        "item_name": "우수상",
+        "unit_price": 200000,
+        "winners_count": 3,
+        "evidence": "페이지 게시(예정) 시상규모 정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관"
+      },
+      {
+        "item_name": "장려상",
+        "unit_price": 100000,
+        "winners_count": 3,
+        "evidence": "정보 시상규모 최우수상(30만 원, 3명), 우수상(20만 원, 3명), 장려상(10만 원, 3명) 심사방법 정보 심사방법 내부 서면 심사를 거쳐 고득점순으로 최종 선정 주최기관 정보 주최기관 행정안전부, 경기도, 고양특례"
+      }
+    ],
+    "source_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+    "apply_url": "https://www.gg.go.kr/gongmo/bbs/boardView.do?bsIdx=923&bIdx=110906123&menuId=4433",
+    "poster_image_url": "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg",
+    "poster_candidates": [
+      "https://raw.githubusercontent.com/vibration2000/kgift-hunter/main/posters/2aee9f38d31f6611.jpg"
+    ],
+    "abuse_prevention_rule": "K-Gift Shield 1인 1회 원칙 및 부정 참여 방지 안심 검증 적용",
+    "announcement_info": "해당 지자체 누리집 공식 발표 및 모바일 개별 안내",
+    "poster_local_path": "posters/2aee9f38d31f6611.jpg",
+    "poster_text": "경기도사회적경제원 공고 제 2026-121호\n\n「제8회 대한민국 사회연대경제박람회 및 국제컨퍼런스 」\n사진 공모전 ‘ay 속 가치있는 순간을 PICK!\n참여자 모집공고\n\n“9886099 OFEEt PHASE 809 BZ FAO! MAY EFORANIA!”\n\n경기도사회적경제원은 제8회 대한민국 사회연대경제박람회 및 국제컨퍼런스\n행사와 연계하여, 사회연대경제의 역사적 가치를 되새기고 우리 사회의 다양한\n문제를 해결하는 생생한 사례를 시각적으로 공유하는 사진공모전을\n개최합니다.\n많은 분들의 관심과 참여 바랍니다.\n\n2026년 9월 15일\n경기도사회적경제원장\n\nEl 사진 공모전 개요\n\nBOY | ㆍ사회연대경제 사진 공모전 *부제: 일상 속 가치있는 순간을 PICK!\n\n참가대상 ㅣ ㆍ대한민국 국민 누구나(연령 및 지역 제한 없음)\n\nㆍ사진+스토리 통합 공모(과거 기록물 가능)\n\n- (사진) 사회연대경제의 과거 or 현재 or 미래가 담긴 사진\n\n- (스토리) 사진 속에 담긴 인물, 사건, 변화의 의미를 기술한 300자 내외\n인당 최대 2점까지 제출 가능하며, 1인당 SS 수상은 불가\n\n공모내용\n\n공모접수 | + 20264 9월 15일(화) ~ 10월 25일(일)\n\n전시계획 | \"공모전 선정작 > 박람회 내 전시 및 시상식 진행\n\n문의처 | ㆍ 경기도사회적경제원 사회가치평가팀 (031-258-3284, 3274, 3280)"
+  }
 }
