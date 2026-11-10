@@ -1,7 +1,28 @@
 {
   "status": "needs_review",
   "note": "경품 금액·인원이 포스터 이미지에만 있을 가능성이 있는 글. 운영자가 이미지를 보고 확인하기 전에는 공개하지 않음.",
-  "generated_at": "2026-11-10T01:30:59",
-  "count": 0,
-  "items": []
+  "generated_at": "2026-11-10T14:45:00",
+  "count": 1,
+  "items": [
+    {
+      "title": "제31회 농업인의 날 기념식 및 용인농업 맛·멋·흥 한마당 행사",
+      "org_name": "용인시",
+      "target_region": "경기도 용인시",
+      "period": {
+        "start": "2026-11-11",
+        "end": "2026-11-11"
+      },
+      "source_url": "https://www.yongin.go.kr/citizen/user/bbs/BD_selectBbs.do?q_bbsCode=1209&q_bbscttSn=20261110111854657",
+      "poster_image_url": "https://www.yongin.go.kr/webcontent/upload/bbs/2026/11/10/77f72183-6b2f-43de-8421-9f2838193b14.jpg",
+      "poster_candidates": [
+        "https://www.yongin.go.kr/webcontent/upload/bbs/2026/11/10/77f72183-6b2f-43de-8421-9f2838193b14.jpg"
+      ],
+      "reward_hints": [
+        "시상"
+      ],
+      "review_reason": "경품 금액·인원이 본문 글자에 없고 포스터 이미지에만 있을 수 있음. 운영자가 이미지를 보고 확인 후 승인해야 공개 가능",
+      "kchecker_verified": false,
+      "_source": "용인특례시 시민참여플랫폼 행사안내"
+    }
+  ]
 }
